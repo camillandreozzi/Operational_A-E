@@ -40,3 +40,6 @@ patients <- data %>% group_by(Pat_X, Pat_Y, Pat_Loc_GPs, Pat_Loc_GP_List) %>% su
 patients <- patients[,-5]
 
 data.summary <- merge(data.num2, patients, by = c("Pat_X"), all.x = T)
+data.summary$Pat_Y.x <- data.summary$Pat_Y
+data.summary$Pat_Y.y <- NULL
+
