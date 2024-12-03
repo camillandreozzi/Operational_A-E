@@ -40,6 +40,24 @@ patients <- data %>% group_by(Pat_X, Pat_Y, Pat_Loc_GPs, Pat_Loc_GP_List) %>% su
 patients <- patients[,-5]
 
 data.summary <- merge(data.num2, patients, by = c("Pat_X"), all.x = T)
-data.summary$Pat_Y.x <- data.summary$Pat_Y
+data.summary$Pat_Y <- data.summary$Pat_Y.x
 data.summary$Pat_Y.y <- NULL
+data.summary$Pat_Y.x <- NULL
+
+
+data.summary$Pat_X <- as.factor(data.summary$Pat_X)
+data.summary$Site_Code <- as.factor(data.summary$Site_Code)
+data.summary$Month <- as.factor(data.summary$Month)
+data.summary$Year <- as.factor(data.summary$Year)
+data.summary$Attendance_Type <- as.factor(data.summary$Attendance_Type)
+data.summary$Age_Group <- factor(data.summary$Age_Group, ordered = T)
+data.summary$Pat_Y <- as.factor(data.summary$Pat_Y)
+
+model <- data.summary %>% lm(formula = Mean_Wait_Time ~ Site_Code + Month+
+                               Year + Attendance_Type +
+                               Age_Group + Pat_X +
+                               Site_Loc_GPs + Site_Loc_GP_List +
+                               Site_Pop_20miles)
+summary(model)
+
 
