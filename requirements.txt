@@ -3,3 +3,4 @@ matplotlib
 seaborn
 openpyxl
 scikit-learn
+ipykernel
