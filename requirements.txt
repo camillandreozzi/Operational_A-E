@@ -4,3 +4,4 @@ seaborn
 openpyxl
 scikit-learn
 ipykernel
+torch
