@@ -5,3 +5,4 @@ openpyxl
 scikit-learn
 ipykernel
 torch
+shapely
