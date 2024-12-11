@@ -27,6 +27,9 @@ data.longer$Year <- as.factor(data.longer$Year)
 data.longer$Attendance_Type <- as.factor(data.longer$Attendance_Type)
 data.longer$Age_Group <- factor(data.longer$Age_Group, ordered = T)
 data.longer$Pat_Y <- as.factor(data.longer$Pat_Y)
+data.longer$Site_X <- as.factor(data.longer$Site_X)
+data.longer$Site_Y <- as.factor(data.longer$Site_Y)
+
 
 # Wait Time
 data.longer$Wait_Time <- factor(data.longer$Wait_Time, levels = c(
@@ -50,7 +53,8 @@ data.summary <- data.longer %>% group_by(Month, Year, Site_Code, Pat_X, Pat_Y,
 # Wait Time distribution
 
 ggplot(data.longer, aes(x = Wait_Time))+
-  geom_bar() + ggtitle("Distribution of Wait Time")
+  geom_bar() + ggtitle("Distribution of Wait Time") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ggplot(data.longer, aes(x = Mean_Wait_Time))+
   geom_histogram() + ggtitle("Distribution of Mean Wait Time (numeric transf)")
@@ -63,9 +67,8 @@ ggplot(data.longer, aes(x = Binary_Wait_Time))+
 # We do not consider any coordinates
 
 model.lm1 <- lm(Mean_Wait_Time ~ Site_Code + Site_Type +
-                  Site_Loc_GPs + Site_Pop_20miles +
                   Pat_Loc_GPs + Pat_Loc_GP_List + Drive_Distance_Miles +
-                  Driving_Time_mins + Attendance_Type + 
+                  Driving_Time_mins + Attendance_Type + #Site_Loc_GPs + Site_Pop_20miles +
                   Age_Group + Year + Month, data =  data.longer)
 summary(model.lm1)
 
@@ -114,7 +117,7 @@ num_vars <- sapply(data.longer, is.numeric)
 data_scaled[num_vars] <- scale(data.longer[num_vars])
 
 model.lm2 <- lm(Mean_Wait_Time ~ Site_Code + Site_Type +
-                  Site_Loc_GPs + Site_Pop_20miles +
+                 # Site_Loc_GPs + Site_Pop_20miles +
                   Pat_Loc_GPs + Pat_Loc_GP_List + Drive_Distance_Miles +
                   Driving_Time_mins + Attendance_Type + 
                   Age_Group + Year + Month, data =  data_scaled)
@@ -125,7 +128,7 @@ coeff[order(abs(coeff), decreasing = T)] ## Quali sono i fattori che influenzano
 data_scaled$Binary_Wait_Time <- data.longer$Binary_Wait_Time
 
 model.lm3 <- glm(Binary_Wait_Time ~Site_Code + Site_Type +
-                   Site_Loc_GPs + Site_Pop_20miles +
+                   #Site_Loc_GPs + Site_Pop_20miles +
                    Pat_Loc_GPs + Pat_Loc_GP_List + Drive_Distance_Miles +
                    Driving_Time_mins + Attendance_Type + 
                    Age_Group + Year + Month, data =  data_scaled, family = "binomial")
@@ -134,6 +137,7 @@ coeff <- exp(model.lm3$coeff) ## Quali sono i fattori che influenzano di più la
 
 sort(coeff, decreasing = T) # Site Code 9 --> investigare
 
+# Baseline: Site Code 1, ED, Attendance type NEW unplanned, Year 1, Month 1
 
 # Decision Trees
 library(rpart)
@@ -167,10 +171,23 @@ plot(performance(score_dt,"prec","rec"),
      main = paste("Decision Tree - AUC:", round(performance(score_dt,"auc")@y.values[[1]], 3)))
 
 #Random Forest
+library(randomForest)
+data.train$Binary_Wait_Time <- as.factor(data.train$Binary_Wait_Time)
+data.test$Binary_Wait_Time <- as.factor(data.test$Binary_Wait_Time)
 rf <- randomForest(Binary_Wait_Time ~Site_Code + Site_Type +
                      Site_Loc_GPs + Site_Pop_20miles +
                      Pat_Loc_GPs + Pat_Loc_GP_List + Drive_Distance_Miles +
                      Driving_Time_mins + Attendance_Type + 
-                     Age_Group + Year + Month, data =  data.train, na.action = na.exclude)
+                     Age_Group + Year + Month, data =  data.train, type = "classification",na.action = na.exclude,
+                   ntree = 100, 
+                   maxnodes = 20,)
+predictions <- predict(rf, data.test, type = "response") 
+probabilities <- predict(rf, data.test, type = "prob")  
 
+library(caret)
+confusionMatrix(predictions, data.test$Binary_Wait_Time)
+
+# Fattori più importanti
+importance(rf)
+varImpPlot(rf)
 
