@@ -1,15 +1,23 @@
 Obiettivo: causalità del Wait time. 
-- Creare un dataframe moltiplicando le righe per ogni categorie per il corrispettivo number of attendance
-- Quali sono i fattori che influenzano la variabile Wait Time?
-- Quali postcodes sono più svantaggiati a livello di tempistiche? X WAIT X DRIVING X SOMMA
-- Quali postcodes sono più avvantaggiati " " " "?
-- Quali siti hanno un maggiore wait time?
-- Io sono in location X,Y. Dove mi conviene andare per essere servito nel meno tempo possibile?
-- Se potessimo aggiungere sites, dove li metteremmo?
+- Creare un dataframe moltiplicando le righe per ogni categorie per il corrispettivo number of attendance - fatto!
+- Quali sono i fattori che influenzano la variabile Wait Time? - lo abbiamo visto nel codice R!
+- Quali postcodes sono più svantaggiati a livello di tempistiche? X WAIT X DRIVING X SOMMA - Non ci sono PostCode più svantaggiati (ne parliamo nel report)
+- Quali postcodes sono più avvantaggiati - Non ci sono PostCode più svantaggiati (ne parliamo nel report)
+- Quali siti hanno un maggiore wait time? - Risposta nella simulazione 
+- Io sono in location X,Y. Dove mi conviene andare per essere servito nel meno tempo possibile? - Assunzione verso sito più vicino
+- Se potessimo aggiungere sites, dove li metteremmo? - fatto
   - Usare kriging da coordinate per creare nuovi dati di predizione?
 - Creare un modello predittivo basato sulle posizioni attuali di siti e pazienti con variabile dipendente Time (come somma di driving time e wait), 
   con loss function il somma time di ogni puntino e variamo la posizione del nuovo sito (new data = Site_X, Site_Y),
-  troviamo la posizione che minimizza la loss con algoritmo ottimizzazione
+  troviamo la posizione che minimizza la loss con algoritmo ottimizzazione - fatto
 - Quali age group attendono di più?
-- La presenza o meno di GPs (sia a livello Site, che a livello Patient) come influenza?
-- C'è una preferenza per un site rispetto che un altro?
+- La presenza o meno di GPs (sia a livello Site, che a livello Patient) come influenza? - modelliamo preferenze per i siti mettendo GP come covariata (camilla)
+- C'è una preferenza per un site rispetto che un altro? (di nuovo modello preferenze)
+
+Glauco:
+- Rifare il modello utilizzando wait_time distribuito uniformemente!
+- Comincio a scrivere bozza report!
+
+Camilla:
+- Fare modello preferenze!
+- Riorganizzazione dell'analisi per report!
