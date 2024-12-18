@@ -16,8 +16,8 @@ Obiettivo: causalità del Wait time.
 
 Glauco:
 - Rifare il modello utilizzando wait_time distribuito uniformemente!
-- Comincio a scrivere bozza report!
+- Scrivere modello report!
 
 Camilla:
 - Fare modello preferenze!
-- Riorganizzazione dell'analisi per report!
+- Scrivere l'analisi per report!
