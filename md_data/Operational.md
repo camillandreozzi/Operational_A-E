@@ -1,8 +1,6 @@
 Operational Research for Hospital Sites
 ================
 
-![](Operational_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
-
 ## Linear Mixed model
 
 #### to analyze the variation of attendees by Site_Code, Month, and Year
@@ -168,11 +166,11 @@ testp <- data.p[setdiff(1:nrow(data.p), trainp.index),]
 model_n <- ranger(n ~ Distance + Site_Type + Month + Year, data = trainp, importance = "impurity")
 ```
 
-![](Operational_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-8-1.png)<!-- -->
 
 ### Plotting feature importance
 
-![](Operational_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-10-1.png)<!-- -->
 
 ## Trying Coordinates for new site (from heuristic method)
 
@@ -186,13 +184,13 @@ coord.new <- c(10640.01507538, 105690.53768844)
 
     ## Total Percentage Reduction of attendance to other sites: -0.06184625
 
-![](Operational_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-13-1.png)<!-- -->
 
 # Optimization Random Forest
 
 ## Optimizing the location of a new site using optimization techniques and evaluating its impact
 
-![](Operational_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-14-1.png)<!-- -->
 
 # Generalized Additive Model (GAM) for Prediction
 
@@ -200,7 +198,7 @@ coord.new <- c(10640.01507538, 105690.53768844)
 
 ### Evaluate and plot predictions
 
-![](Operational_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-16-1.png)<!-- -->
 
 ## Trying Coordinates for new site (from heuristic method)
 
@@ -208,7 +206,7 @@ coord.new <- c(10640.01507538, 105690.53768844)
 
     ## Total Percentage Reduction of attendance to other sites: -0.06100713
 
-![](Operational_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-18-1.png)<!-- -->
 
 # Optimization GAM
 
@@ -304,7 +302,7 @@ ggplot(data.p)+
   geom_point(data = optimal_coords_gam, aes(x = Site_X, y = Site_Y), col = "red", size = 3)
 ```
 
-![](Operational_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-19-1.png)<!-- -->
 
 # Poisson Count Model
 
@@ -358,7 +356,7 @@ Visualize Impact
 
     ## Total Percentage Reduction of attendance to other sites: -0.05302561
 
-![](Operational_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-23-1.png)<!-- -->
 
 # Optimization Poisson Model
 
@@ -449,7 +447,7 @@ ggplot(data.p)+
   geom_point(data = optimal_coords_glm, aes(x = Site_X, y = Site_Y), col = "red", size = 3)
 ```
 
-![](Operational_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-24-1.png)<!-- -->
 
 # Final Comparison
 
@@ -458,4 +456,4 @@ ggplot(data.p)+
     ## 2  33537 111593    RF
     ## 3  33537 111593   GAM
 
-![](Operational_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
+![](Operational_A-E/md_data/unnamed-chunk-25-1.png)<!-- -->
