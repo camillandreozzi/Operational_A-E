@@ -2,8 +2,8 @@ Obiettivo: causalità del Wait time.
 - Creare un dataframe moltiplicando le righe per ogni categorie per il corrispettivo number of attendance - fatto!
 - Quali sono i fattori che influenzano la variabile Wait Time? - lo abbiamo visto nel codice R!
 - Quali postcodes sono più svantaggiati a livello di tempistiche? X WAIT X DRIVING X SOMMA - Non ci sono PostCode più svantaggiati (ne parliamo nel report)
-- Quali postcodes sono più avvantaggiati - Non ci sono PostCode più svantaggiati (ne parliamo nel report)
-- Quali siti hanno un maggiore wait time? - Risposta nella simulazione 
+- Quali postcodes sono più avvantaggiati - Non ci sono PostCode più svantaggiati (ne parliamo nel report) 
+- Quali siti hanno un maggiore wait time? - Risposta nella simulazione GLAUCO!!
 - Io sono in location X,Y. Dove mi conviene andare per essere servito nel meno tempo possibile? - Assunzione verso sito più vicino
 - Se potessimo aggiungere sites, dove li metteremmo? - fatto
   - Usare kriging da coordinate per creare nuovi dati di predizione?
@@ -21,3 +21,10 @@ Glauco:
 Camilla:
 - Fare modello preferenze!
 - Scrivere l'analisi per report!
+
+
+1. Fattori su Wait Time (importance albero)
+2. Postcodes + o - avvantaggiati (accounting) --> hypothesis testing sulle mean
+3. Siti --> hypothesis testing sulle mean
+4. Modelli predittivi non funzionano e GPs troppi pochi valori unici
+5. Profilo del paziente che aspetta di meno e quello del paziente che aspetta di più
