@@ -6,21 +6,20 @@ Public Health Scotland is Scotland’s national agency responsible for improving
 
 ## Getting Started
 
+Install required libraries in **Python**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+    
 Clone the repository to your local machine using:
    ```bash
    git clone https://github.com/yourusername/ae-model-development.git
    ```
 
-Install required libraries in **Python**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
 Install required libraries in **R**:
-    ```R
-    install.packages("...")
-    install.packages("...")
-    ```
+   ```R
+   install.packages("...")
+   ```
 
 
 
