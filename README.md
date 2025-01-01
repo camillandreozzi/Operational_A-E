@@ -1,6 +1,6 @@
 # A&E Model Development for Public Health Scotland
 
-This repository contains all the code used to address the challenge titled **"Supporting our development of an A&E model/s"** for Public Health Scotland. The project aims to develop a more detailed Accident & Emergency (A&E) model to understand the flow of patients being admitted to the hospital system. The model will contribute to predicting the demand for A&E services, building on an existing acute hospital model.
+This repository contains all the code used to address the challenge titled **"Supporting our development of an A&E model/s"** for Public Health Scotland. The project aims to develop a more detailed Accident & Emergency (A&E) model to understand the flow of patients being admitted to the hospital system. 
 
 Public Health Scotland is Scotland’s national agency responsible for improving and protecting the health and well-being of its citizens. Their goal is to leverage intelligence and data to enhance the healthcare system's effectiveness and user experience.
 
