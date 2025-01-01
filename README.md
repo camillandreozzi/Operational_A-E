@@ -4,7 +4,7 @@ This repository contains all the code used to address the challenge titled **"Su
 
 Public Health Scotland is Scotland’s national agency responsible for improving and protecting the health and well-being of its citizens. Their goal is to leverage intelligence and data to enhance the healthcare system's effectiveness and user experience.
 
-### Getting Started
+## Getting Started
 To run the code:
 1. Clone the repository to your local machine using:
    ```bash
