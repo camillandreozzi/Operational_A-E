@@ -34,8 +34,7 @@ If you wish to contribute to this project, please fork the repository and submit
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Authors
+## Authors
 
 * **Glauco Rampone**: Python Notebooks, Data Analysis, Model Development
 * **Camilla Andreozzi**: R Code, Data Analysis, Model Development
-* 
