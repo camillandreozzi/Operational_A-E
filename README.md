@@ -11,16 +11,18 @@ Clone the repository to your local machine using:
    git clone https://github.com/yourusername/ae-model-development.git
    ```
 
+Install required libraries in **Python**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 Install required libraries in **R**:
     ```R
     install.packages("...")
     install.packages("...")
     ```
 
-Install required libraries in **Python**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+
 
 Run the R scripts and Python notebooks to replicate the model development and analysis.
 
