@@ -22,7 +22,7 @@ To install required libraries in **Python**:
 
 To install required libraries in **R**:
    ```R
-   install.packages("...")
+   install.packages(c("readxl", "tidyverse", "magritt", "ranger", "caret", "optimx", "patchwork"))
    ```
 
 
