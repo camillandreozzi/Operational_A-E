@@ -1,5 +1,7 @@
 # A&E Model Development for Public Health Scotland
 
+![Voronoi Map of Best New Site](data/images/best_new_site_voronoi_map.png
+
 This repository contains all the code used to address the Undergraduate Operational Research Challenge for Public Health Scotland. The project aims to develop a more detailed Accident & Emergency (A&E) model to understand the flow of patients being admitted to the hospital system. 
 
 A full description of the challenge can be found in the `problem_description.pdf` file in this repository. For more information about the challenge, please visit the [Undergraduate Operational Research Challenge](https://www.maths.ed.ac.uk/school-of-mathematics/events/operational-research-challenge).
