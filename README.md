@@ -1,6 +1,6 @@
 # A&E Model Development for Public Health Scotland
 
-![Voronoi Map of Best New Site](data/images/best_new_site_voronoi_map.png
+![Voronoi Map of Best New Site](data/images/best_new_site_voronoi_map.png)
 
 This repository contains all the code used to address the Undergraduate Operational Research Challenge for Public Health Scotland. The project aims to develop a more detailed Accident & Emergency (A&E) model to understand the flow of patients being admitted to the hospital system. 
 
