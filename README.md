@@ -12,7 +12,7 @@ Public Health Scotland is Scotland’s national agency responsible for improving
 
 Clone the repository to your local machine using:
    ```bash
-   git clone https://github.com/yourusername/ae-model-development.git
+   git clone https://github.com/camillandreozzi/Operational_A-E.git
    ```
 
 To install required libraries in **Python**:
