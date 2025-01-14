@@ -8,7 +8,7 @@ Public Health Scotland is Scotland’s national agency responsible for improving
 
 <table>
 <tr>
-<td><img src="data/images/best_new_site_voronoi_map.png" alt="Voronoi Map of Best New Site" style="width: 450px;"/></td>
+<td><img src="data/images/best_new_site_voronoi_map.png" alt="Voronoi Map of Best New Site" style="width: 460px;"/></td>
 <td><img src="data/images/best_new_site_model.png" alt="Best New Site from Modelling" style="width: 400px;"/></td>
 </tr>
 <tr>
