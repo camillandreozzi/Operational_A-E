@@ -1,6 +1,7 @@
 pandas
 matplotlib
 seaborn
+shapely
 openpyxl
 scikit-learn
 ipykernel
