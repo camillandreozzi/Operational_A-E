@@ -6,8 +6,16 @@ A full description of the challenge can be found in the `problem_description.pdf
 
 Public Health Scotland is Scotland’s national agency responsible for improving and protecting the health and well-being of its citizens. Their goal is to leverage intelligence and data to enhance the healthcare system's effectiveness and user experience.
 
-![Voronoi Map of Best New Site](data/images/best_new_site_voronoi_map.png)
-![Best New Site from Modelling](data/images/best_new_site_model.png)
+<table>
+<tr>
+<td><img src="data/images/best_new_site_voronoi_map.png" alt="Voronoi Map of Best New Site" style="width: 400px;"/></td>
+<td><img src="data/images/best_new_site_model.png" alt="Best New Site from Modelling" style="width: 400px;"/></td>
+</tr>
+<tr>
+<td align="center">Voronoi Map of Best New Site</td>
+<td align="center">Best New Site from Modelling</td>
+</tr>
+</table>
 
 ## Getting Started
 
