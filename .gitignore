@@ -1,0 +1,23 @@
+# Ignora i dataset pesanti
+*.csv
+*.xlsx
+*.Rdata
+*.npz
+*.pkl
+
+# Ignora i file shapefile
+data/shapefiles/
+
+# Ignora l'ambiente virtuale
+/env_phs/
+
+# Ignora i file di sistema
+.Rhistory
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Non ignorare alcuni file specifici che potrebbero essere necessari per eseguire il codice
+# Decommentare se necessario:
+# !important_data.csv
