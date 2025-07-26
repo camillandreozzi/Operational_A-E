@@ -1,10 +1,6 @@
 # A&E Model Development for Public Health Scotland
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/best_ed.png" alt="A&E Optimization" width="700"/>
-</div>
-
-<div align="center">
   <table>
     <tr>
       <td><img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/recovered/best_new_site_voronoi_map.png" alt="Voronoi Map of Best New Site" width="400"/></td>
