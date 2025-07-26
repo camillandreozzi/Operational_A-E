@@ -4,6 +4,19 @@
   <img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/best_ed.png" alt="A&E Optimization" width="700"/>
 </div>
 
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/recovered/best_new_site_voronoi_map.png" alt="Voronoi Map of Best New Site" width="400"/></td>
+      <td><img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/recovered/best_new_site_model.png" alt="Best New Site Model" width="400"/></td>
+    </tr>
+    <tr>
+      <td align="center">Voronoi Map of Best New Site</td>
+      <td align="center">Best New Site from Modelling</td>
+    </tr>
+  </table>
+</div>
+
 ## 📋 Summary
 
 - [Project Overview](#-project-overview)
@@ -126,6 +139,12 @@ The project uses various datasets provided by Public Health Scotland:
 
 ### Visualizing Results
 The main results are available in the `results` folder, with visualizations in the `images_dir` subfolder.
+
+Key visualizations include:
+- **Optimal Locations**: Best new site modeling results in `results/images_dir/recovered/best_new_site_model.png`
+- **Service Areas**: Voronoi maps showing coverage in `results/images_dir/recovered/best_new_site_voronoi_map.png`
+- **Patient Flow Changes**: Impact analysis in `results/images_dir/recovered/change_in_attendances.png`
+- **Combined Solutions**: Multi-facility optimization in `results/images_dir/recovered/combined_solution.png`
 
 ## 📈 Key Findings
 
