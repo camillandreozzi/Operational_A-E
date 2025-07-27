@@ -56,7 +56,7 @@ The repository is organized into the following main folders:
     - `BNS_real_data.ipynb`: Application of models on real data
     - `Finding_Best_New_Site.ipynb`: Algorithms to find optimal locations
     - `Elderly Work.ipynb`: Specific analyses for the elderly population
-    - `Best_New_Site_Distributional_Assumptions.R`: Distributional assumptions for models
+    - `Best_New_Site_Distributional_Assumptions.R`: Optimization for optimal locations
     - `metrics.R`: Evaluation metrics for location models
   
   - **`/wait_time`**: Models for waiting time analysis and prediction
