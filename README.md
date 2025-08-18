@@ -42,12 +42,40 @@ For more information about the challenge, visit [Undergraduate Operational Resea
 
 The repository is organized into the following main folders:
 
+### `/data`: Data Files
+- **`/raw`**: Original data files and intermediate zones data
+- **`/processed`**: Cleaned and processed data files (CSV, JSON, Excel formats)
+- **`/shapefiles`**: Geographic shapefiles for Scotland data zones
+- Main datasets: population estimates, hospital data, A&E activity data
+
 ### `/src`: Source Code
 - **`/exploratory`**: Notebooks and scripts for exploratory data analysis
   - `data_transf.ipynb`: Data transformation and preprocessing
   - `exploration.ipynb`: Initial exploration of datasets
   - `Exploratory Data Analysis.ipynb`: Detailed analysis of patterns in the data
   - `Exploratory_Analysis_PatientProfiles.R`: R script for patient profile analysis
+  - `filter_non_glasgow_data.ipynb`: Data filtering for Glasgow analysis
+  - `technique_4.ipynb`: Advanced analysis techniques
+  - `waiting_time_analysis.ipynb`: Analysis of waiting times
+- **`/modeling`**: Model development and optimization scripts
+  - `/location_optimization`: Hospital location optimization models
+  - `/wait_time`: Waiting time prediction models
+- **`/analysis`**: Additional analysis scripts
+- **`/utils`**: Utility functions and helper scripts
+- Main analysis files:
+  - `intermediate_zones_exploration.ipynb`: Comprehensive zones analysis
+  - `glasgow_edinburgh_analysis.R`: Glasgow and Edinburgh comparative analysis
+  - `ModelCode.R`: Main modeling code
+
+### `/results`: Results and Outputs
+- **`/analysis`**: Analysis reports (PDF format)
+- **`/maps`**: Interactive HTML maps and visualizations
+- **`/static_maps`**: Static PNG maps and charts
+- **`/models`**: Saved model files (R data, numpy, pickle formats)
+- **`/images_dir`**: Additional charts and visualizations
+
+### `/docs`: Documentation
+- Complete project documentation and reports
 
 - **`/modeling`**: Analytical and optimization models
   - **`/location_optimization`**: Models to optimize the location of healthcare facilities

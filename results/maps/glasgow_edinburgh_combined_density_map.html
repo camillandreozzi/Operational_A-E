@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_71d8914dcc9e4a9fb4018f66f3c1b7d2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_71d8914dcc9e4a9fb4018f66f3c1b7d2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_71d8914dcc9e4a9fb4018f66f3c1b7d2 = L.map(
+                "map_71d8914dcc9e4a9fb4018f66f3c1b7d2",
+                {
+                    center: [55.9, -3.7],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03fcc5c6cf175ca927aed8815b4580d4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_03fcc5c6cf175ca927aed8815b4580d4.addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+            var circle_marker_1d389d8552f8172f96a2cdb34f7dfb83 = L.circleMarker(
+                [55.89208535969157, -4.240011173366163],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed976", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.965073642346113, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_32ada079d4b36d9d8f23d4f4e55f3c71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_223d49accef4bbd4c31fc969c2c06191 = $(`<div id="html_223d49accef4bbd4c31fc969c2c06191" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Darnley East<br>Density: 5068.6</div>`)[0];
+                popup_32ada079d4b36d9d8f23d4f4e55f3c71.setContent(html_223d49accef4bbd4c31fc969c2c06191);
+            
+        
+
+        circle_marker_1d389d8552f8172f96a2cdb34f7dfb83.bindPopup(popup_32ada079d4b36d9d8f23d4f4e55f3c71)
+        ;
+
+        
+    
+    
+            var circle_marker_db04d755775d8f5444f7bf76bd83ebfe = L.circleMarker(
+                [55.76920215104453, -4.182820679273007],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffcc5", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.266272093385133, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_9252c13b5d6654b0808f559f9f3b450f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69da4626aea24132c6e92c5d44e3bda9 = $(`<div id="html_69da4626aea24132c6e92c5d44e3bda9" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Darnley North<br>Density: 987.8</div>`)[0];
+                popup_9252c13b5d6654b0808f559f9f3b450f.setContent(html_69da4626aea24132c6e92c5d44e3bda9);
+            
+        
+
+        circle_marker_db04d755775d8f5444f7bf76bd83ebfe.bindPopup(popup_9252c13b5d6654b0808f559f9f3b450f)
+        ;
+
+        
+    
+    
+            var circle_marker_97b5e4a5821d225dae92c12232530cb4 = L.circleMarker(
+                [55.81920586367382, -4.341454680983092],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedf82", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.5427087165418, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_0a8907f30e619dbf7aa13cf5ca1a1de5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c36cd7bfe19df39ed16626898df6509 = $(`<div id="html_9c36cd7bfe19df39ed16626898df6509" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Darnley West<br>Density: 4429.9</div>`)[0];
+                popup_0a8907f30e619dbf7aa13cf5ca1a1de5.setContent(html_9c36cd7bfe19df39ed16626898df6509);
+            
+        
+
+        circle_marker_97b5e4a5821d225dae92c12232530cb4.bindPopup(popup_0a8907f30e619dbf7aa13cf5ca1a1de5)
+        ;
+
+        
+    
+    
+            var circle_marker_4c3d13fe214cb24714dd836c498cac76 = L.circleMarker(
+                [55.80884214762976, -4.308285112609732],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee999", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.738369275871808, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_2cd64417b28a38c260f4efd005ccf042 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45a5801dbaecbc97c7e3a28df3ed62cb = $(`<div id="html_45a5801dbaecbc97c7e3a28df3ed62cb" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Nitshill<br>Density: 3213.7</div>`)[0];
+                popup_2cd64417b28a38c260f4efd005ccf042.setContent(html_45a5801dbaecbc97c7e3a28df3ed62cb);
+            
+        
+
+        circle_marker_4c3d13fe214cb24714dd836c498cac76.bindPopup(popup_2cd64417b28a38c260f4efd005ccf042)
+        ;
+
+        
+    
+    
+            var circle_marker_fc5c7dae956e3b32aad4aeb91ebbc847 = L.circleMarker(
+                [55.9114942428328, -4.103255193001732],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee28a", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.287668977281655, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_8618831d40d0be4ae9160b6454435640 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93da3b413df0b6b6790321730a5a9e71 = $(`<div id="html_93da3b413df0b6b6790321730a5a9e71" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Crookston South<br>Density: 4044.3</div>`)[0];
+                popup_8618831d40d0be4ae9160b6454435640.setContent(html_93da3b413df0b6b6790321730a5a9e71);
+            
+        
+
+        circle_marker_fc5c7dae956e3b32aad4aeb91ebbc847.bindPopup(popup_8618831d40d0be4ae9160b6454435640)
+        ;
+
+        
+    
+    
+            var circle_marker_17f40bec43581a58b5c5a6e708cea629 = L.circleMarker(
+                [55.89953989748458, -4.206836582708164],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feca65", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.56835126467632, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_4c259ba4ed6b8175222e7b40250eca7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54fc1d7a09fd66bce531642537742532 = $(`<div id="html_54fc1d7a09fd66bce531642537742532" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Penilee<br>Density: 5980.7</div>`)[0];
+                popup_4c259ba4ed6b8175222e7b40250eca7b.setContent(html_54fc1d7a09fd66bce531642537742532);
+            
+        
+
+        circle_marker_17f40bec43581a58b5c5a6e708cea629.bindPopup(popup_4c259ba4ed6b8175222e7b40250eca7b)
+        ;
+
+        
+    
+    
+            var circle_marker_e8a57773b220c809b9efad3c604d9c65 = L.circleMarker(
+                [55.94263591354097, -4.270369974825649],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec763", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.698036091503223, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_8a23a454679bc59981baa094160c7d6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_371c4bc1665f47f45e9776bb4bf8b5b4 = $(`<div id="html_371c4bc1665f47f45e9776bb4bf8b5b4" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Hillington<br>Density: 6176.8</div>`)[0];
+                popup_8a23a454679bc59981baa094160c7d6e.setContent(html_371c4bc1665f47f45e9776bb4bf8b5b4);
+            
+        
+
+        circle_marker_e8a57773b220c809b9efad3c604d9c65.bindPopup(popup_8a23a454679bc59981baa094160c7d6e)
+        ;
+
+        
+    
+    
+            var circle_marker_3319b9259e5c6ba8d19c53cc1cbe4ab6 = L.circleMarker(
+                [55.78158776652588, -4.246527247689323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.870296738187177, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_04fdd427d14394eb90b0659bc8293174 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dc1314bb17eb43108fd538ebd9fbda4 = $(`<div id="html_5dc1314bb17eb43108fd538ebd9fbda4" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Drumoyne and Shieldhall<br>Density: 1901.1</div>`)[0];
+                popup_04fdd427d14394eb90b0659bc8293174.setContent(html_5dc1314bb17eb43108fd538ebd9fbda4);
+            
+        
+
+        circle_marker_3319b9259e5c6ba8d19c53cc1cbe4ab6.bindPopup(popup_04fdd427d14394eb90b0659bc8293174)
+        ;
+
+        
+    
+    
+            var circle_marker_b7ec2e77c70fb5e31e349997cbc37ef2 = L.circleMarker(
+                [55.84858436393705, -4.36549874123952],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.870296738187177, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_d2c8d1ebb408bcd6577ba6a3a422f458 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e1ec220ead6baa231a61b9ac6ddf417 = $(`<div id="html_7e1ec220ead6baa231a61b9ac6ddf417" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Drumoyne and Shieldhall<br>Density: 1901.1</div>`)[0];
+                popup_d2c8d1ebb408bcd6577ba6a3a422f458.setContent(html_7e1ec220ead6baa231a61b9ac6ddf417);
+            
+        
+
+        circle_marker_b7ec2e77c70fb5e31e349997cbc37ef2.bindPopup(popup_d2c8d1ebb408bcd6577ba6a3a422f458)
+        ;
+
+        
+    
+    
+            var circle_marker_9fea6c3ad87e1632e606cee50288a863 = L.circleMarker(
+                [55.770159443887614, -4.334390798890533],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee590", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.075818924762494, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_7e5f6338411e3f44ff394dfe3f6fa362 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_328755506afff028cbdbc94dd47dd7b0 = $(`<div id="html_328755506afff028cbdbc94dd47dd7b0" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Govan and Linthouse<br>Density: 3723.9</div>`)[0];
+                popup_7e5f6338411e3f44ff394dfe3f6fa362.setContent(html_328755506afff028cbdbc94dd47dd7b0);
+            
+        
+
+        circle_marker_9fea6c3ad87e1632e606cee50288a863.bindPopup(popup_7e5f6338411e3f44ff394dfe3f6fa362)
+        ;
+
+        
+    
+    
+            var circle_marker_18e669eee5cb5b35ec33e534df9dbbb6 = L.circleMarker(
+                [55.80792759496072, -4.300374331355764],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee793", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.926245672231449, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_cd7831e8a2f12a40ca94a0e51f9f44d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01041b7b2b8cb78cbdcd77d96b90ffd2 = $(`<div id="html_01041b7b2b8cb78cbdcd77d96b90ffd2" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Craigton<br>Density: 3497.8</div>`)[0];
+                popup_cd7831e8a2f12a40ca94a0e51f9f44d7.setContent(html_01041b7b2b8cb78cbdcd77d96b90ffd2);
+            
+        
+
+        circle_marker_18e669eee5cb5b35ec33e534df9dbbb6.bindPopup(popup_cd7831e8a2f12a40ca94a0e51f9f44d7)
+        ;
+
+        
+    
+    
+            var circle_marker_0f08a63cc5713705874277fda8819e89 = L.circleMarker(
+                [55.86527105762067, -4.22530738446283],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff0a9", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.215996291492724, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_410d60ccf07ffac834edc4e576a4cdb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc1f9c1fc91c49c22caecb70e891f5fa = $(`<div id="html_dc1f9c1fc91c49c22caecb70e891f5fa" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Mosspark<br>Density: 2423.8</div>`)[0];
+                popup_410d60ccf07ffac834edc4e576a4cdb3.setContent(html_dc1f9c1fc91c49c22caecb70e891f5fa);
+            
+        
+
+        circle_marker_0f08a63cc5713705874277fda8819e89.bindPopup(popup_410d60ccf07ffac834edc4e576a4cdb3)
+        ;
+
+        
+    
+    
+            var circle_marker_f00a9b8ccf39d1241b1e61f782855dc8 = L.circleMarker(
+                [55.76950719393677, -4.332765580221027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee38c", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.229376994485555, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_0919a1eb1466c49b1434d9665a5e1d12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f60a8988cc915c1aeb32b1b9eb1d334 = $(`<div id="html_2f60a8988cc915c1aeb32b1b9eb1d334" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Ibrox<br>Density: 3956.1</div>`)[0];
+                popup_0919a1eb1466c49b1434d9665a5e1d12.setContent(html_2f60a8988cc915c1aeb32b1b9eb1d334);
+            
+        
+
+        circle_marker_f00a9b8ccf39d1241b1e61f782855dc8.bindPopup(popup_0919a1eb1466c49b1434d9665a5e1d12)
+        ;
+
+        
+    
+    
+            var circle_marker_1f26a607155e2b6466d8bfcfa4f99b9a = L.circleMarker(
+                [55.80396753013733, -4.335734784664532],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee289", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.311353168408438, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_ef34f7b847f5c1c2c21d341a3f752eba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a0d49da32e62d082fddc05f2297ab7b = $(`<div id="html_3a0d49da32e62d082fddc05f2297ab7b" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Ibrox East and Cessnock<br>Density: 4080.1</div>`)[0];
+                popup_ef34f7b847f5c1c2c21d341a3f752eba.setContent(html_3a0d49da32e62d082fddc05f2297ab7b);
+            
+        
+
+        circle_marker_1f26a607155e2b6466d8bfcfa4f99b9a.bindPopup(popup_ef34f7b847f5c1c2c21d341a3f752eba)
+        ;
+
+        
+    
+    
+            var circle_marker_087fce7fa111ac0c3f924de2df34292b = L.circleMarker(
+                [55.8941768875559, -4.380502074197291],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdab49", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.754169618595235, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_c65451d7c30d0a6c7e4b409aff0379e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3029cdf010d5bf4850b3ca417fd56731 = $(`<div id="html_3029cdf010d5bf4850b3ca417fd56731" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Kinning Park and Festival Park<br>Density: 7773.8</div>`)[0];
+                popup_c65451d7c30d0a6c7e4b409aff0379e0.setContent(html_3029cdf010d5bf4850b3ca417fd56731);
+            
+        
+
+        circle_marker_087fce7fa111ac0c3f924de2df34292b.bindPopup(popup_c65451d7c30d0a6c7e4b409aff0379e0)
+        ;
+
+        
+    
+    
+            var circle_marker_13b00643d226e2d9c5d8a93851d9ae0a = L.circleMarker(
+                [55.87318829612064, -4.212469112818971],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff0a8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.22605301608587, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_183e242d11dde42641ba850ff18b33fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8a9ba17c1f8d3966d0b54170fe3edad = $(`<div id="html_a8a9ba17c1f8d3966d0b54170fe3edad" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Kingston West and Dumbreck<br>Density: 2439.0</div>`)[0];
+                popup_183e242d11dde42641ba850ff18b33fe.setContent(html_a8a9ba17c1f8d3966d0b54170fe3edad);
+            
+        
+
+        circle_marker_13b00643d226e2d9c5d8a93851d9ae0a.bindPopup(popup_183e242d11dde42641ba850ff18b33fe)
+        ;
+
+        
+    
+    
+            var circle_marker_a7eee64d03907033a2f1236cb44dc9fc = L.circleMarker(
+                [55.808288124408136, -4.333117464856654],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fede81", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.591887579459149, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_324b57f3b1cfed134264bc7b1359fcfa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_222875995b3fd778c8fa7acbe57e5856 = $(`<div id="html_222875995b3fd778c8fa7acbe57e5856" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Pollokshields West<br>Density: 4504.3</div>`)[0];
+                popup_324b57f3b1cfed134264bc7b1359fcfa.setContent(html_222875995b3fd778c8fa7acbe57e5856);
+            
+        
+
+        circle_marker_a7eee64d03907033a2f1236cb44dc9fc.bindPopup(popup_324b57f3b1cfed134264bc7b1359fcfa)
+        ;
+
+        
+    
+    
+            var circle_marker_58b88bc9283990216cb900aa9abcfb68 = L.circleMarker(
+                [55.88205313677518, -4.130173996098162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd943f", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.707996856637237, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_661061423f1b6c649f8a579599e67ae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6049c3f43823f0278442f7674b9cf8db = $(`<div id="html_6049c3f43823f0278442f7674b9cf8db" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Pollokshields East<br>Density: 9216.0</div>`)[0];
+                popup_661061423f1b6c649f8a579599e67ae9.setContent(html_6049c3f43823f0278442f7674b9cf8db);
+            
+        
+
+        circle_marker_58b88bc9283990216cb900aa9abcfb68.bindPopup(popup_661061423f1b6c649f8a579599e67ae9)
+        ;
+
+        
+    
+    
+            var circle_marker_f12d77d834969c316bb6d693eccb2eb4 = L.circleMarker(
+                [55.92608609133556, -4.143909379923876],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800026", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_0019ad73f4651df1e3429c53d694eac1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91599214bed83f34b34c546a16872b5d = $(`<div id="html_91599214bed83f34b34c546a16872b5d" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Govanhill West<br>Density: 18729.9</div>`)[0];
+                popup_0019ad73f4651df1e3429c53d694eac1.setContent(html_91599214bed83f34b34c546a16872b5d);
+            
+        
+
+        circle_marker_f12d77d834969c316bb6d693eccb2eb4.bindPopup(popup_0019ad73f4651df1e3429c53d694eac1)
+        ;
+
+        
+    
+    
+            var circle_marker_ef620d4125edf6a9023d45fd41a9645c = L.circleMarker(
+                [55.76549975193561, -4.380542795033405],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fda345", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.066595202278126, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_670e62985be19b0970b3447d68e1b1e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f212df464501bb468d0db2a23bbda57 = $(`<div id="html_1f212df464501bb468d0db2a23bbda57" style="width: 100.0%; height: 100.0%;"><b>GLASGOW</b><br>Govanhill East and Aikenhead<br>Density: 8246.2</div>`)[0];
+                popup_670e62985be19b0970b3447d68e1b1e4.setContent(html_1f212df464501bb468d0db2a23bbda57);
+            
+        
+
+        circle_marker_ef620d4125edf6a9023d45fd41a9645c.bindPopup(popup_670e62985be19b0970b3447d68e1b1e4)
+        ;
+
+        
+    
+    
+            var circle_marker_d9a4d3eb7384fcde6d69f1a3879e22ad = L.circleMarker(
+                [55.97523814036822, -3.197827223677054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e9f2fa", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.798400977205457, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_a364628cd765140d1ddcc03d0d709b8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dbaadbb6060a94e5e0a9e5dede1021e = $(`<div id="html_8dbaadbb6060a94e5e0a9e5dede1021e" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Craigleith, Orchard Brae and Crewe Toll<br>Density: 3332.6</div>`)[0];
+                popup_a364628cd765140d1ddcc03d0d709b8d.setContent(html_8dbaadbb6060a94e5e0a9e5dede1021e);
+            
+        
+
+        circle_marker_d9a4d3eb7384fcde6d69f1a3879e22ad.bindPopup(popup_a364628cd765140d1ddcc03d0d709b8d)
+        ;
+
+        
+    
+    
+            var circle_marker_0ce37aca9a0344ba46e3e184cec1860f = L.circleMarker(
+                [55.915212841989494, -3.235054191838736],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#deebf7", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.472398523578622, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_28bd151684cd004b4b1505a7b94f7f9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c3a46637491f17f0e08e530b0e68d4a = $(`<div id="html_8c3a46637491f17f0e08e530b0e68d4a" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Morningside<br>Density: 4393.8</div>`)[0];
+                popup_28bd151684cd004b4b1505a7b94f7f9e.setContent(html_8c3a46637491f17f0e08e530b0e68d4a);
+            
+        
+
+        circle_marker_0ce37aca9a0344ba46e3e184cec1860f.bindPopup(popup_28bd151684cd004b4b1505a7b94f7f9e)
+        ;
+
+        
+    
+    
+            var circle_marker_b51a09e64bbfc9974e93c2cfc71ee70d = L.circleMarker(
+                [55.99189694533567, -3.117417080203313],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d8ed", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.211663343743675, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_14819cd1e354ab4c94efd144566290f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7f9c707029dcedbce02414e693d50e1 = $(`<div id="html_c7f9c707029dcedbce02414e693d50e1" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Meadows and Southside<br>Density: 7132.2</div>`)[0];
+                popup_14819cd1e354ab4c94efd144566290f8.setContent(html_c7f9c707029dcedbce02414e693d50e1);
+            
+        
+
+        circle_marker_b51a09e64bbfc9974e93c2cfc71ee70d.bindPopup(popup_14819cd1e354ab4c94efd144566290f8)
+        ;
+
+        
+    
+    
+            var circle_marker_5daab52548da2cafbc8e544077a5c457 = L.circleMarker(
+                [55.96156886738022, -3.253677083022135],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d8ed", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.211663343743675, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_fde791ec8f2300a6d2d29a3f59a70932 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_852ae13fd4c14c52d8ae1729a28c8493 = $(`<div id="html_852ae13fd4c14c52d8ae1729a28c8493" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Meadows and Southside<br>Density: 7132.2</div>`)[0];
+                popup_fde791ec8f2300a6d2d29a3f59a70932.setContent(html_852ae13fd4c14c52d8ae1729a28c8493);
+            
+        
+
+        circle_marker_5daab52548da2cafbc8e544077a5c457.bindPopup(popup_fde791ec8f2300a6d2d29a3f59a70932)
+        ;
+
+        
+    
+    
+            var circle_marker_42f036c0c0ed476f6f8f2caad5dde524 = L.circleMarker(
+                [55.94172990703691, -3.3026205356716516],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3eef8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.193060826903418, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_32e002bf70464f350b934587b83f84b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e8abed1fdd9f6ad2f756007701f8647 = $(`<div id="html_8e8abed1fdd9f6ad2f756007701f8647" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Merchiston and Greenhill<br>Density: 3954.0</div>`)[0];
+                popup_32e002bf70464f350b934587b83f84b6.setContent(html_8e8abed1fdd9f6ad2f756007701f8647);
+            
+        
+
+        circle_marker_42f036c0c0ed476f6f8f2caad5dde524.bindPopup(popup_32e002bf70464f350b934587b83f84b6)
+        ;
+
+        
+    
+    
+            var circle_marker_a66a654ac5ec95a790c15b2a2dbf7dd3 = L.circleMarker(
+                [55.87484715193733, -3.2619488508013497],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8fc1dd", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.93540614125141, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_c4a34a7aabc052c2786f43b19be00b61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1aa30ab82b901fc505686fa3023fdea = $(`<div id="html_c1aa30ab82b901fc505686fa3023fdea" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Tollcross<br>Density: 9846.2</div>`)[0];
+                popup_c4a34a7aabc052c2786f43b19be00b61.setContent(html_c1aa30ab82b901fc505686fa3023fdea);
+            
+        
+
+        circle_marker_a66a654ac5ec95a790c15b2a2dbf7dd3.bindPopup(popup_c4a34a7aabc052c2786f43b19be00b61)
+        ;
+
+        
+    
+    
+            var circle_marker_2c668d6ee4d0e6ad011d9d6e3d584018 = L.circleMarker(
+                [55.8853390176118, -3.22951713171255],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3eef8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.193060826903418, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_0ee28b1e3b5c2f37d4b41c40d12b241d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b23db73f5aecb8b376a4ce397df07bd = $(`<div id="html_6b23db73f5aecb8b376a4ce397df07bd" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Merchiston and Greenhill<br>Density: 3954.0</div>`)[0];
+                popup_0ee28b1e3b5c2f37d4b41c40d12b241d.setContent(html_6b23db73f5aecb8b376a4ce397df07bd);
+            
+        
+
+        circle_marker_2c668d6ee4d0e6ad011d9d6e3d584018.bindPopup(popup_0ee28b1e3b5c2f37d4b41c40d12b241d)
+        ;
+
+        
+    
+    
+            var circle_marker_6d94839745eb93372e08f870f98c0db9 = L.circleMarker(
+                [56.01459702292802, -3.100855293912731],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3eef8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.193060826903418, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_f0f3329a0e9aec1061f42c9c817a3504 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fdee08f6dca2ea2a4da8c508ea79ca3 = $(`<div id="html_0fdee08f6dca2ea2a4da8c508ea79ca3" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Merchiston and Greenhill<br>Density: 3954.0</div>`)[0];
+                popup_f0f3329a0e9aec1061f42c9c817a3504.setContent(html_0fdee08f6dca2ea2a4da8c508ea79ca3);
+            
+        
+
+        circle_marker_6d94839745eb93372e08f870f98c0db9.bindPopup(popup_f0f3329a0e9aec1061f42c9c817a3504)
+        ;
+
+        
+    
+    
+            var circle_marker_d40399d6b1f26a36292d851d32b89f48 = L.circleMarker(
+                [56.01792857144958, -3.0762466150283934],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7fbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.017327769881945, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_b861a61fed12a74ba4716879a6c14a2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07dcd193661be5f42dab292c4e378521 = $(`<div id="html_07dcd193661be5f42dab292c4e378521" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Canongate, Southside and Dumbiedykes<br>Density: 2102.8</div>`)[0];
+                popup_b861a61fed12a74ba4716879a6c14a2b.setContent(html_07dcd193661be5f42dab292c4e378521);
+            
+        
+
+        circle_marker_d40399d6b1f26a36292d851d32b89f48.bindPopup(popup_b861a61fed12a74ba4716879a6c14a2b)
+        ;
+
+        
+    
+    
+            var circle_marker_5485a4838bf731471818393ace11141a = L.circleMarker(
+                [55.960594446272886, -3.2413100017467507],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#92c3de", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.83348542158458, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_860e3b84bb82f378e9c82eee7d907e56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f4066f1fb7d7d48aad9349279f23bb2 = $(`<div id="html_8f4066f1fb7d7d48aad9349279f23bb2" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>South Leith<br>Density: 9685.7</div>`)[0];
+                popup_860e3b84bb82f378e9c82eee7d907e56.setContent(html_8f4066f1fb7d7d48aad9349279f23bb2);
+            
+        
+
+        circle_marker_5485a4838bf731471818393ace11141a.bindPopup(popup_860e3b84bb82f378e9c82eee7d907e56)
+        ;
+
+        
+    
+    
+            var circle_marker_9c747b39a45919587549385eff658f97 = L.circleMarker(
+                [56.00683520318176, -3.1543443827341693],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3eef8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.193060826903418, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_284b913af73b934421672152fca5e2e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e5fde563789030eb5f0717578a26c70 = $(`<div id="html_5e5fde563789030eb5f0717578a26c70" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Merchiston and Greenhill<br>Density: 3954.0</div>`)[0];
+                popup_284b913af73b934421672152fca5e2e1.setContent(html_5e5fde563789030eb5f0717578a26c70);
+            
+        
+
+        circle_marker_9c747b39a45919587549385eff658f97.bindPopup(popup_284b913af73b934421672152fca5e2e1)
+        ;
+
+        
+    
+    
+            var circle_marker_6d47d9294ca76dc714ad4603e4d36adf = L.circleMarker(
+                [55.96650153063837, -3.212377187753585],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d8ed", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.211663343743675, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_6b5e4a03ec92015da169e4fc6f889a36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a3e2314131a6a742c3a7dcde5611324 = $(`<div id="html_2a3e2314131a6a742c3a7dcde5611324" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Meadows and Southside<br>Density: 7132.2</div>`)[0];
+                popup_6b5e4a03ec92015da169e4fc6f889a36.setContent(html_2a3e2314131a6a742c3a7dcde5611324);
+            
+        
+
+        circle_marker_6d47d9294ca76dc714ad4603e4d36adf.bindPopup(popup_6b5e4a03ec92015da169e4fc6f889a36)
+        ;
+
+        
+    
+    
+            var circle_marker_88b6d8726f34a6a935e9820483cec06d = L.circleMarker(
+                [55.8969950056908, -3.0728240750724174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aacfe5", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.031657335340203, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_f3a66819eaeab9237702c6a34927638a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6113203232bfd3683e3f0c0178d85ab1 = $(`<div id="html_6113203232bfd3683e3f0c0178d85ab1" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Gorgie East<br>Density: 8423.3</div>`)[0];
+                popup_f3a66819eaeab9237702c6a34927638a.setContent(html_6113203232bfd3683e3f0c0178d85ab1);
+            
+        
+
+        circle_marker_88b6d8726f34a6a935e9820483cec06d.bindPopup(popup_f3a66819eaeab9237702c6a34927638a)
+        ;
+
+        
+    
+    
+            var circle_marker_cc1fb5b4b5b1fb7e77a8c81490b6aad9 = L.circleMarker(
+                [55.89369128308514, -3.1796082242051065],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98c7df", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.662848255944144, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_eabc1fe22dcfae5db9e31ed7557531f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cebecb69cf0461817f4fd0f8191f457 = $(`<div id="html_9cebecb69cf0461817f4fd0f8191f457" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Shandon<br>Density: 9417.1</div>`)[0];
+                popup_eabc1fe22dcfae5db9e31ed7557531f3.setContent(html_9cebecb69cf0461817f4fd0f8191f457);
+            
+        
+
+        circle_marker_cc1fb5b4b5b1fb7e77a8c81490b6aad9.bindPopup(popup_eabc1fe22dcfae5db9e31ed7557531f3)
+        ;
+
+        
+    
+    
+            var circle_marker_e3d79fb5ce0f6ab670148ad4b0729f8f = L.circleMarker(
+                [55.92262133598882, -3.082883086322068],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eff6fc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.424066964610171, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_62fe7e572e8311c8893e306a8139405a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24d748997d418d2fd96225969c8d41a9 = $(`<div id="html_24d748997d418d2fd96225969c8d41a9" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Blackford, West Mains and Mayfield Road<br>Density: 2743.2</div>`)[0];
+                popup_62fe7e572e8311c8893e306a8139405a.setContent(html_24d748997d418d2fd96225969c8d41a9);
+            
+        
+
+        circle_marker_e3d79fb5ce0f6ab670148ad4b0729f8f.bindPopup(popup_62fe7e572e8311c8893e306a8139405a)
+        ;
+
+        
+    
+    
+            var circle_marker_e8a5bce40077122ebac72a25186ed80b = L.circleMarker(
+                [56.01713703819881, -3.2806179795556574],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf3fb", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.680145282621604, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_5684efad6e92268d03c12aea8a2615db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1f8bff9da08c58fe12838c18a55d9f0 = $(`<div id="html_e1f8bff9da08c58fe12838c18a55d9f0" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Prestonfield<br>Density: 3146.4</div>`)[0];
+                popup_5684efad6e92268d03c12aea8a2615db.setContent(html_e1f8bff9da08c58fe12838c18a55d9f0);
+            
+        
+
+        circle_marker_e8a5bce40077122ebac72a25186ed80b.bindPopup(popup_5684efad6e92268d03c12aea8a2615db)
+        ;
+
+        
+    
+    
+            var circle_marker_0f1ccc6796299cf646bb8b1b17d02810 = L.circleMarker(
+                [56.00067956878208, -3.0754038533546653],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a7cee4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.129918511281787, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_fc6692d871fedd3d9b26cd45eec502fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52319c42e8f66029535d8e30a0ccb618 = $(`<div id="html_52319c42e8f66029535d8e30a0ccb618" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Newington and Dalkeith Road<br>Density: 8578.0</div>`)[0];
+                popup_fc6692d871fedd3d9b26cd45eec502fe.setContent(html_52319c42e8f66029535d8e30a0ccb618);
+            
+        
+
+        circle_marker_0f1ccc6796299cf646bb8b1b17d02810.bindPopup(popup_fc6692d871fedd3d9b26cd45eec502fe)
+        ;
+
+        
+    
+    
+            var circle_marker_d96a5b52f18d4960da8a68a11122482f = L.circleMarker(
+                [56.01101241312014, -3.2654437241186085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4e4f3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.11119584502731, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_e760e9ea0447235938afc3a300be7db0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e1d60d2768e0a074796e2186b64e50c = $(`<div id="html_6e1d60d2768e0a074796e2186b64e50c" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>The Grange<br>Density: 5399.5</div>`)[0];
+                popup_e760e9ea0447235938afc3a300be7db0.setContent(html_6e1d60d2768e0a074796e2186b64e50c);
+            
+        
+
+        circle_marker_d96a5b52f18d4960da8a68a11122482f.bindPopup(popup_e760e9ea0447235938afc3a300be7db0)
+        ;
+
+        
+    
+    
+            var circle_marker_12844700d7fa0749f5e4540b8fee6a66 = L.circleMarker(
+                [56.01712794184424, -3.0772917642172266],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3d8dc3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.696869352567754, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_812a4bfd0027b53dcb5f9b48beef21d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5d798d4a284ef7591454c81b6cd7ed0 = $(`<div id="html_a5d798d4a284ef7591454c81b6cd7ed0" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Marchmont East and Sciennes<br>Density: 14194.1</div>`)[0];
+                popup_812a4bfd0027b53dcb5f9b48beef21d3.setContent(html_a5d798d4a284ef7591454c81b6cd7ed0);
+            
+        
+
+        circle_marker_12844700d7fa0749f5e4540b8fee6a66.bindPopup(popup_812a4bfd0027b53dcb5f9b48beef21d3)
+        ;
+
+        
+    
+    
+            var circle_marker_245cf18f4ea79891dc9569900ef21de8 = L.circleMarker(
+                [55.90691224613436, -3.2445880729944876],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1b6aaf", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.317880522249837, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_731bc8d621e27fe03e72b61dad2422ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffeb524cbb7a46362e480aebf615a1ba = $(`<div id="html_ffeb524cbb7a46362e480aebf615a1ba" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Marchmont West<br>Density: 16746.3</div>`)[0];
+                popup_731bc8d621e27fe03e72b61dad2422ea.setContent(html_ffeb524cbb7a46362e480aebf615a1ba);
+            
+        
+
+        circle_marker_245cf18f4ea79891dc9569900ef21de8.bindPopup(popup_731bc8d621e27fe03e72b61dad2422ea)
+        ;
+
+        
+    
+    
+            var circle_marker_13949c75a0724f4f4b49cdbd070dd134 = L.circleMarker(
+                [55.91322475827567, -3.2822833886684695],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2f7fbc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.31922481575421, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_cfea87dae338a3d58c421067c37d998b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c34ddb6ed9e24dfed735c13011f4083c = $(`<div id="html_c34ddb6ed9e24dfed735c13011f4083c" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Bruntsfield<br>Density: 15174.0</div>`)[0];
+                popup_cfea87dae338a3d58c421067c37d998b.setContent(html_c34ddb6ed9e24dfed735c13011f4083c);
+            
+        
+
+        circle_marker_13949c75a0724f4f4b49cdbd070dd134.bindPopup(popup_cfea87dae338a3d58c421067c37d998b)
+        ;
+
+        
+    
+    
+            var circle_marker_5bd8449c6faa691b9144d864c3d61833 = L.circleMarker(
+                [55.88974697946748, -3.204004697944485],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#083f82", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.254334210571727, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_44454ca09fda458c1c7a5def9802d45d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d085136d141441e8677dcb3aa1b85fc = $(`<div id="html_6d085136d141441e8677dcb3aa1b85fc" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Polwarth<br>Density: 19795.2</div>`)[0];
+                popup_44454ca09fda458c1c7a5def9802d45d.setContent(html_6d085136d141441e8677dcb3aa1b85fc);
+            
+        
+
+        circle_marker_5bd8449c6faa691b9144d864c3d61833.bindPopup(popup_44454ca09fda458c1c7a5def9802d45d)
+        ;
+
+        
+    
+    
+            var circle_marker_4bd34a5a18af29cf3e9486e8cce5dc40 = L.circleMarker(
+                [55.99811859869943, -3.133449185443351],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#60a6d1", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.387417208300043, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_54419dc9f8b04ff444f482b1217e128d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2403615264c0c9bd9c4c821e4d9214f1 = $(`<div id="html_2403615264c0c9bd9c4c821e4d9214f1" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Dalry and Fountainbridge<br>Density: 12132.4</div>`)[0];
+                popup_54419dc9f8b04ff444f482b1217e128d.setContent(html_2403615264c0c9bd9c4c821e4d9214f1);
+            
+        
+
+        circle_marker_4bd34a5a18af29cf3e9486e8cce5dc40.bindPopup(popup_54419dc9f8b04ff444f482b1217e128d)
+        ;
+
+        
+    
+    
+            var circle_marker_8b236a5da4e7fe3bea1f36b1ed51b863 = L.circleMarker(
+                [56.01476155223216, -3.233017444593202],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ddeaf6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.550526976525829, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_5557eb63630a0add9df51e56516d7e1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54244e64fec0c89f99cb1fcc101e205c = $(`<div id="html_54244e64fec0c89f99cb1fcc101e205c" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Old Town, Princes Street and Leith Street<br>Density: 4516.8</div>`)[0];
+                popup_5557eb63630a0add9df51e56516d7e1e.setContent(html_54244e64fec0c89f99cb1fcc101e205c);
+            
+        
+
+        circle_marker_8b236a5da4e7fe3bea1f36b1ed51b863.bindPopup(popup_5557eb63630a0add9df51e56516d7e1e)
+        ;
+
+        
+    
+    
+            var circle_marker_a04f591f691637c2b38122106d890f39 = L.circleMarker(
+                [55.938320382373135, -3.1628098752065257],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4e4f3", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.130947534382932, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_badc30519aff9d002bae0a56e5b4ec04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd22988b8bf5febee43b0292c5ee55c4 = $(`<div id="html_cd22988b8bf5febee43b0292c5ee55c4" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Abbeyhill<br>Density: 5430.6</div>`)[0];
+                popup_badc30519aff9d002bae0a56e5b4ec04.setContent(html_cd22988b8bf5febee43b0292c5ee55c4);
+            
+        
+
+        circle_marker_a04f591f691637c2b38122106d890f39.bindPopup(popup_badc30519aff9d002bae0a56e5b4ec04)
+        ;
+
+        
+    
+    
+            var circle_marker_009a9adddd229601dcabdb0ca0bfd0f9 = L.circleMarker(
+                [55.972605841624116, -3.185558465679325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#caddf0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.726346436026555, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_9fdc2c528274b2774d1f4f3fd276b97a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17476ea095dd543d4165e4d8e9f83fb1 = $(`<div id="html_17476ea095dd543d4165e4d8e9f83fb1" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Meadowbank and Abbeyhill North<br>Density: 6368.1</div>`)[0];
+                popup_9fdc2c528274b2774d1f4f3fd276b97a.setContent(html_17476ea095dd543d4165e4d8e9f83fb1);
+            
+        
+
+        circle_marker_009a9adddd229601dcabdb0ca0bfd0f9.bindPopup(popup_9fdc2c528274b2774d1f4f3fd276b97a)
+        ;
+
+        
+    
+    
+            var circle_marker_9619f72ab8729724df915450b373e40d = L.circleMarker(
+                [55.898028534133154, -3.2158530959972653],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1f7fd", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.330746597907183, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_fe00434f9274162121fa3b75699a8ed8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_980f99bbc9a108bfe2df39e0e3e67373 = $(`<div id="html_980f99bbc9a108bfe2df39e0e3e67373" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Willowbrae and Duddingston Village<br>Density: 2596.3</div>`)[0];
+                popup_fe00434f9274162121fa3b75699a8ed8.setContent(html_980f99bbc9a108bfe2df39e0e3e67373);
+            
+        
+
+        circle_marker_9619f72ab8729724df915450b373e40d.bindPopup(popup_fe00434f9274162121fa3b75699a8ed8)
+        ;
+
+        
+    
+    
+            var circle_marker_51b8b64dc042996eaf50761fad6b585a = L.circleMarker(
+                [56.022080962510984, -3.1699188695608163],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#acd0e6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.975755151915934, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_4871b330e82643f9691b6796610c7206 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bad3d960432e533405cfedb18ff7f3f5 = $(`<div id="html_bad3d960432e533405cfedb18ff7f3f5" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Restalrig and Lochend<br>Density: 8335.3</div>`)[0];
+                popup_4871b330e82643f9691b6796610c7206.setContent(html_bad3d960432e533405cfedb18ff7f3f5);
+            
+        
+
+        circle_marker_51b8b64dc042996eaf50761fad6b585a.bindPopup(popup_4871b330e82643f9691b6796610c7206)
+        ;
+
+        
+    
+    
+            var circle_marker_4d511b53817ed001c26f81f5b35cc8c7 = L.circleMarker(
+                [56.01163691139519, -3.24716659852674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#82badb", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.300602393379748, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_d9777a5480905960d57ecef5c485a422 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63eb07ff4991c085f9669c1ec9586ff2 = $(`<div id="html_63eb07ff4991c085f9669c1ec9586ff2" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Leith (Hermitage and Prospect Bank)<br>Density: 10421.2</div>`)[0];
+                popup_d9777a5480905960d57ecef5c485a422.setContent(html_63eb07ff4991c085f9669c1ec9586ff2);
+            
+        
+
+        circle_marker_4d511b53817ed001c26f81f5b35cc8c7.bindPopup(popup_d9777a5480905960d57ecef5c485a422)
+        ;
+
+        
+    
+    
+            var circle_marker_4edf13d7b1a657d29971019d9f046866 = L.circleMarker(
+                [56.02949296526895, -3.138191531879799],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7ab6d9", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.574491642011399, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_9b3994cb0903f39809da284608133c8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af87f15f1bc2e2bbd6424a8096c06b50 = $(`<div id="html_af87f15f1bc2e2bbd6424a8096c06b50" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Great Junction Street<br>Density: 10852.4</div>`)[0];
+                popup_9b3994cb0903f39809da284608133c8f.setContent(html_af87f15f1bc2e2bbd6424a8096c06b50);
+            
+        
+
+        circle_marker_4edf13d7b1a657d29971019d9f046866.bindPopup(popup_9b3994cb0903f39809da284608133c8f)
+        ;
+
+        
+    
+    
+            var circle_marker_d1d805c8cdf80030759e8f0ab5b16614 = L.circleMarker(
+                [56.00302347519046, -3.307894093227529],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#75b3d8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.718141336539741, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_77598187290612b777cc9a638c2f15ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc756a26b7f52dc928cace254dcafa79 = $(`<div id="html_fc756a26b7f52dc928cace254dcafa79" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Easter Road and Hawkhill Avenue<br>Density: 11078.6</div>`)[0];
+                popup_77598187290612b777cc9a638c2f15ba.setContent(html_fc756a26b7f52dc928cace254dcafa79);
+            
+        
+
+        circle_marker_d1d805c8cdf80030759e8f0ab5b16614.bindPopup(popup_77598187290612b777cc9a638c2f15ba)
+        ;
+
+        
+    
+    
+            var circle_marker_25cab46e55d44f3bed3506e119739858 = L.circleMarker(
+                [56.01432659274613, -3.08616196028022],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08306b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_e1fbc9e59ccc6050db0c9090df0c29d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a63340ef62a63391c9f36bb99b48c444 = $(`<div id="html_a63340ef62a63391c9f36bb99b48c444" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Leith (Albert Street)<br>Density: 20969.3</div>`)[0];
+                popup_e1fbc9e59ccc6050db0c9090df0c29d8.setContent(html_a63340ef62a63391c9f36bb99b48c444);
+            
+        
+
+        circle_marker_25cab46e55d44f3bed3506e119739858.bindPopup(popup_e1fbc9e59ccc6050db0c9090df0c29d8)
+        ;
+
+        
+    
+    
+            var circle_marker_37a89f47df39607f9263c98580d98135 = L.circleMarker(
+                [55.87726581790371, -3.17907152069773],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abcfe5", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.018927532242625, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_f2bdd5f72a80fc924bf81ad376146355 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbebc0d140685373d5d9923f8a59f588 = $(`<div id="html_bbebc0d140685373d5d9923f8a59f588" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Hillside and Calton Hill<br>Density: 8403.2</div>`)[0];
+                popup_f2bdd5f72a80fc924bf81ad376146355.setContent(html_bbebc0d140685373d5d9923f8a59f588);
+            
+        
+
+        circle_marker_37a89f47df39607f9263c98580d98135.bindPopup(popup_f2bdd5f72a80fc924bf81ad376146355)
+        ;
+
+        
+    
+    
+            var circle_marker_d6349caa0e0088ccbf65d17bce588d3e = L.circleMarker(
+                [55.99115031548081, -3.135636800205237],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7bb7d9", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.51046422784163, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_19ef64f45360794e1a839c83fe91b2f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0507a8436b6737c59a9731d43c1ed934 = $(`<div id="html_0507a8436b6737c59a9731d43c1ed934" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Pilrig<br>Density: 10751.6</div>`)[0];
+                popup_19ef64f45360794e1a839c83fe91b2f9.setContent(html_0507a8436b6737c59a9731d43c1ed934);
+            
+        
+
+        circle_marker_d6349caa0e0088ccbf65d17bce588d3e.bindPopup(popup_19ef64f45360794e1a839c83fe91b2f9)
+        ;
+
+        
+    
+    
+            var circle_marker_15c909fa839a4464000b554ff5b208f5 = L.circleMarker(
+                [55.92644967487143, -3.1302319813185253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abcfe5", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.994078634404145, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_09f18ed66972ecb62f9ac9ba5772967c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00842e1dc28d643fa11b2956355f8b96 = $(`<div id="html_00842e1dc28d643fa11b2956355f8b96" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Bonnington<br>Density: 8364.1</div>`)[0];
+                popup_09f18ed66972ecb62f9ac9ba5772967c.setContent(html_00842e1dc28d643fa11b2956355f8b96);
+            
+        
+
+        circle_marker_15c909fa839a4464000b554ff5b208f5.bindPopup(popup_09f18ed66972ecb62f9ac9ba5772967c)
+        ;
+
+        
+    
+    
+            var circle_marker_5cf533290695bf29dea880494ff4b55b = L.circleMarker(
+                [56.02223054176773, -3.14734915893608],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cee0f1", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.524816231322756, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_e304b4b409f0145696ab5e52b526fd9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e3c8720ad27f1e2e07bb3a5650a6bbd = $(`<div id="html_0e3c8720ad27f1e2e07bb3a5650a6bbd" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Trinity East and The Dudleys<br>Density: 6050.8</div>`)[0];
+                popup_e304b4b409f0145696ab5e52b526fd9e.setContent(html_0e3c8720ad27f1e2e07bb3a5650a6bbd);
+            
+        
+
+        circle_marker_5cf533290695bf29dea880494ff4b55b.bindPopup(popup_e304b4b409f0145696ab5e52b526fd9e)
+        ;
+
+        
+    
+    
+            var circle_marker_991fc2c8088bac17c342aa3907942db7 = L.circleMarker(
+                [56.00165762222994, -3.2208868467724967],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbe9f6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.682965628249196, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_d8b1f84bfb161d5ebba4c1347cc714bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ef9b7878defd1919bffacc4e251a50d = $(`<div id="html_5ef9b7878defd1919bffacc4e251a50d" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Trinity<br>Density: 4725.3</div>`)[0];
+                popup_d8b1f84bfb161d5ebba4c1347cc714bb.setContent(html_5ef9b7878defd1919bffacc4e251a50d);
+            
+        
+
+        circle_marker_991fc2c8088bac17c342aa3907942db7.bindPopup(popup_d8b1f84bfb161d5ebba4c1347cc714bb)
+        ;
+
+        
+    
+    
+            var circle_marker_08d8632c28559a5ab64568343a08231b = L.circleMarker(
+                [56.01155024454005, -3.2915062853296853],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7fbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_8b5ecc2bb316008a3c0e88edb60868eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_618f15348c7f521e47878fde3d2399ca = $(`<div id="html_618f15348c7f521e47878fde3d2399ca" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Inverleith, Goldenacre and Warriston<br>Density: 2075.5</div>`)[0];
+                popup_8b5ecc2bb316008a3c0e88edb60868eb.setContent(html_618f15348c7f521e47878fde3d2399ca);
+            
+        
+
+        circle_marker_08d8632c28559a5ab64568343a08231b.bindPopup(popup_8b5ecc2bb316008a3c0e88edb60868eb)
+        ;
+
+        
+    
+    
+            var circle_marker_447e55f7f051c10ad268e891c1278a96 = L.circleMarker(
+                [56.0030198906519, -3.1488829556212945],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d8ed", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.225136241733143, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_2fc119d4766215c5b390d5e4343f6e71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19a5fdc4df65f2ed0b3492f6654485fc = $(`<div id="html_19a5fdc4df65f2ed0b3492f6654485fc" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Broughton North and Powderhall<br>Density: 7153.4</div>`)[0];
+                popup_2fc119d4766215c5b390d5e4343f6e71.setContent(html_19a5fdc4df65f2ed0b3492f6654485fc);
+            
+        
+
+        circle_marker_447e55f7f051c10ad268e891c1278a96.bindPopup(popup_2fc119d4766215c5b390d5e4343f6e71)
+        ;
+
+        
+    
+    
+            var circle_marker_66ec0291dbab31b8841c876ee0aae75b = L.circleMarker(
+                [55.91598891353512, -3.2290519913497766],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6fb0d6", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.867482810319755, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_c7139e1278229703d18649274f5b0e1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54cfb81d10a171a4514219b78674e2f0 = $(`<div id="html_54cfb81d10a171a4514219b78674e2f0" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Broughton South<br>Density: 11313.7</div>`)[0];
+                popup_c7139e1278229703d18649274f5b0e1c.setContent(html_54cfb81d10a171a4514219b78674e2f0);
+            
+        
+
+        circle_marker_66ec0291dbab31b8841c876ee0aae75b.bindPopup(popup_c7139e1278229703d18649274f5b0e1c)
+        ;
+
+        
+    
+    
+            var circle_marker_bbe10fd4487ea53c47af6aa6730466bb = L.circleMarker(
+                [55.99927992146167, -3.2329602451859936],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8bc0dd", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.035897413368414, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_dc386efc5ea767dcf092b31ecb28d70c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78be35c616a6b9d7f8055f44ee32779a = $(`<div id="html_78be35c616a6b9d7f8055f44ee32779a" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>New Town East and Gayfield<br>Density: 10004.4</div>`)[0];
+                popup_dc386efc5ea767dcf092b31ecb28d70c.setContent(html_78be35c616a6b9d7f8055f44ee32779a);
+            
+        
+
+        circle_marker_bbe10fd4487ea53c47af6aa6730466bb.bindPopup(popup_dc386efc5ea767dcf092b31ecb28d70c)
+        ;
+
+        
+    
+    
+            var circle_marker_ee322b5fdaf28a97496b0960e2362105 = L.circleMarker(
+                [55.89059530022447, -3.104776332918479],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c3d9ee", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.120376674716496, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_3b6a2891046e1e8c7ba1dc7aaabca151 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_276e955453bab1fdb890efe140cd45a9 = $(`<div id="html_276e955453bab1fdb890efe140cd45a9" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>New Town West<br>Density: 6988.5</div>`)[0];
+                popup_3b6a2891046e1e8c7ba1dc7aaabca151.setContent(html_276e955453bab1fdb890efe140cd45a9);
+            
+        
+
+        circle_marker_ee322b5fdaf28a97496b0960e2362105.bindPopup(popup_3b6a2891046e1e8c7ba1dc7aaabca151)
+        ;
+
+        
+    
+    
+            var circle_marker_d1e5648ecf2a8ae497f265747730f796 = L.circleMarker(
+                [56.012846685264975, -3.135558976876652],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#60a6d1", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.38876913600096, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_2f76d7540a3c95dc21f36cd7bd281a06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6614359fbb17da033401adfbeb1fe96b = $(`<div id="html_6614359fbb17da033401adfbeb1fe96b" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Canonmills and New Town North<br>Density: 12134.5</div>`)[0];
+                popup_2f76d7540a3c95dc21f36cd7bd281a06.setContent(html_6614359fbb17da033401adfbeb1fe96b);
+            
+        
+
+        circle_marker_d1e5648ecf2a8ae497f265747730f796.bindPopup(popup_2f76d7540a3c95dc21f36cd7bd281a06)
+        ;
+
+        
+    
+    
+            var circle_marker_b6a0c4ecdf8972d9b86f1d0c9d7485e9 = L.circleMarker(
+                [56.01067492021404, -3.2362226556292963],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9dc9e0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.508546383464566, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_6bb57b8374cffca2ba37a383d16224e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_954fd946d35379dbee682d404c286232 = $(`<div id="html_954fd946d35379dbee682d404c286232" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Stockbridge<br>Density: 9174.1</div>`)[0];
+                popup_6bb57b8374cffca2ba37a383d16224e8.setContent(html_954fd946d35379dbee682d404c286232);
+            
+        
+
+        circle_marker_b6a0c4ecdf8972d9b86f1d0c9d7485e9.bindPopup(popup_6bb57b8374cffca2ba37a383d16224e8)
+        ;
+
+        
+    
+    
+            var circle_marker_06b3186847e304b11a5c71387c6c1190 = L.circleMarker(
+                [55.908889394807304, -3.2340716810699233],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8e7f5", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.84718375682838, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_cc1a265bab3e393ad9f0f7142030d803 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b82ae375ca850b915b020f604124ec9 = $(`<div id="html_0b82ae375ca850b915b020f604124ec9" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Comely Bank<br>Density: 4983.9</div>`)[0];
+                popup_cc1a265bab3e393ad9f0f7142030d803.setContent(html_0b82ae375ca850b915b020f604124ec9);
+            
+        
+
+        circle_marker_06b3186847e304b11a5c71387c6c1190.bindPopup(popup_cc1a265bab3e393ad9f0f7142030d803)
+        ;
+
+        
+    
+    
+            var circle_marker_7b64ef6d87108a848ce9fcc605320eb9 = L.circleMarker(
+                [56.00395385689551, -3.210285701931388],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e2edf8", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.241619119479571, "stroke": true, "weight": 2}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+        var popup_e91a6d02a7a22fdc8c979a6955160b0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4569dc957a56fbed4c1b5e8da02c97a7 = $(`<div id="html_4569dc957a56fbed4c1b5e8da02c97a7" style="width: 100.0%; height: 100.0%;"><b>EDINBURGH</b><br>Deans Village<br>Density: 4030.4</div>`)[0];
+                popup_e91a6d02a7a22fdc8c979a6955160b0f.setContent(html_4569dc957a56fbed4c1b5e8da02c97a7);
+            
+        
+
+        circle_marker_7b64ef6d87108a848ce9fcc605320eb9.bindPopup(popup_e91a6d02a7a22fdc8c979a6955160b0f)
+        ;
+
+        
+    
+    
+            var marker_b34f010bfc5e7c337aab4cd581014f45 = L.marker(
+                [55.8642, -4.2518],
+                {
+}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+            var icon_b24dafb2e1671760d6fbbe76546b52d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "city",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5763baa9e6891f0a205f0d498e70fb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3df275b343e9edf03a4aa21bf440f04b = $(`<div id="html_3df275b343e9edf03a4aa21bf440f04b" style="width: 100.0%; height: 100.0%;">Glasgow City Center</div>`)[0];
+                popup_f5763baa9e6891f0a205f0d498e70fb5.setContent(html_3df275b343e9edf03a4aa21bf440f04b);
+            
+        
+
+        marker_b34f010bfc5e7c337aab4cd581014f45.bindPopup(popup_f5763baa9e6891f0a205f0d498e70fb5)
+        ;
+
+        
+    
+    
+                marker_b34f010bfc5e7c337aab4cd581014f45.setIcon(icon_b24dafb2e1671760d6fbbe76546b52d9);
+            
+    
+            var marker_5bc49cbd7e148ef0d7aa40da6625a641 = L.marker(
+                [55.9533, -3.1883],
+                {
+}
+            ).addTo(map_71d8914dcc9e4a9fb4018f66f3c1b7d2);
+        
+    
+            var icon_9a34af1eeb010ff29d665be8a5325467 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "city",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee82c370bda86b5aba48c3951a495340 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90464268bf1e2faa4273c8e539050381 = $(`<div id="html_90464268bf1e2faa4273c8e539050381" style="width: 100.0%; height: 100.0%;">Edinburgh City Center</div>`)[0];
+                popup_ee82c370bda86b5aba48c3951a495340.setContent(html_90464268bf1e2faa4273c8e539050381);
+            
+        
+
+        marker_5bc49cbd7e148ef0d7aa40da6625a641.bindPopup(popup_ee82c370bda86b5aba48c3951a495340)
+        ;
+
+        
+    
+    
+                marker_5bc49cbd7e148ef0d7aa40da6625a641.setIcon(icon_9a34af1eeb010ff29d665be8a5325467);
+            
+</script>
+</html>

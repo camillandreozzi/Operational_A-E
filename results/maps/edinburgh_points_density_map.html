@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d8b7def2dc3e349d9fc5027db3ba28c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d8b7def2dc3e349d9fc5027db3ba28c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d8b7def2dc3e349d9fc5027db3ba28c = L.map(
+                "map_2d8b7def2dc3e349d9fc5027db3ba28c",
+                {
+                    center: [55.9533, -3.1883],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_888b53ae8c5ab55cde000bae84fa4f93 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_888b53ae8c5ab55cde000bae84fa4f93.addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+            var circle_marker_6366f1d4c728a9c7cf998be0105822a0 = L.circleMarker(
+                [55.97523814036822, -3.197827223677054],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e9f2fa", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.383897529993988, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_3cc4a282d29adf67d3b538e15234b65b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2c0e6fe5b2423d687d6d9cc90cac55aa = $(`<div id="html_2c0e6fe5b2423d687d6d9cc90cac55aa" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Craigleith, Orchard Brae and Crewe Toll</h4>         <b>Population:</b> 4,227<br>         <b>Area:</b> 1.27 km²<br>         <b>Density:</b> 3332.6 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_3cc4a282d29adf67d3b538e15234b65b.setContent(html_2c0e6fe5b2423d687d6d9cc90cac55aa);
+            
+        
+
+        circle_marker_6366f1d4c728a9c7cf998be0105822a0.bindPopup(popup_3cc4a282d29adf67d3b538e15234b65b)
+        ;
+
+        
+    
+    
+            var circle_marker_cc588bab1e53c8ec885ed6a010f2a356 = L.circleMarker(
+                [55.915212841989494, -3.235054191838736],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#deebf7", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.143005412026987, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_7132e2df18889691d3d437ea4c0e5805 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5abebcab4e3a52f4f6202e2b442b106c = $(`<div id="html_5abebcab4e3a52f4f6202e2b442b106c" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Morningside</h4>         <b>Population:</b> 5,575<br>         <b>Area:</b> 1.27 km²<br>         <b>Density:</b> 4393.8 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_7132e2df18889691d3d437ea4c0e5805.setContent(html_5abebcab4e3a52f4f6202e2b442b106c);
+            
+        
+
+        circle_marker_cc588bab1e53c8ec885ed6a010f2a356.bindPopup(popup_7132e2df18889691d3d437ea4c0e5805)
+        ;
+
+        
+    
+    
+            var circle_marker_a319108647686a43995a695c0cb7a446 = L.circleMarker(
+                [55.99189694533567, -3.117417080203313],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d8ed", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.101899240401561, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_862fdec836180b5b7be4a8dabb19e577 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_83a645556628396694dd930f6ea4d375 = $(`<div id="html_83a645556628396694dd930f6ea4d375" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Meadows and Southside</h4>         <b>Population:</b> 6,556<br>         <b>Area:</b> 0.92 km²<br>         <b>Density:</b> 7132.2 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_862fdec836180b5b7be4a8dabb19e577.setContent(html_83a645556628396694dd930f6ea4d375);
+            
+        
+
+        circle_marker_a319108647686a43995a695c0cb7a446.bindPopup(popup_862fdec836180b5b7be4a8dabb19e577)
+        ;
+
+        
+    
+    
+            var circle_marker_9b09dfbb89a40da1f8ea89a59cd9df99 = L.circleMarker(
+                [55.96156886738022, -3.253677083022135],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d8ed", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.101899240401561, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_deda1c3a22ecfb40de764bb186974ab7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c299c5be5fec6303c8d1ee14cc655f64 = $(`<div id="html_c299c5be5fec6303c8d1ee14cc655f64" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Meadows and Southside</h4>         <b>Population:</b> 6,556<br>         <b>Area:</b> 0.92 km²<br>         <b>Density:</b> 7132.2 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_deda1c3a22ecfb40de764bb186974ab7.setContent(html_c299c5be5fec6303c8d1ee14cc655f64);
+            
+        
+
+        circle_marker_9b09dfbb89a40da1f8ea89a59cd9df99.bindPopup(popup_deda1c3a22ecfb40de764bb186974ab7)
+        ;
+
+        
+    
+    
+            var circle_marker_e8b252977dbbe6a86ef3fcfc7c70695b = L.circleMarker(
+                [55.94172990703691, -3.3026205356716516],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3eef8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.828393810788771, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_85a1664e569ca2072e952bb87c10ba8c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_acdc2b78339c6e071c18b6d9ff8de251 = $(`<div id="html_acdc2b78339c6e071c18b6d9ff8de251" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Merchiston and Greenhill</h4>         <b>Population:</b> 5,018<br>         <b>Area:</b> 1.27 km²<br>         <b>Density:</b> 3954.0 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_85a1664e569ca2072e952bb87c10ba8c.setContent(html_acdc2b78339c6e071c18b6d9ff8de251);
+            
+        
+
+        circle_marker_e8b252977dbbe6a86ef3fcfc7c70695b.bindPopup(popup_85a1664e569ca2072e952bb87c10ba8c)
+        ;
+
+        
+    
+    
+            var circle_marker_90f95cafe10ddf54b10d1f3483f24227 = L.circleMarker(
+                [55.87484715193733, -3.2619488508013497],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8fc1dd", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.043310972872865, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_e26efc2da114a6217cc7e31124b7071f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_953892bdd21f055e2bb65f2b8b359195 = $(`<div id="html_953892bdd21f055e2bb65f2b8b359195" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Tollcross</h4>         <b>Population:</b> 6,233<br>         <b>Area:</b> 0.63 km²<br>         <b>Density:</b> 9846.2 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_e26efc2da114a6217cc7e31124b7071f.setContent(html_953892bdd21f055e2bb65f2b8b359195);
+            
+        
+
+        circle_marker_90f95cafe10ddf54b10d1f3483f24227.bindPopup(popup_e26efc2da114a6217cc7e31124b7071f)
+        ;
+
+        
+    
+    
+            var circle_marker_84bd73cc4096db65c47702f4d15aa822 = L.circleMarker(
+                [55.8853390176118, -3.22951713171255],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3eef8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.828393810788771, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_b519780a756498bdbccaf360e78cf7cd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3d26f13386d2149d895249e935e6ff02 = $(`<div id="html_3d26f13386d2149d895249e935e6ff02" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Merchiston and Greenhill</h4>         <b>Population:</b> 5,018<br>         <b>Area:</b> 1.27 km²<br>         <b>Density:</b> 3954.0 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_b519780a756498bdbccaf360e78cf7cd.setContent(html_3d26f13386d2149d895249e935e6ff02);
+            
+        
+
+        circle_marker_84bd73cc4096db65c47702f4d15aa822.bindPopup(popup_b519780a756498bdbccaf360e78cf7cd)
+        ;
+
+        
+    
+    
+            var circle_marker_c35467c85882f0542116f90a8dfa244c = L.circleMarker(
+                [56.01459702292802, -3.100855293912731],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3eef8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.828393810788771, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_5eb8975fd9cffdbc94bac5526f0e8e20 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8d632e6a45785d04f279fa51dadb8b02 = $(`<div id="html_8d632e6a45785d04f279fa51dadb8b02" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Merchiston and Greenhill</h4>         <b>Population:</b> 5,018<br>         <b>Area:</b> 1.27 km²<br>         <b>Density:</b> 3954.0 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_5eb8975fd9cffdbc94bac5526f0e8e20.setContent(html_8d632e6a45785d04f279fa51dadb8b02);
+            
+        
+
+        circle_marker_c35467c85882f0542116f90a8dfa244c.bindPopup(popup_5eb8975fd9cffdbc94bac5526f0e8e20)
+        ;
+
+        
+    
+    
+            var circle_marker_dd9cd97f6d77b56007c598d7d41deb07 = L.circleMarker(
+                [56.01792857144958, -3.0762466150283934],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7fbff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.504192802113868, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_99abb1fbfe80487247d9cc2e9d3c0f43 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_135a5b1545a90cc2ae8c98c992d944e4 = $(`<div id="html_135a5b1545a90cc2ae8c98c992d944e4" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Canongate, Southside and Dumbiedykes</h4>         <b>Population:</b> 5,915<br>         <b>Area:</b> 2.81 km²<br>         <b>Density:</b> 2102.8 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_99abb1fbfe80487247d9cc2e9d3c0f43.setContent(html_135a5b1545a90cc2ae8c98c992d944e4);
+            
+        
+
+        circle_marker_dd9cd97f6d77b56007c598d7d41deb07.bindPopup(popup_99abb1fbfe80487247d9cc2e9d3c0f43)
+        ;
+
+        
+    
+    
+            var circle_marker_d653126f9a5c5f020d6b2220bc5b8e73 = L.circleMarker(
+                [55.960594446272886, -3.2413100017467507],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#92c3de", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.928520018428157, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_5e00fa5eab7a1a179b8f420906c236e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b9540cd4e0ae64f1494668a195c66426 = $(`<div id="html_b9540cd4e0ae64f1494668a195c66426" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>South Leith</h4>         <b>Population:</b> 5,260<br>         <b>Area:</b> 0.54 km²<br>         <b>Density:</b> 9685.7 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_5e00fa5eab7a1a179b8f420906c236e3.setContent(html_b9540cd4e0ae64f1494668a195c66426);
+            
+        
+
+        circle_marker_d653126f9a5c5f020d6b2220bc5b8e73.bindPopup(popup_5e00fa5eab7a1a179b8f420906c236e3)
+        ;
+
+        
+    
+    
+            var circle_marker_55959555ffdc27b45bd7fad8c4171bc7 = L.circleMarker(
+                [56.00683520318176, -3.1543443827341693],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3eef8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.828393810788771, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_bc4d8f29eddbb29588e6068cfcec18e9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c0a128f5669ca8691a36f1d7e0d3dd4b = $(`<div id="html_c0a128f5669ca8691a36f1d7e0d3dd4b" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Merchiston and Greenhill</h4>         <b>Population:</b> 5,018<br>         <b>Area:</b> 1.27 km²<br>         <b>Density:</b> 3954.0 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_bc4d8f29eddbb29588e6068cfcec18e9.setContent(html_c0a128f5669ca8691a36f1d7e0d3dd4b);
+            
+        
+
+        circle_marker_55959555ffdc27b45bd7fad8c4171bc7.bindPopup(popup_bc4d8f29eddbb29588e6068cfcec18e9)
+        ;
+
+        
+    
+    
+            var circle_marker_4a2bcc3f78142034f258ec5612b3675b = L.circleMarker(
+                [55.96650153063837, -3.212377187753585],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d8ed", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.101899240401561, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_a9b0869e0a5605f66fe0195c001d1c78 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ff8c3d80ca1ed664d977f074fa9046f3 = $(`<div id="html_ff8c3d80ca1ed664d977f074fa9046f3" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Meadows and Southside</h4>         <b>Population:</b> 6,556<br>         <b>Area:</b> 0.92 km²<br>         <b>Density:</b> 7132.2 inhabitants/km²<br>         <b>Council:</b> S12000036     </div>     </div>`)[0];
+                popup_a9b0869e0a5605f66fe0195c001d1c78.setContent(html_ff8c3d80ca1ed664d977f074fa9046f3);
+            
+        
+
+        circle_marker_4a2bcc3f78142034f258ec5612b3675b.bindPopup(popup_a9b0869e0a5605f66fe0195c001d1c78)
+        ;
+
+        
+    
+    
+            var circle_marker_c89ff7ce879dcba01c4ca4356ac878f7 = L.circleMarker(
+                [55.8969950056908, -3.0728240750724174],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aacfe5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.025439549398461, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_069527b08ff3f92fbe2b469bf6d5d819 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_66be49e4d26ac1c163096abf9d32c0c2 = $(`<div id="html_66be49e4d26ac1c163096abf9d32c0c2" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Gorgie East</h4>         <b>Population:</b> 3,563<br>         <b>Area:</b> 0.42 km²<br>         <b>Density:</b> 8423.3 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_069527b08ff3f92fbe2b469bf6d5d819.setContent(html_66be49e4d26ac1c163096abf9d32c0c2);
+            
+        
+
+        circle_marker_c89ff7ce879dcba01c4ca4356ac878f7.bindPopup(popup_069527b08ff3f92fbe2b469bf6d5d819)
+        ;
+
+        
+    
+    
+            var circle_marker_4cd13c272975147d5d7edcb81d0933e6 = L.circleMarker(
+                [55.89369128308514, -3.1796082242051065],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98c7df", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.736335316714555, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_b7992ee6dee1bf6d44d2214457ddaa0d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0b784a56bf56563b7726596ae960a1f1 = $(`<div id="html_0b784a56bf56563b7726596ae960a1f1" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Shandon</h4>         <b>Population:</b> 5,042<br>         <b>Area:</b> 0.54 km²<br>         <b>Density:</b> 9417.1 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_b7992ee6dee1bf6d44d2214457ddaa0d.setContent(html_0b784a56bf56563b7726596ae960a1f1);
+            
+        
+
+        circle_marker_4cd13c272975147d5d7edcb81d0933e6.bindPopup(popup_b7992ee6dee1bf6d44d2214457ddaa0d)
+        ;
+
+        
+    
+    
+            var circle_marker_ea892459fcb065df84696cc305e6accf = L.circleMarker(
+                [55.92262133598882, -3.082883086322068],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eff6fc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.962293770450339, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_04768a2213e278ad1b840b43c0f1e505 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ec74077807312d5eb31b11464b88c960 = $(`<div id="html_ec74077807312d5eb31b11464b88c960" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Blackford, West Mains and Mayfield Road</h4>         <b>Population:</b> 6,240<br>         <b>Area:</b> 2.27 km²<br>         <b>Density:</b> 2743.2 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_04768a2213e278ad1b840b43c0f1e505.setContent(html_ec74077807312d5eb31b11464b88c960);
+            
+        
+
+        circle_marker_ea892459fcb065df84696cc305e6accf.bindPopup(popup_04768a2213e278ad1b840b43c0f1e505)
+        ;
+
+        
+    
+    
+            var circle_marker_6bc9174dd6ff8ffcdbc61ba2e071af8b = L.circleMarker(
+                [56.01713703819881, -3.2806179795556574],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecf3fb", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.250708870277133, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_9012eed70f09c2b197c09900507cbc00 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_66f2841b203edd7d06986e46c0cebac0 = $(`<div id="html_66f2841b203edd7d06986e46c0cebac0" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Prestonfield</h4>         <b>Population:</b> 3,474<br>         <b>Area:</b> 1.10 km²<br>         <b>Density:</b> 3146.4 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_9012eed70f09c2b197c09900507cbc00.setContent(html_66f2841b203edd7d06986e46c0cebac0);
+            
+        
+
+        circle_marker_6bc9174dd6ff8ffcdbc61ba2e071af8b.bindPopup(popup_9012eed70f09c2b197c09900507cbc00)
+        ;
+
+        
+    
+    
+            var circle_marker_997b28c639174a654aa52d53427186bf = L.circleMarker(
+                [56.00067956878208, -3.0754038533546653],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a7cee4", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.136108844200002, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_b8ed5757933fa4bb601df764cac8edd6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7eaeec3db18fa6a5a929ba0196164e3a = $(`<div id="html_7eaeec3db18fa6a5a929ba0196164e3a" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Newington and Dalkeith Road</h4>         <b>Population:</b> 6,070<br>         <b>Area:</b> 0.71 km²<br>         <b>Density:</b> 8578.0 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_b8ed5757933fa4bb601df764cac8edd6.setContent(html_7eaeec3db18fa6a5a929ba0196164e3a);
+            
+        
+
+        circle_marker_997b28c639174a654aa52d53427186bf.bindPopup(popup_b8ed5757933fa4bb601df764cac8edd6)
+        ;
+
+        
+    
+    
+            var circle_marker_b827ad7341406aa42eb2b5c18a5a7d1e = L.circleMarker(
+                [56.01101241312014, -3.2654437241186085],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4e4f3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.862468093074774, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_2eb7d4fff3f2c494a000451df6373b9b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_884619d5b34e5ce07620b12f86ed0ee6 = $(`<div id="html_884619d5b34e5ce07620b12f86ed0ee6" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>The Grange</h4>         <b>Population:</b> 5,608<br>         <b>Area:</b> 1.04 km²<br>         <b>Density:</b> 5399.5 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_2eb7d4fff3f2c494a000451df6373b9b.setContent(html_884619d5b34e5ce07620b12f86ed0ee6);
+            
+        
+
+        circle_marker_b827ad7341406aa42eb2b5c18a5a7d1e.bindPopup(popup_2eb7d4fff3f2c494a000451df6373b9b)
+        ;
+
+        
+    
+    
+            var circle_marker_9d242c3f552548bdd6908ffa56a7e0ff = L.circleMarker(
+                [56.01712794184424, -3.0772917642172266],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3d8dc3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.15348325901022, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_c32c84b57a7ad511265cffc75794d4ee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4b6bdfaeba879b2a87a050bc0e41ad52 = $(`<div id="html_4b6bdfaeba879b2a87a050bc0e41ad52" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Marchmont East and Sciennes</h4>         <b>Population:</b> 5,277<br>         <b>Area:</b> 0.37 km²<br>         <b>Density:</b> 14194.1 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_c32c84b57a7ad511265cffc75794d4ee.setContent(html_4b6bdfaeba879b2a87a050bc0e41ad52);
+            
+        
+
+        circle_marker_9d242c3f552548bdd6908ffa56a7e0ff.bindPopup(popup_c32c84b57a7ad511265cffc75794d4ee)
+        ;
+
+        
+    
+    
+            var circle_marker_507583ada6b9642a7662b985e2f84e62 = L.circleMarker(
+                [55.90691224613436, -3.2445880729944876],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1b6aaf", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.97919072989159, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_7cdd793f4ccb1030e2258be81a71d8b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_30f00ce4249db21bd7bdbf70f5ffc257 = $(`<div id="html_30f00ce4249db21bd7bdbf70f5ffc257" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Marchmont West</h4>         <b>Population:</b> 5,144<br>         <b>Area:</b> 0.31 km²<br>         <b>Density:</b> 16746.3 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_7cdd793f4ccb1030e2258be81a71d8b7.setContent(html_30f00ce4249db21bd7bdbf70f5ffc257);
+            
+        
+
+        circle_marker_507583ada6b9642a7662b985e2f84e62.bindPopup(popup_7cdd793f4ccb1030e2258be81a71d8b7)
+        ;
+
+        
+    
+    
+            var circle_marker_c363ea10e61c5f140c2c1a79a45e37c3 = L.circleMarker(
+                [55.91322475827567, -3.2822833886684695],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2f7fbc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.854427854540795, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_74fad40c40bc8c14544c8cf251c74b88 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03bb48d330dc823a947fe1eac9d051bb = $(`<div id="html_03bb48d330dc823a947fe1eac9d051bb" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Bruntsfield</h4>         <b>Population:</b> 5,758<br>         <b>Area:</b> 0.38 km²<br>         <b>Density:</b> 15174.0 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_74fad40c40bc8c14544c8cf251c74b88.setContent(html_03bb48d330dc823a947fe1eac9d051bb);
+            
+        
+
+        circle_marker_c363ea10e61c5f140c2c1a79a45e37c3.bindPopup(popup_74fad40c40bc8c14544c8cf251c74b88)
+        ;
+
+        
+    
+    
+            var circle_marker_e278e9b2c6041f73d69548e70c977118 = L.circleMarker(
+                [55.88974697946748, -3.204004697944485],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#083f82", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.16017382976649, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_e0029c1fbabdbf8b198e7bcd6bf83801 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a9e34d517e33ceb480a353fc81634bce = $(`<div id="html_a9e34d517e33ceb480a353fc81634bce" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Polwarth</h4>         <b>Population:</b> 4,468<br>         <b>Area:</b> 0.23 km²<br>         <b>Density:</b> 19795.2 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_e0029c1fbabdbf8b198e7bcd6bf83801.setContent(html_a9e34d517e33ceb480a353fc81634bce);
+            
+        
+
+        circle_marker_e278e9b2c6041f73d69548e70c977118.bindPopup(popup_e0029c1fbabdbf8b198e7bcd6bf83801)
+        ;
+
+        
+    
+    
+            var circle_marker_6e6ba43f1e0570594222d93409a5ab27 = L.circleMarker(
+                [55.99811859869943, -3.133449185443351],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#60a6d1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.67867752832543, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_46a2d2eecaf58dd33237eeeb422ea3d9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_778c6f3b260e5f7fced294ee789af1aa = $(`<div id="html_778c6f3b260e5f7fced294ee789af1aa" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Dalry and Fountainbridge</h4>         <b>Population:</b> 6,462<br>         <b>Area:</b> 0.53 km²<br>         <b>Density:</b> 12132.4 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_46a2d2eecaf58dd33237eeeb422ea3d9.setContent(html_778c6f3b260e5f7fced294ee789af1aa);
+            
+        
+
+        circle_marker_6e6ba43f1e0570594222d93409a5ab27.bindPopup(popup_46a2d2eecaf58dd33237eeeb422ea3d9)
+        ;
+
+        
+    
+    
+            var circle_marker_3e97b3889dd95b1d631c45542e7ca6c2 = L.circleMarker(
+                [56.01476155223216, -3.233017444593202],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ddeaf6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.230999685540905, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_c2e2fd90b3b0d556b95df8c0d93333e9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4eeb483a038edea57130b1d32ef19b53 = $(`<div id="html_4eeb483a038edea57130b1d32ef19b53" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Old Town, Princes Street and Leith Street</h4>         <b>Population:</b> 5,651<br>         <b>Area:</b> 1.25 km²<br>         <b>Density:</b> 4516.8 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_c2e2fd90b3b0d556b95df8c0d93333e9.setContent(html_4eeb483a038edea57130b1d32ef19b53);
+            
+        
+
+        circle_marker_3e97b3889dd95b1d631c45542e7ca6c2.bindPopup(popup_c2e2fd90b3b0d556b95df8c0d93333e9)
+        ;
+
+        
+    
+    
+            var circle_marker_b1e805692ce528694dd9ad0d1c6e0e47 = L.circleMarker(
+                [55.938320382373135, -3.1628098752065257],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4e4f3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.884713964968523, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_fe66479d0e87443cbf87a655afac8aa0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a19c2b0d198135fa03fda97fd8547096 = $(`<div id="html_a19c2b0d198135fa03fda97fd8547096" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Abbeyhill</h4>         <b>Population:</b> 2,507<br>         <b>Area:</b> 0.46 km²<br>         <b>Density:</b> 5430.6 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_fe66479d0e87443cbf87a655afac8aa0.setContent(html_a19c2b0d198135fa03fda97fd8547096);
+            
+        
+
+        circle_marker_b1e805692ce528694dd9ad0d1c6e0e47.bindPopup(popup_fe66479d0e87443cbf87a655afac8aa0)
+        ;
+
+        
+    
+    
+            var circle_marker_fa4b2b800ea17f6780223673b6080065 = L.circleMarker(
+                [55.972605841624116, -3.185558465679325],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#caddf0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.555298007334201, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_282643cc9b8b3fa6c975dfafaf106962 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ed684128869c72f8154783b01b5e77e4 = $(`<div id="html_ed684128869c72f8154783b01b5e77e4" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Meadowbank and Abbeyhill North</h4>         <b>Population:</b> 4,072<br>         <b>Area:</b> 0.64 km²<br>         <b>Density:</b> 6368.1 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_282643cc9b8b3fa6c975dfafaf106962.setContent(html_ed684128869c72f8154783b01b5e77e4);
+            
+        
+
+        circle_marker_fa4b2b800ea17f6780223673b6080065.bindPopup(popup_282643cc9b8b3fa6c975dfafaf106962)
+        ;
+
+        
+    
+    
+            var circle_marker_3956a33ba4536e999c975a6185554f7c = L.circleMarker(
+                [55.898028534133154, -3.2158530959972653],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1f7fd", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.857189195070731, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_2bb7c5fdcc8dec535a1ce5f498300f86 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bd8a2cef7c2598426b9cb8547b9a076e = $(`<div id="html_bd8a2cef7c2598426b9cb8547b9a076e" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Willowbrae and Duddingston Village</h4>         <b>Population:</b> 5,407<br>         <b>Area:</b> 2.08 km²<br>         <b>Density:</b> 2596.3 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_2bb7c5fdcc8dec535a1ce5f498300f86.setContent(html_bd8a2cef7c2598426b9cb8547b9a076e);
+            
+        
+
+        circle_marker_3956a33ba4536e999c975a6185554f7c.bindPopup(popup_2bb7c5fdcc8dec535a1ce5f498300f86)
+        ;
+
+        
+    
+    
+            var circle_marker_00e0c430c521729a24b2a8d96f817b5f = L.circleMarker(
+                [56.022080962510984, -3.1699188695608163],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#acd0e6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.962478210312634, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_19e03c89cc9abb865be3fe96f27cb478 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f5c7949065e4a9f5e37b779b7475dd92 = $(`<div id="html_f5c7949065e4a9f5e37b779b7475dd92" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Restalrig and Lochend</h4>         <b>Population:</b> 4,420<br>         <b>Area:</b> 0.53 km²<br>         <b>Density:</b> 8335.3 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_19e03c89cc9abb865be3fe96f27cb478.setContent(html_f5c7949065e4a9f5e37b779b7475dd92);
+            
+        
+
+        circle_marker_00e0c430c521729a24b2a8d96f817b5f.bindPopup(popup_19e03c89cc9abb865be3fe96f27cb478)
+        ;
+
+        
+    
+    
+            var circle_marker_d4d7e44bef4ceca8230d06d3a0f70a4b = L.circleMarker(
+                [56.01163691139519, -3.24716659852674],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#82badb", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.4546230836829, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_f044c9c2b248fb7f2445b368a133874a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f46e1414760ed30d1cc8a3c258f0f56f = $(`<div id="html_f46e1414760ed30d1cc8a3c258f0f56f" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Leith (Hermitage and Prospect Bank)</h4>         <b>Population:</b> 4,698<br>         <b>Area:</b> 0.45 km²<br>         <b>Density:</b> 10421.2 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_f044c9c2b248fb7f2445b368a133874a.setContent(html_f46e1414760ed30d1cc8a3c258f0f56f);
+            
+        
+
+        circle_marker_d4d7e44bef4ceca8230d06d3a0f70a4b.bindPopup(popup_f044c9c2b248fb7f2445b368a133874a)
+        ;
+
+        
+    
+    
+            var circle_marker_5012945fd99163a64f41baf9fdf2798e = L.circleMarker(
+                [56.02949296526895, -3.138191531879799],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7ab6d9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.763098223628397, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_629ad3818af020c498fbce0b30aab99d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_577fac1d0e5def34acde4c9ae8fc6b8c = $(`<div id="html_577fac1d0e5def34acde4c9ae8fc6b8c" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Great Junction Street</h4>         <b>Population:</b> 5,025<br>         <b>Area:</b> 0.46 km²<br>         <b>Density:</b> 10852.4 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_629ad3818af020c498fbce0b30aab99d.setContent(html_577fac1d0e5def34acde4c9ae8fc6b8c);
+            
+        
+
+        circle_marker_5012945fd99163a64f41baf9fdf2798e.bindPopup(popup_629ad3818af020c498fbce0b30aab99d)
+        ;
+
+        
+    
+    
+            var circle_marker_902d3bd3b4f72bf3bce3e7d61fc9dae7 = L.circleMarker(
+                [56.00302347519046, -3.307894093227529],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#75b3d8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.92488755944257, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_a37dff18a192ba9d97bf45b5ffb92b78 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_750ebc1034a094f540cb6f31c3eec044 = $(`<div id="html_750ebc1034a094f540cb6f31c3eec044" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Easter Road and Hawkhill Avenue</h4>         <b>Population:</b> 3,423<br>         <b>Area:</b> 0.31 km²<br>         <b>Density:</b> 11078.6 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_a37dff18a192ba9d97bf45b5ffb92b78.setContent(html_750ebc1034a094f540cb6f31c3eec044);
+            
+        
+
+        circle_marker_902d3bd3b4f72bf3bce3e7d61fc9dae7.bindPopup(popup_a37dff18a192ba9d97bf45b5ffb92b78)
+        ;
+
+        
+    
+    
+            var circle_marker_41b4456fb337c10336a6381f98472e43 = L.circleMarker(
+                [56.01432659274613, -3.08616196028022],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08306b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.0, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_48ba3242c0de5d6ed4aeda90c26dc0db = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_293bf3d10d8bccc5c30d0b7bdc11d885 = $(`<div id="html_293bf3d10d8bccc5c30d0b7bdc11d885" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Leith (Albert Street)</h4>         <b>Population:</b> 3,185<br>         <b>Area:</b> 0.15 km²<br>         <b>Density:</b> 20969.3 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_48ba3242c0de5d6ed4aeda90c26dc0db.setContent(html_293bf3d10d8bccc5c30d0b7bdc11d885);
+            
+        
+
+        circle_marker_41b4456fb337c10336a6381f98472e43.bindPopup(popup_48ba3242c0de5d6ed4aeda90c26dc0db)
+        ;
+
+        
+    
+    
+            var circle_marker_4b7e87fee96d3b6bfab42b2d7396bf68 = L.circleMarker(
+                [55.87726581790371, -3.17907152069773],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abcfe5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.011102265946766, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_0b3252cfc8817fc7078a9990bca638f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1227c9661907b097ad212d8986dcc04 = $(`<div id="html_c1227c9661907b097ad212d8986dcc04" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Hillside and Calton Hill</h4>         <b>Population:</b> 5,164<br>         <b>Area:</b> 0.61 km²<br>         <b>Density:</b> 8403.2 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_0b3252cfc8817fc7078a9990bca638f6.setContent(html_c1227c9661907b097ad212d8986dcc04);
+            
+        
+
+        circle_marker_4b7e87fee96d3b6bfab42b2d7396bf68.bindPopup(popup_0b3252cfc8817fc7078a9990bca638f6)
+        ;
+
+        
+    
+    
+            var circle_marker_4645e2cc65fd226eeb7ad540284ad043 = L.circleMarker(
+                [55.99115031548081, -3.135636800205237],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7bb7d9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.690985624667164, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_6ebeb152db8614372523e12c68dd4edf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_441d7f25d83b75fbaa1767936d39182a = $(`<div id="html_441d7f25d83b75fbaa1767936d39182a" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Pilrig</h4>         <b>Population:</b> 3,243<br>         <b>Area:</b> 0.30 km²<br>         <b>Density:</b> 10751.6 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_6ebeb152db8614372523e12c68dd4edf.setContent(html_441d7f25d83b75fbaa1767936d39182a);
+            
+        
+
+        circle_marker_4645e2cc65fd226eeb7ad540284ad043.bindPopup(popup_6ebeb152db8614372523e12c68dd4edf)
+        ;
+
+        
+    
+    
+            var circle_marker_1175eeb7a7a2fc8787eb3bceb9f28c01 = L.circleMarker(
+                [55.92644967487143, -3.1302319813185253],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abcfe5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.983115525771634, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_98921e480fd0e99371a66819ca4a8089 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3d4b8ce8359a90ebda3f7f12501c5823 = $(`<div id="html_3d4b8ce8359a90ebda3f7f12501c5823" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Bonnington</h4>         <b>Population:</b> 3,414<br>         <b>Area:</b> 0.41 km²<br>         <b>Density:</b> 8364.1 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_98921e480fd0e99371a66819ca4a8089.setContent(html_3d4b8ce8359a90ebda3f7f12501c5823);
+            
+        
+
+        circle_marker_1175eeb7a7a2fc8787eb3bceb9f28c01.bindPopup(popup_98921e480fd0e99371a66819ca4a8089)
+        ;
+
+        
+    
+    
+            var circle_marker_34300956b60f31659b1ba19b70c96fa2 = L.circleMarker(
+                [56.02223054176773, -3.14734915893608],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cee0f1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.328319188669958, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_0195fcc3dd75832d0f2848555c0d21ce = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2c82fe1e544c5eadf77ba4c2ca75e12d = $(`<div id="html_2c82fe1e544c5eadf77ba4c2ca75e12d" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Trinity East and The Dudleys</h4>         <b>Population:</b> 3,701<br>         <b>Area:</b> 0.61 km²<br>         <b>Density:</b> 6050.8 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_0195fcc3dd75832d0f2848555c0d21ce.setContent(html_2c82fe1e544c5eadf77ba4c2ca75e12d);
+            
+        
+
+        circle_marker_34300956b60f31659b1ba19b70c96fa2.bindPopup(popup_0195fcc3dd75832d0f2848555c0d21ce)
+        ;
+
+        
+    
+    
+            var circle_marker_f963ec35c71ce852d8f1f69c077f0789 = L.circleMarker(
+                [56.00165762222994, -3.2208868467724967],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbe9f6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.380162282571145, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_16c1acda081eb6b8218b82a3ca6c865d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d9b0b08f4783d3758d74d73fff7a7116 = $(`<div id="html_d9b0b08f4783d3758d74d73fff7a7116" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Trinity</h4>         <b>Population:</b> 4,461<br>         <b>Area:</b> 0.94 km²<br>         <b>Density:</b> 4725.3 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_16c1acda081eb6b8218b82a3ca6c865d.setContent(html_d9b0b08f4783d3758d74d73fff7a7116);
+            
+        
+
+        circle_marker_f963ec35c71ce852d8f1f69c077f0789.bindPopup(popup_16c1acda081eb6b8218b82a3ca6c865d)
+        ;
+
+        
+    
+    
+            var circle_marker_bf3f8aafaf0bfa72952a346381b6cce0 = L.circleMarker(
+                [56.01155024454005, -3.2915062853296853],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7fbff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.484676934784353, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_9266fa4e5d3fdaa301c4ed9a955c0ad7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2a9d2fe684926fbead171757f00e18a = $(`<div id="html_c2a9d2fe684926fbead171757f00e18a" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Inverleith, Goldenacre and Warriston</h4>         <b>Population:</b> 3,687<br>         <b>Area:</b> 1.78 km²<br>         <b>Density:</b> 2075.5 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_9266fa4e5d3fdaa301c4ed9a955c0ad7.setContent(html_c2a9d2fe684926fbead171757f00e18a);
+            
+        
+
+        circle_marker_bf3f8aafaf0bfa72952a346381b6cce0.bindPopup(popup_9266fa4e5d3fdaa301c4ed9a955c0ad7)
+        ;
+
+        
+    
+    
+            var circle_marker_55741adfa34222aa7325ef252b5a77e4 = L.circleMarker(
+                [56.0030198906519, -3.1488829556212945],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d8ed", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.117073454480924, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_5fe20e61d1bf99e22b89fa361364c219 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_90329edbffd5310c3166006d96f1a2a2 = $(`<div id="html_90329edbffd5310c3166006d96f1a2a2" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Broughton North and Powderhall</h4>         <b>Population:</b> 3,726<br>         <b>Area:</b> 0.52 km²<br>         <b>Density:</b> 7153.4 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_5fe20e61d1bf99e22b89fa361364c219.setContent(html_90329edbffd5310c3166006d96f1a2a2);
+            
+        
+
+        circle_marker_55741adfa34222aa7325ef252b5a77e4.bindPopup(popup_5fe20e61d1bf99e22b89fa361364c219)
+        ;
+
+        
+    
+    
+            var circle_marker_a9f5ba8608188d977c29f9a63df8b8f2 = L.circleMarker(
+                [55.91598891353512, -3.2290519913497766],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6fb0d6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.093087414873594, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_725465ca007611a210fbcfb453724a01 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d44055c61a6a26785fb05fde65110e1b = $(`<div id="html_d44055c61a6a26785fb05fde65110e1b" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Broughton South</h4>         <b>Population:</b> 4,210<br>         <b>Area:</b> 0.37 km²<br>         <b>Density:</b> 11313.7 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_725465ca007611a210fbcfb453724a01.setContent(html_d44055c61a6a26785fb05fde65110e1b);
+            
+        
+
+        circle_marker_a9f5ba8608188d977c29f9a63df8b8f2.bindPopup(popup_725465ca007611a210fbcfb453724a01)
+        ;
+
+        
+    
+    
+            var circle_marker_1d19f35332460fcc4e5901713fa062e7 = L.circleMarker(
+                [55.99927992146167, -3.2329602451859936],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8bc0dd", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.156491973530848, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_835f46f74459352d11d4028c8f4bd26a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f300bfa675705b204b0d2eb20eb607d = $(`<div id="html_4f300bfa675705b204b0d2eb20eb607d" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>New Town East and Gayfield</h4>         <b>Population:</b> 3,031<br>         <b>Area:</b> 0.30 km²<br>         <b>Density:</b> 10004.4 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_835f46f74459352d11d4028c8f4bd26a.setContent(html_4f300bfa675705b204b0d2eb20eb607d);
+            
+        
+
+        circle_marker_1d19f35332460fcc4e5901713fa062e7.bindPopup(popup_835f46f74459352d11d4028c8f4bd26a)
+        ;
+
+        
+    
+    
+            var circle_marker_043323f66f5a0012d269b2a3fb130112 = L.circleMarker(
+                [55.89059530022447, -3.104776332918479],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c3d9ee", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.999085171780749, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_6f2e46bbdb56bb320450c667f6255727 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9eafb5982ecb2d9d7ef77a540e9d1f2a = $(`<div id="html_9eafb5982ecb2d9d7ef77a540e9d1f2a" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>New Town West</h4>         <b>Population:</b> 3,569<br>         <b>Area:</b> 0.51 km²<br>         <b>Density:</b> 6988.5 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_6f2e46bbdb56bb320450c667f6255727.setContent(html_9eafb5982ecb2d9d7ef77a540e9d1f2a);
+            
+        
+
+        circle_marker_043323f66f5a0012d269b2a3fb130112.bindPopup(popup_6f2e46bbdb56bb320450c667f6255727)
+        ;
+
+        
+    
+    
+            var circle_marker_a93affcb2c58e49efc88427b5064c7a8 = L.circleMarker(
+                [56.012846685264975, -3.135558976876652],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#60a6d1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.68020017329532, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_28dbb4eeddd71227e08b55778c65ed0e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_932626c682b9a7001ee8701eb281e70f = $(`<div id="html_932626c682b9a7001ee8701eb281e70f" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Canonmills and New Town North</h4>         <b>Population:</b> 3,212<br>         <b>Area:</b> 0.26 km²<br>         <b>Density:</b> 12134.5 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_28dbb4eeddd71227e08b55778c65ed0e.setContent(html_932626c682b9a7001ee8701eb281e70f);
+            
+        
+
+        circle_marker_a93affcb2c58e49efc88427b5064c7a8.bindPopup(popup_28dbb4eeddd71227e08b55778c65ed0e)
+        ;
+
+        
+    
+    
+            var circle_marker_d0336e48ea17b0b5470a9d3699dfde53 = L.circleMarker(
+                [56.01067492021404, -3.2362226556292963],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9dc9e0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.562548678703791, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_4592c99daa1bbcfc4c954b53a975a006 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3d48cdf9c68b142793948c6d541ea6c4 = $(`<div id="html_3d48cdf9c68b142793948c6d541ea6c4" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Stockbridge</h4>         <b>Population:</b> 5,686<br>         <b>Area:</b> 0.62 km²<br>         <b>Density:</b> 9174.1 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_4592c99daa1bbcfc4c954b53a975a006.setContent(html_3d48cdf9c68b142793948c6d541ea6c4);
+            
+        
+
+        circle_marker_d0336e48ea17b0b5470a9d3699dfde53.bindPopup(popup_4592c99daa1bbcfc4c954b53a975a006)
+        ;
+
+        
+    
+    
+            var circle_marker_66c15ee5cfa5c832fa220d27ca775df8 = L.circleMarker(
+                [55.908889394807304, -3.2340716810699233],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8e7f5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.565117370980545, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_3fa6e7c0651a762ed436a7d3b2c93018 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b6b679e38c555e2d40dd03d906b8593c = $(`<div id="html_b6b679e38c555e2d40dd03d906b8593c" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Comely Bank</h4>         <b>Population:</b> 3,614<br>         <b>Area:</b> 0.73 km²<br>         <b>Density:</b> 4983.9 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_3fa6e7c0651a762ed436a7d3b2c93018.setContent(html_b6b679e38c555e2d40dd03d906b8593c);
+            
+        
+
+        circle_marker_66c15ee5cfa5c832fa220d27ca775df8.bindPopup(popup_3fa6e7c0651a762ed436a7d3b2c93018)
+        ;
+
+        
+    
+    
+            var circle_marker_bad56f1bdb0ea0d2f5e2021806127fd4 = L.circleMarker(
+                [56.00395385689551, -3.210285701931388],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e2edf8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.883083895093936, "stroke": true, "weight": 2}
+            ).addTo(map_2d8b7def2dc3e349d9fc5027db3ba28c);
+        
+    
+        var popup_f565190566e918cce5e04ef4c843e60a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b57ad96c0d3a0276919170a7f3c05795 = $(`<div id="html_b57ad96c0d3a0276919170a7f3c05795" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Deans Village</h4>         <b>Population:</b> 6,021<br>         <b>Area:</b> 1.49 km²<br>         <b>Density:</b> 4030.4 inhabitants/km²<br>         <b>Council:</b> NA_character_     </div>     </div>`)[0];
+                popup_f565190566e918cce5e04ef4c843e60a.setContent(html_b57ad96c0d3a0276919170a7f3c05795);
+            
+        
+
+        circle_marker_bad56f1bdb0ea0d2f5e2021806127fd4.bindPopup(popup_f565190566e918cce5e04ef4c843e60a)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,12 @@
+{
+  "source_file": "c:/Users/glauc/Desktop/PHS/Operational_A-E/data/intermediate_zones_data/glasgow.RData",
+  "city": "glasgow",
+  "objects_count": 1,
+  "objects": {
+    "plot_glasgow": {
+      "class": "sf",
+      "type": "list",
+      "dimensions": "146 x 58"
+    }
+  }
+}

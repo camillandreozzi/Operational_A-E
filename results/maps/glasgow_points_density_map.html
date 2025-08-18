@@ -1,0 +1,3459 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_350cdd024e29e6170c484580de3bbbaf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_350cdd024e29e6170c484580de3bbbaf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_350cdd024e29e6170c484580de3bbbaf = L.map(
+                "map_350cdd024e29e6170c484580de3bbbaf",
+                {
+                    center: [55.8642, -4.2518],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2843906a13fd0be4b29f6da7dc41ea8f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2843906a13fd0be4b29f6da7dc41ea8f.addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+            var circle_marker_d86b1c28ad0e293a586ebb26af070226 = L.circleMarker(
+                [55.89208535969157, -4.240011173366163],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed976", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.412246057135432, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_17a86c6322376a8a08f5bf3bff20012c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_04b9a6eaefa85cf3ea23cc331beb55b5 = $(`<div id="html_04b9a6eaefa85cf3ea23cc331beb55b5" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Darnley East</h4>         <b>Population:</b> 5,104<br>         <b>Area:</b> 1.01 km²<br>         <b>Density:</b> 5068.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_17a86c6322376a8a08f5bf3bff20012c.setContent(html_04b9a6eaefa85cf3ea23cc331beb55b5);
+            
+        
+
+        circle_marker_d86b1c28ad0e293a586ebb26af070226.bindPopup(popup_17a86c6322376a8a08f5bf3bff20012c)
+        ;
+
+        
+    
+    
+            var circle_marker_fbb9b826f2a63583499f4bbcc88c377b = L.circleMarker(
+                [55.76920215104453, -4.182820679273007],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffcc5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.054772473135166, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_5037c6f893e000097c18d1a9d8f6ee80 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_751e2ad20f9bc2cae825393317dc071a = $(`<div id="html_751e2ad20f9bc2cae825393317dc071a" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Darnley North</h4>         <b>Population:</b> 3,542<br>         <b>Area:</b> 3.59 km²<br>         <b>Density:</b> 987.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_5037c6f893e000097c18d1a9d8f6ee80.setContent(html_751e2ad20f9bc2cae825393317dc071a);
+            
+        
+
+        circle_marker_fbb9b826f2a63583499f4bbcc88c377b.bindPopup(popup_5037c6f893e000097c18d1a9d8f6ee80)
+        ;
+
+        
+    
+    
+            var circle_marker_5f0ad39c02e6e97dc1d7eea641c2f82b = L.circleMarker(
+                [55.81920586367382, -4.341454680983092],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedf82", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.730297431565281, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_13484179fad469c51e8b8b3247a83e20 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_94abaee1b5675c52f00404b486f10eec = $(`<div id="html_94abaee1b5675c52f00404b486f10eec" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Darnley West</h4>         <b>Population:</b> 5,461<br>         <b>Area:</b> 1.23 km²<br>         <b>Density:</b> 4429.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_13484179fad469c51e8b8b3247a83e20.setContent(html_94abaee1b5675c52f00404b486f10eec);
+            
+        
+
+        circle_marker_5f0ad39c02e6e97dc1d7eea641c2f82b.bindPopup(popup_13484179fad469c51e8b8b3247a83e20)
+        ;
+
+        
+    
+    
+            var circle_marker_6720b1958884b374eb50b9b4c138606a = L.circleMarker(
+                [55.80884214762976, -4.308285112609732],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee999", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.4316143673591, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_56670025624507787f82874d69393b31 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3e90f53a2aa5c3551e552ff1dcd4fc90 = $(`<div id="html_3e90f53a2aa5c3551e552ff1dcd4fc90" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Nitshill</h4>         <b>Population:</b> 6,330<br>         <b>Area:</b> 1.97 km²<br>         <b>Density:</b> 3213.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_56670025624507787f82874d69393b31.setContent(html_3e90f53a2aa5c3551e552ff1dcd4fc90);
+            
+        
+
+        circle_marker_6720b1958884b374eb50b9b4c138606a.bindPopup(popup_56670025624507787f82874d69393b31)
+        ;
+
+        
+    
+    
+            var circle_marker_be14c30c824199fd875ce3d644c9086c = L.circleMarker(
+                [55.9114942428328, -4.103255193001732],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee28a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.318511345580468, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_6d930883f3ccb644f2ef9832120a0a37 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dd93e480921335c61a2b945aea701dc5 = $(`<div id="html_dd93e480921335c61a2b945aea701dc5" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Crookston South</h4>         <b>Population:</b> 3,380<br>         <b>Area:</b> 0.84 km²<br>         <b>Density:</b> 4044.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_6d930883f3ccb644f2ef9832120a0a37.setContent(html_dd93e480921335c61a2b945aea701dc5);
+            
+        
+
+        circle_marker_be14c30c824199fd875ce3d644c9086c.bindPopup(popup_6d930883f3ccb644f2ef9832120a0a37)
+        ;
+
+        
+    
+    
+            var circle_marker_0cd300b5c23ad85498f25f4c77773e78 = L.circleMarker(
+                [55.89953989748458, -4.206836582708164],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feca65", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.38629555852779, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_399005e9a6da4ba77a3b72822499de03 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ef1f4c4809c39d3e725e308b13468e8 = $(`<div id="html_2ef1f4c4809c39d3e725e308b13468e8" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Penilee</h4>         <b>Population:</b> 5,279<br>         <b>Area:</b> 0.88 km²<br>         <b>Density:</b> 5980.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_399005e9a6da4ba77a3b72822499de03.setContent(html_2ef1f4c4809c39d3e725e308b13468e8);
+            
+        
+
+        circle_marker_0cd300b5c23ad85498f25f4c77773e78.bindPopup(popup_399005e9a6da4ba77a3b72822499de03)
+        ;
+
+        
+    
+    
+            var circle_marker_71d6cc188679bdeb3ec72a9b6885be49 = L.circleMarker(
+                [55.94263591354097, -4.270369974825649],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec763", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.595684132267653, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_bc1a5458f2ceb1a52b5b5b951f8d389b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ff529c48573b117313dab135b37e4e18 = $(`<div id="html_ff529c48573b117313dab135b37e4e18" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Hillington</h4>         <b>Population:</b> 3,377<br>         <b>Area:</b> 0.55 km²<br>         <b>Density:</b> 6176.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_bc1a5458f2ceb1a52b5b5b951f8d389b.setContent(html_ff529c48573b117313dab135b37e4e18);
+            
+        
+
+        circle_marker_71d6cc188679bdeb3ec72a9b6885be49.bindPopup(popup_bc1a5458f2ceb1a52b5b5b951f8d389b)
+        ;
+
+        
+    
+    
+            var circle_marker_20d6cdfc3545d62df248a0a00a290a10 = L.circleMarker(
+                [55.78158776652588, -4.246527247689323],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0300281138559, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_902ce6405d26e1aa5368c366a014340e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ae424df0238152863326a759ad0ee122 = $(`<div id="html_ae424df0238152863326a759ad0ee122" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Drumoyne and Shieldhall</h4>         <b>Population:</b> 6,241<br>         <b>Area:</b> 3.28 km²<br>         <b>Density:</b> 1901.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_902ce6405d26e1aa5368c366a014340e.setContent(html_ae424df0238152863326a759ad0ee122);
+            
+        
+
+        circle_marker_20d6cdfc3545d62df248a0a00a290a10.bindPopup(popup_902ce6405d26e1aa5368c366a014340e)
+        ;
+
+        
+    
+    
+            var circle_marker_c85e9c74a865e53427705b8f47f0b389 = L.circleMarker(
+                [55.84858436393705, -4.36549874123952],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0300281138559, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_6df936578b87e9351af2c0e6890bf745 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0a25dd7bf373750ffef1004544556946 = $(`<div id="html_0a25dd7bf373750ffef1004544556946" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Drumoyne and Shieldhall</h4>         <b>Population:</b> 6,241<br>         <b>Area:</b> 3.28 km²<br>         <b>Density:</b> 1901.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_6df936578b87e9351af2c0e6890bf745.setContent(html_0a25dd7bf373750ffef1004544556946);
+            
+        
+
+        circle_marker_c85e9c74a865e53427705b8f47f0b389.bindPopup(popup_6df936578b87e9351af2c0e6890bf745)
+        ;
+
+        
+    
+    
+            var circle_marker_d3fa907f31ef7bab79f4c67f5791a03a = L.circleMarker(
+                [55.770159443887614, -4.334390798890533],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee590", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.976459145418987, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_88cd2da57e23e4984655603d95375e0f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6fa6c838e160db87907f4dbd7e990dd7 = $(`<div id="html_6fa6c838e160db87907f4dbd7e990dd7" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Govan and Linthouse</h4>         <b>Population:</b> 6,065<br>         <b>Area:</b> 1.63 km²<br>         <b>Density:</b> 3723.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_88cd2da57e23e4984655603d95375e0f.setContent(html_6fa6c838e160db87907f4dbd7e990dd7);
+            
+        
+
+        circle_marker_d3fa907f31ef7bab79f4c67f5791a03a.bindPopup(popup_88cd2da57e23e4984655603d95375e0f)
+        ;
+
+        
+    
+    
+            var circle_marker_6df42113a4495686fbd12ee470134d92 = L.circleMarker(
+                [55.80792759496072, -4.300374331355764],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee793", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.734958803525398, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_728472b76437abdf4d73382a3e4fa80a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5908a76cc922842ee02d096c2ffa9d5 = $(`<div id="html_a5908a76cc922842ee02d096c2ffa9d5" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Craigton</h4>         <b>Population:</b> 3,516<br>         <b>Area:</b> 1.01 km²<br>         <b>Density:</b> 3497.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_728472b76437abdf4d73382a3e4fa80a.setContent(html_a5908a76cc922842ee02d096c2ffa9d5);
+            
+        
+
+        circle_marker_6df42113a4495686fbd12ee470134d92.bindPopup(popup_728472b76437abdf4d73382a3e4fa80a)
+        ;
+
+        
+    
+    
+            var circle_marker_44b25f5a8fa6eceb319d286da76313bb = L.circleMarker(
+                [55.86527105762067, -4.22530738446283],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff0a9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.588193152744942, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_bbfec07c638632a5327e921eb4d37f04 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_509306c9422392afe18a35d9d00f3b20 = $(`<div id="html_509306c9422392afe18a35d9d00f3b20" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Mosspark</h4>         <b>Population:</b> 5,126<br>         <b>Area:</b> 2.11 km²<br>         <b>Density:</b> 2423.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_bbfec07c638632a5327e921eb4d37f04.setContent(html_509306c9422392afe18a35d9d00f3b20);
+            
+        
+
+        circle_marker_44b25f5a8fa6eceb319d286da76313bb.bindPopup(popup_bbfec07c638632a5327e921eb4d37f04)
+        ;
+
+        
+    
+    
+            var circle_marker_06f6dd8b06c760a9b4f78b245531e318 = L.circleMarker(
+                [55.76950719393677, -4.332765580221027],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee38c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.224393356323056, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_fe3381170ec14dfda01b94d52c1cda68 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_98241a845bec9e8978eb8f619e8e333e = $(`<div id="html_98241a845bec9e8978eb8f619e8e333e" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Ibrox</h4>         <b>Population:</b> 3,640<br>         <b>Area:</b> 0.92 km²<br>         <b>Density:</b> 3956.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_fe3381170ec14dfda01b94d52c1cda68.setContent(html_98241a845bec9e8978eb8f619e8e333e);
+            
+        
+
+        circle_marker_06f6dd8b06c760a9b4f78b245531e318.bindPopup(popup_fe3381170ec14dfda01b94d52c1cda68)
+        ;
+
+        
+    
+    
+            var circle_marker_86e2b47d114706cacdf6a2f7a6464790 = L.circleMarker(
+                [55.80396753013733, -4.335734784664532],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee289", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.356751740556195, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_6c2b8cc81860bb0066275681d45452c4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a713e14d11d7b97338240fec137707ac = $(`<div id="html_a713e14d11d7b97338240fec137707ac" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Ibrox East and Cessnock</h4>         <b>Population:</b> 3,322<br>         <b>Area:</b> 0.81 km²<br>         <b>Density:</b> 4080.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_6c2b8cc81860bb0066275681d45452c4.setContent(html_a713e14d11d7b97338240fec137707ac);
+            
+        
+
+        circle_marker_86e2b47d114706cacdf6a2f7a6464790.bindPopup(popup_6c2b8cc81860bb0066275681d45452c4)
+        ;
+
+        
+    
+    
+            var circle_marker_9c8ac0858f6734baed46c1fc58448077 = L.circleMarker(
+                [55.8941768875559, -4.380502074197291],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdab49", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.3009128650925, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_225d8a6e0dad9b5b443eca895bf54844 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_99826cc39334f053f2fb41c9579bcfa4 = $(`<div id="html_99826cc39334f053f2fb41c9579bcfa4" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kinning Park and Festival Park</h4>         <b>Population:</b> 4,448<br>         <b>Area:</b> 0.57 km²<br>         <b>Density:</b> 7773.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_225d8a6e0dad9b5b443eca895bf54844.setContent(html_99826cc39334f053f2fb41c9579bcfa4);
+            
+        
+
+        circle_marker_9c8ac0858f6734baed46c1fc58448077.bindPopup(popup_225d8a6e0dad9b5b443eca895bf54844)
+        ;
+
+        
+    
+    
+            var circle_marker_a2809f22e81aeaf4c5a1ea63c1205baa = L.circleMarker(
+                [55.87318829612064, -4.212469112818971],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff0a8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.60443069780381, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_78b50d30d0a4a2432da528185104869e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_90d5b3c4c6d3cad9125505f2702f2c20 = $(`<div id="html_90d5b3c4c6d3cad9125505f2702f2c20" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kingston West and Dumbreck</h4>         <b>Population:</b> 3,637<br>         <b>Area:</b> 1.49 km²<br>         <b>Density:</b> 2439.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_78b50d30d0a4a2432da528185104869e.setContent(html_90d5b3c4c6d3cad9125505f2702f2c20);
+            
+        
+
+        circle_marker_a2809f22e81aeaf4c5a1ea63c1205baa.bindPopup(popup_78b50d30d0a4a2432da528185104869e)
+        ;
+
+        
+    
+    
+            var circle_marker_0460ef521c4a3f0c9805f433bd93cfa1 = L.circleMarker(
+                [55.808288124408136, -4.333117464856654],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fede81", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.809701415950876, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_081a44ba48c8861b621db6fed105ee07 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5a9f976548c4c8a0eea80be0dd426a4a = $(`<div id="html_5a9f976548c4c8a0eea80be0dd426a4a" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Pollokshields West</h4>         <b>Population:</b> 4,662<br>         <b>Area:</b> 1.04 km²<br>         <b>Density:</b> 4504.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_081a44ba48c8861b621db6fed105ee07.setContent(html_5a9f976548c4c8a0eea80be0dd426a4a);
+            
+        
+
+        circle_marker_0460ef521c4a3f0c9805f433bd93cfa1.bindPopup(popup_081a44ba48c8861b621db6fed105ee07)
+        ;
+
+        
+    
+    
+            var circle_marker_da2aeae592ee95666033ab4f6ef678c8 = L.circleMarker(
+                [55.88205313677518, -4.130173996098162],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd943f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.840958295653373, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_383dbe06738f5077aba8b85a1215c32d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_274bc40536cfa845c970bb8d4a87290c = $(`<div id="html_274bc40536cfa845c970bb8d4a87290c" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Pollokshields East</h4>         <b>Population:</b> 5,037<br>         <b>Area:</b> 0.55 km²<br>         <b>Density:</b> 9216.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_383dbe06738f5077aba8b85a1215c32d.setContent(html_274bc40536cfa845c970bb8d4a87290c);
+            
+        
+
+        circle_marker_da2aeae592ee95666033ab4f6ef678c8.bindPopup(popup_383dbe06738f5077aba8b85a1215c32d)
+        ;
+
+        
+    
+    
+            var circle_marker_743f10e696b1a4a1077c985dafe8cd73 = L.circleMarker(
+                [55.92608609133556, -4.143909379923876],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800026", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_6e8110c94925741943cdeb187db2a8f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ed742aa7c066eabe73434e05f6e534b = $(`<div id="html_3ed742aa7c066eabe73434e05f6e534b" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Govanhill West</h4>         <b>Population:</b> 5,793<br>         <b>Area:</b> 0.31 km²<br>         <b>Density:</b> 18729.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_6e8110c94925741943cdeb187db2a8f1.setContent(html_3ed742aa7c066eabe73434e05f6e534b);
+            
+        
+
+        circle_marker_743f10e696b1a4a1077c985dafe8cd73.bindPopup(popup_6e8110c94925741943cdeb187db2a8f1)
+        ;
+
+        
+    
+    
+            var circle_marker_ebfe6ca1c87f84134a59a9fef2d25672 = L.circleMarker(
+                [55.76549975193561, -4.380542795033405],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fda345", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.80535389314371, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_1d53c84ada08d01821142e2e4a8ae675 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e1b36ebd69a2a896dd000565e9472968 = $(`<div id="html_e1b36ebd69a2a896dd000565e9472968" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Govanhill East and Aikenhead</h4>         <b>Population:</b> 4,519<br>         <b>Area:</b> 0.55 km²<br>         <b>Density:</b> 8246.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_1d53c84ada08d01821142e2e4a8ae675.setContent(html_e1b36ebd69a2a896dd000565e9472968);
+            
+        
+
+        circle_marker_ebfe6ca1c87f84134a59a9fef2d25672.bindPopup(popup_1d53c84ada08d01821142e2e4a8ae675)
+        ;
+
+        
+    
+    
+            var circle_marker_22cff90c077d16982daf3ad7631fe29d = L.circleMarker(
+                [55.92536385036656, -4.3303986096893015],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedf82", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.757671651979344, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_1106add4e9388bebce56fec350ff7b0e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c39936eaf8d87888f5abf37bc01d77bd = $(`<div id="html_c39936eaf8d87888f5abf37bc01d77bd" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Battlefield</h4>         <b>Population:</b> 5,074<br>         <b>Area:</b> 1.14 km²<br>         <b>Density:</b> 4455.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_1106add4e9388bebce56fec350ff7b0e.setContent(html_c39936eaf8d87888f5abf37bc01d77bd);
+            
+        
+
+        circle_marker_22cff90c077d16982daf3ad7631fe29d.bindPopup(popup_1106add4e9388bebce56fec350ff7b0e)
+        ;
+
+        
+    
+    
+            var circle_marker_0c26f731a1b135bf848e637397fcfec5 = L.circleMarker(
+                [55.90382787899764, -4.201106666511116],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedf82", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.757671651979344, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_8fd33ef22d4818472ce3c0e4e7ce063e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0def3ed33fe065ddef1adb2849377065 = $(`<div id="html_0def3ed33fe065ddef1adb2849377065" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Battlefield</h4>         <b>Population:</b> 5,074<br>         <b>Area:</b> 1.14 km²<br>         <b>Density:</b> 4455.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_8fd33ef22d4818472ce3c0e4e7ce063e.setContent(html_0def3ed33fe065ddef1adb2849377065);
+            
+        
+
+        circle_marker_0c26f731a1b135bf848e637397fcfec5.bindPopup(popup_8fd33ef22d4818472ce3c0e4e7ce063e)
+        ;
+
+        
+    
+    
+            var circle_marker_188e549d4f21f95afdbe9f15480b0091 = L.circleMarker(
+                [55.83225010330359, -4.3375289577888685],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee186", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.545601172334493, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c8021edc2a0f8f9b4b65e11949a4676b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_24053c522918f071751f9ebf5169ee38 = $(`<div id="html_24053c522918f071751f9ebf5169ee38" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Crookston North</h4>         <b>Population:</b> 3,106<br>         <b>Area:</b> 0.73 km²<br>         <b>Density:</b> 4256.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_c8021edc2a0f8f9b4b65e11949a4676b.setContent(html_24053c522918f071751f9ebf5169ee38);
+            
+        
+
+        circle_marker_188e549d4f21f95afdbe9f15480b0091.bindPopup(popup_c8021edc2a0f8f9b4b65e11949a4676b)
+        ;
+
+        
+    
+    
+            var circle_marker_f0020d2dd3b2bb38db9a94ea5d89d7bb = L.circleMarker(
+                [55.795295899962355, -4.3621064453824925],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feec9e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.141942137692855, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_8e10f0d2c3dbf5e207250cbe26476671 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_98c4383c01255deec5f2808327d28a1d = $(`<div id="html_98c4383c01255deec5f2808327d28a1d" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Pollok South and West</h4>         <b>Population:</b> 6,341<br>         <b>Area:</b> 2.16 km²<br>         <b>Density:</b> 2942.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_8e10f0d2c3dbf5e207250cbe26476671.setContent(html_98c4383c01255deec5f2808327d28a1d);
+            
+        
+
+        circle_marker_f0020d2dd3b2bb38db9a94ea5d89d7bb.bindPopup(popup_8e10f0d2c3dbf5e207250cbe26476671)
+        ;
+
+        
+    
+    
+            var circle_marker_13e425c22620a5b132cf0406c6cbd2f1 = L.circleMarker(
+                [55.95564261444135, -4.121145727825799],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feec9e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.170805554125678, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_b38071746c67aef3b0c28414591a9000 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8912aa69fd90a43b57537d71e0dbd7f3 = $(`<div id="html_8912aa69fd90a43b57537d71e0dbd7f3" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Pollok North and East</h4>         <b>Population:</b> 5,869<br>         <b>Area:</b> 1.98 km²<br>         <b>Density:</b> 2969.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_b38071746c67aef3b0c28414591a9000.setContent(html_8912aa69fd90a43b57537d71e0dbd7f3);
+            
+        
+
+        circle_marker_13e425c22620a5b132cf0406c6cbd2f1.bindPopup(popup_b38071746c67aef3b0c28414591a9000)
+        ;
+
+        
+    
+    
+            var circle_marker_2bd69ba594d9e1045a72d80cb37c39de = L.circleMarker(
+                [55.83151890902252, -4.230487072002415],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedd7e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.010706162649026, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_762869d728fd6cda2d5fbca6c877b91a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ec86c29d0bf65a0110dcfb2f11c8cd78 = $(`<div id="html_ec86c29d0bf65a0110dcfb2f11c8cd78" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Cardonald South and East</h4>         <b>Population:</b> 3,192<br>         <b>Area:</b> 0.68 km²<br>         <b>Density:</b> 4692.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_762869d728fd6cda2d5fbca6c877b91a.setContent(html_ec86c29d0bf65a0110dcfb2f11c8cd78);
+            
+        
+
+        circle_marker_2bd69ba594d9e1045a72d80cb37c39de.bindPopup(popup_762869d728fd6cda2d5fbca6c877b91a)
+        ;
+
+        
+    
+    
+            var circle_marker_5b5287f3e4fa46babd27b0c2dd01acfa = L.circleMarker(
+                [55.78274916867603, -4.259998692106462],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdaf4a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.048842791990417, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_a4285b4c97330792da82a9e4744a851e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2305e0d28b030c27d6db9ea87b85e8e1 = $(`<div id="html_2305e0d28b030c27d6db9ea87b85e8e1" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Cardonald North</h4>         <b>Population:</b> 4,329<br>         <b>Area:</b> 0.57 km²<br>         <b>Density:</b> 7537.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_a4285b4c97330792da82a9e4744a851e.setContent(html_2305e0d28b030c27d6db9ea87b85e8e1);
+            
+        
+
+        circle_marker_5b5287f3e4fa46babd27b0c2dd01acfa.bindPopup(popup_a4285b4c97330792da82a9e4744a851e)
+        ;
+
+        
+    
+    
+            var circle_marker_680c85c315425d6a6fefc7462289356b = L.circleMarker(
+                [55.78354327536669, -4.166414172712774],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee085", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.59362817224238, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_4fd003fc2bb43a1503329e6f1eec40d8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2187632fc9ad3eebc33b2f905050e18 = $(`<div id="html_c2187632fc9ad3eebc33b2f905050e18" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Cardonald West and Central</h4>         <b>Population:</b> 5,162<br>         <b>Area:</b> 1.20 km²<br>         <b>Density:</b> 4301.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_4fd003fc2bb43a1503329e6f1eec40d8.setContent(html_c2187632fc9ad3eebc33b2f905050e18);
+            
+        
+
+        circle_marker_680c85c315425d6a6fefc7462289356b.bindPopup(popup_4fd003fc2bb43a1503329e6f1eec40d8)
+        ;
+
+        
+    
+    
+            var circle_marker_21b196e352b89c99cbccbc32aa201ec7 = L.circleMarker(
+                [55.93369887326949, -4.159550900670007],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feca65", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.438292718198696, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c9bc8a19b2cbeadf1dd702e27bfecb2c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_803d9b87882ca1274d609ebf9e52c822 = $(`<div id="html_803d9b87882ca1274d609ebf9e52c822" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Carnwadric West</h4>         <b>Population:</b> 4,228<br>         <b>Area:</b> 0.70 km²<br>         <b>Density:</b> 6029.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_c9bc8a19b2cbeadf1dd702e27bfecb2c.setContent(html_803d9b87882ca1274d609ebf9e52c822);
+            
+        
+
+        circle_marker_21b196e352b89c99cbccbc32aa201ec7.bindPopup(popup_c9bc8a19b2cbeadf1dd702e27bfecb2c)
+        ;
+
+        
+    
+    
+            var circle_marker_b99f6acde3f3f9ccd519fe18934f26a7 = L.circleMarker(
+                [55.88494520627337, -4.344677025691437],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedd80", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.887382350747508, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_e622c7e9f01a219f0def38920e897a4d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_53c60d1a90f8367f874c5e68c615046f = $(`<div id="html_53c60d1a90f8367f874c5e68c615046f" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Carnwadric East</h4>         <b>Population:</b> 3,127<br>         <b>Area:</b> 0.68 km²<br>         <b>Density:</b> 4577.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_e622c7e9f01a219f0def38920e897a4d.setContent(html_53c60d1a90f8367f874c5e68c615046f);
+            
+        
+
+        circle_marker_b99f6acde3f3f9ccd519fe18934f26a7.bindPopup(popup_e622c7e9f01a219f0def38920e897a4d)
+        ;
+
+        
+    
+    
+            var circle_marker_2f6d50a8c327ae95c7e1970b7d2331c9 = L.circleMarker(
+                [55.92562565465487, -4.372720755731353],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedf84", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.657493771884727, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_14b6d626c56d23fabed1e8b2e12f2bc6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_15b101bc39916f5ca6f720f74362eae4 = $(`<div id="html_15b101bc39916f5ca6f720f74362eae4" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Newlands</h4>         <b>Population:</b> 5,278<br>         <b>Area:</b> 1.21 km²<br>         <b>Density:</b> 4361.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_14b6d626c56d23fabed1e8b2e12f2bc6.setContent(html_15b101bc39916f5ca6f720f74362eae4);
+            
+        
+
+        circle_marker_2f6d50a8c327ae95c7e1970b7d2331c9.bindPopup(popup_14b6d626c56d23fabed1e8b2e12f2bc6)
+        ;
+
+        
+    
+    
+            var circle_marker_3ac35822e880f916f1854c64a811dbb8 = L.circleMarker(
+                [55.91014635733876, -4.272484645278087],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee085", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.610511186928743, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_a168d35472bfd509c7f20db002612b87 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a4918cf490e0082e90ac7538daa02bb0 = $(`<div id="html_a4918cf490e0082e90ac7538daa02bb0" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Merrylee and Millbrae</h4>         <b>Population:</b> 3,496<br>         <b>Area:</b> 0.81 km²<br>         <b>Density:</b> 4317.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_a168d35472bfd509c7f20db002612b87.setContent(html_a4918cf490e0082e90ac7538daa02bb0);
+            
+        
+
+        circle_marker_3ac35822e880f916f1854c64a811dbb8.bindPopup(popup_a168d35472bfd509c7f20db002612b87)
+        ;
+
+        
+    
+    
+            var circle_marker_bff0e67f9a20fbe4c8b3165fcdf3cfdd = L.circleMarker(
+                [55.871445618290934, -4.274726413094024],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed370", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.804868343638015, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c28f6975a19cf4b623ab78917e5bd1bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d1599fd734c5c2bef857b28e86127867 = $(`<div id="html_d1599fd734c5c2bef857b28e86127867" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Muirend and Old Cathcart</h4>         <b>Population:</b> 4,622<br>         <b>Area:</b> 0.85 km²<br>         <b>Density:</b> 5436.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_c28f6975a19cf4b623ab78917e5bd1bf.setContent(html_d1599fd734c5c2bef857b28e86127867);
+            
+        
+
+        circle_marker_bff0e67f9a20fbe4c8b3165fcdf3cfdd.bindPopup(popup_c28f6975a19cf4b623ab78917e5bd1bf)
+        ;
+
+        
+    
+    
+            var circle_marker_b2696e47e07c2db802ba8484fd72159f = L.circleMarker(
+                [55.95882315279587, -4.261692599588998],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee289", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.341752233286845, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_27985caf70c448eed60a709f818d3d06 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_32023890eeaf79d466c03ce3f36189e7 = $(`<div id="html_32023890eeaf79d466c03ce3f36189e7" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Carmunnock North</h4>         <b>Population:</b> 2,871<br>         <b>Area:</b> 0.71 km²<br>         <b>Density:</b> 4066.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_27985caf70c448eed60a709f818d3d06.setContent(html_32023890eeaf79d466c03ce3f36189e7);
+            
+        
+
+        circle_marker_b2696e47e07c2db802ba8484fd72159f.bindPopup(popup_27985caf70c448eed60a709f818d3d06)
+        ;
+
+        
+    
+    
+            var circle_marker_0db65b65539ef7e603b99b219c2f2c38 = L.circleMarker(
+                [55.83990687544167, -4.183077245162045],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.684345897873676, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_1e96d7006cd23ee89158755ed4df69f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11dfea3e9557ac214d764b3157f01ff9 = $(`<div id="html_11dfea3e9557ac214d764b3157f01ff9" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Carmunnock South</h4>         <b>Population:</b> 3,737<br>         <b>Area:</b> 5.83 km²<br>         <b>Density:</b> 640.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_1e96d7006cd23ee89158755ed4df69f6.setContent(html_11dfea3e9557ac214d764b3157f01ff9);
+            
+        
+
+        circle_marker_0db65b65539ef7e603b99b219c2f2c38.bindPopup(popup_1e96d7006cd23ee89158755ed4df69f6)
+        ;
+
+        
+    
+    
+            var circle_marker_994f46ceb763a9a3cec03fc1de5ffe81 = L.circleMarker(
+                [55.87460812625464, -4.199790635812009],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed875", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.5105380057541, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_8838b76c714aad7363e886812686d29d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e3d60bcf0d9917dfc650081b06c5c8e3 = $(`<div id="html_e3d60bcf0d9917dfc650081b06c5c8e3" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Glenwood South</h4>         <b>Population:</b> 4,953<br>         <b>Area:</b> 0.96 km²<br>         <b>Density:</b> 5160.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_8838b76c714aad7363e886812686d29d.setContent(html_e3d60bcf0d9917dfc650081b06c5c8e3);
+            
+        
+
+        circle_marker_994f46ceb763a9a3cec03fc1de5ffe81.bindPopup(popup_8838b76c714aad7363e886812686d29d)
+        ;
+
+        
+    
+    
+            var circle_marker_9e22c76124a8cc3d79429398ace30173 = L.circleMarker(
+                [55.93008093285059, -4.106550436590211],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee691", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.946286236641088, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_a0f7093d30a2898d364a8f8472f014ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d90e812520bdc89ba360df1c9d7baf74 = $(`<div id="html_d90e812520bdc89ba360df1c9d7baf74" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Glenwood North</h4>         <b>Population:</b> 4,313<br>         <b>Area:</b> 1.17 km²<br>         <b>Density:</b> 3695.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_a0f7093d30a2898d364a8f8472f014ae.setContent(html_d90e812520bdc89ba360df1c9d7baf74);
+            
+        
+
+        circle_marker_9e22c76124a8cc3d79429398ace30173.bindPopup(popup_a0f7093d30a2898d364a8f8472f014ae)
+        ;
+
+        
+    
+    
+            var circle_marker_afec91093adeaf1cdc26dca33da5da83 = L.circleMarker(
+                [55.88790395047285, -4.372274638654413],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec05b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.041844251172165, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_d1aa3b10947eee2d1540deffca0048a3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5969223d25a79fc4f99f55970c84bdd6 = $(`<div id="html_5969223d25a79fc4f99f55970c84bdd6" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Castlemilk</h4>         <b>Population:</b> 4,980<br>         <b>Area:</b> 0.76 km²<br>         <b>Density:</b> 6594.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_d1aa3b10947eee2d1540deffca0048a3.setContent(html_5969223d25a79fc4f99f55970c84bdd6);
+            
+        
+
+        circle_marker_afec91093adeaf1cdc26dca33da5da83.bindPopup(popup_d1aa3b10947eee2d1540deffca0048a3)
+        ;
+
+        
+    
+    
+            var circle_marker_eaaa54734442de1022cb7305d5fadac4 = L.circleMarker(
+                [55.93654138006215, -4.28101361536932],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee38c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.25741853885857, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_0c1257ca9f243bc592e769138c44eab4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_019a54cb953d45518882157e9f6a79cb = $(`<div id="html_019a54cb953d45518882157e9f6a79cb" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kingspark South</h4>         <b>Population:</b> 4,026<br>         <b>Area:</b> 1.01 km²<br>         <b>Density:</b> 3987.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_0c1257ca9f243bc592e769138c44eab4.setContent(html_019a54cb953d45518882157e9f6a79cb);
+            
+        
+
+        circle_marker_eaaa54734442de1022cb7305d5fadac4.bindPopup(popup_0c1257ca9f243bc592e769138c44eab4)
+        ;
+
+        
+    
+    
+            var circle_marker_9f2be7f50f3c18926f9710e41d8f4124 = L.circleMarker(
+                [55.87967042905135, -4.300009218381511],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec864", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.459036806082224, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_ae8d43f952616cb3c5807d2989f89736 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3927bc527a14ef03e88ba7cc9a6feb4f = $(`<div id="html_3927bc527a14ef03e88ba7cc9a6feb4f" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kingspark North</h4>         <b>Population:</b> 4,069<br>         <b>Area:</b> 0.67 km²<br>         <b>Density:</b> 6048.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_ae8d43f952616cb3c5807d2989f89736.setContent(html_3927bc527a14ef03e88ba7cc9a6feb4f);
+            
+        
+
+        circle_marker_9f2be7f50f3c18926f9710e41d8f4124.bindPopup(popup_ae8d43f952616cb3c5807d2989f89736)
+        ;
+
+        
+    
+    
+            var circle_marker_60bf9df5b20cb03e2b760ebf3df99a34 = L.circleMarker(
+                [55.90511436724298, -4.143298239094163],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#febb56", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.30415690584696, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_16c3df1a71c01ad4ef2a3b75b317b8f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_618e9e8f57ddfca2f767ea8e104473dc = $(`<div id="html_618e9e8f57ddfca2f767ea8e104473dc" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Cathcart</h4>         <b>Population:</b> 5,411<br>         <b>Area:</b> 0.79 km²<br>         <b>Density:</b> 6840.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_16c3df1a71c01ad4ef2a3b75b317b8f8.setContent(html_618e9e8f57ddfca2f767ea8e104473dc);
+            
+        
+
+        circle_marker_60bf9df5b20cb03e2b760ebf3df99a34.bindPopup(popup_16c3df1a71c01ad4ef2a3b75b317b8f8)
+        ;
+
+        
+    
+    
+            var circle_marker_0672c0cc866fa30eebb737034457ca5e = L.circleMarker(
+                [55.77336487673113, -4.327203099823914],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdae4a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.16703343649776, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_3457fe6b9a8653c2bb3dbda26938ddce = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0671c984921976c44efd3d800c0edbe = $(`<div id="html_f0671c984921976c44efd3d800c0edbe" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Mount Florida</h4>         <b>Population:</b> 4,395<br>         <b>Area:</b> 0.57 km²<br>         <b>Density:</b> 7648.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_3457fe6b9a8653c2bb3dbda26938ddce.setContent(html_f0671c984921976c44efd3d800c0edbe);
+            
+        
+
+        circle_marker_0672c0cc866fa30eebb737034457ca5e.bindPopup(popup_3457fe6b9a8653c2bb3dbda26938ddce)
+        ;
+
+        
+    
+    
+            var circle_marker_04bd082ed0a405de426b5af338352ffe = L.circleMarker(
+                [55.809779655130306, -4.344737327467757],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee795", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.68950078170437, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_eebf7959d0ae754d42b51294c9614b4d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1641a79a4081bcdaa5bae953d104be06 = $(`<div id="html_1641a79a4081bcdaa5bae953d104be06" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Toryglen and Oatlands</h4>         <b>Population:</b> 6,814<br>         <b>Area:</b> 1.97 km²<br>         <b>Density:</b> 3455.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_eebf7959d0ae754d42b51294c9614b4d.setContent(html_1641a79a4081bcdaa5bae953d104be06);
+            
+        
+
+        circle_marker_04bd082ed0a405de426b5af338352ffe.bindPopup(popup_eebf7959d0ae754d42b51294c9614b4d)
+        ;
+
+        
+    
+    
+            var circle_marker_b09583e4cb8e53c741e997b3e249839b = L.circleMarker(
+                [55.82207759272042, -4.267215935650061],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdb04b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.033113073406014, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_7eacc4d621484ffd1fd12ab696e081f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eb196245920232c1d3735ba1e539c806 = $(`<div id="html_eb196245920232c1d3735ba1e539c806" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Gorbals and Hutchesontown</h4>         <b>Population:</b> 6,201<br>         <b>Area:</b> 0.82 km²<br>         <b>Density:</b> 7523.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_7eacc4d621484ffd1fd12ab696e081f6.setContent(html_eb196245920232c1d3735ba1e539c806);
+            
+        
+
+        circle_marker_b09583e4cb8e53c741e997b3e249839b.bindPopup(popup_7eacc4d621484ffd1fd12ab696e081f6)
+        ;
+
+        
+    
+    
+            var circle_marker_85f59619953475384925bc2a90d8c284 = L.circleMarker(
+                [55.780158395384724, -4.275235508049679],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.015122696017528, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_06c23b734f8fd49d5d5e6025daab7d9f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b5870a7e71b16ab52f94d40cda07e074 = $(`<div id="html_b5870a7e71b16ab52f94d40cda07e074" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Laurieston and Tradeston</h4>         <b>Population:</b> 6,156<br>         <b>Area:</b> 2.18 km²<br>         <b>Density:</b> 2823.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_06c23b734f8fd49d5d5e6025daab7d9f.setContent(html_b5870a7e71b16ab52f94d40cda07e074);
+            
+        
+
+        circle_marker_85f59619953475384925bc2a90d8c284.bindPopup(popup_06c23b734f8fd49d5d5e6025daab7d9f)
+        ;
+
+        
+    
+    
+            var circle_marker_77beed99ab38dd1745cb660dbad1fa11 = L.circleMarker(
+                [55.810758177272206, -4.3182364565999185],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedf82", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.776361255976013, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c0085f4c661abeda69ce333cdf935516 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_141177549e94d1a34d2bcd34d94df5ad = $(`<div id="html_141177549e94d1a34d2bcd34d94df5ad" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Calton and Gallowgate</h4>         <b>Population:</b> 4,602<br>         <b>Area:</b> 1.03 km²<br>         <b>Density:</b> 4473.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_c0085f4c661abeda69ce333cdf935516.setContent(html_141177549e94d1a34d2bcd34d94df5ad);
+            
+        
+
+        circle_marker_77beed99ab38dd1745cb660dbad1fa11.bindPopup(popup_c0085f4c661abeda69ce333cdf935516)
+        ;
+
+        
+    
+    
+            var circle_marker_aa2b808f4973d286663c6cb26b0ac928 = L.circleMarker(
+                [55.784400285881944, -4.32685806563537],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc602f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.998573911014624, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_6b2f5ced49b3505b9c4789646b3e2d45 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1dd3bc0d46e5baf812a440783d00eb5d = $(`<div id="html_1dd3bc0d46e5baf812a440783d00eb5d" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Bridgeton</h4>         <b>Population:</b> 4,147<br>         <b>Area:</b> 0.37 km²<br>         <b>Density:</b> 11236.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_6b2f5ced49b3505b9c4789646b3e2d45.setContent(html_1dd3bc0d46e5baf812a440783d00eb5d);
+            
+        
+
+        circle_marker_aa2b808f4973d286663c6cb26b0ac928.bindPopup(popup_6b2f5ced49b3505b9c4789646b3e2d45)
+        ;
+
+        
+    
+    
+            var circle_marker_c7d2e8c9a6efb2375f8568510a6838d4 = L.circleMarker(
+                [55.81979472062201, -4.1248203202171965],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee999", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.475520079624586, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_3708926e7553aaa5ae5d3efd4c915ac8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_441b530190d55fd32c36a347885b085c = $(`<div id="html_441b530190d55fd32c36a347885b085c" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Dalmarnock</h4>         <b>Population:</b> 3,860<br>         <b>Area:</b> 1.19 km²<br>         <b>Density:</b> 3254.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_3708926e7553aaa5ae5d3efd4c915ac8.setContent(html_441b530190d55fd32c36a347885b085c);
+            
+        
+
+        circle_marker_c7d2e8c9a6efb2375f8568510a6838d4.bindPopup(popup_3708926e7553aaa5ae5d3efd4c915ac8)
+        ;
+
+        
+    
+    
+            var circle_marker_8f920052818518cd80c7bce84f8e7941 = L.circleMarker(
+                [55.89133688885288, -4.2688607764839634],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee896", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.629737408994208, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_157bb4da9bdb138e98e8ece938480a54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e2ca774938f8cf772193c1a28182674f = $(`<div id="html_e2ca774938f8cf772193c1a28182674f" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Parkhead West and Barrowfield</h4>         <b>Population:</b> 7,465<br>         <b>Area:</b> 2.20 km²<br>         <b>Density:</b> 3399.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_157bb4da9bdb138e98e8ece938480a54.setContent(html_e2ca774938f8cf772193c1a28182674f);
+            
+        
+
+        circle_marker_8f920052818518cd80c7bce84f8e7941.bindPopup(popup_157bb4da9bdb138e98e8ece938480a54)
+        ;
+
+        
+    
+    
+            var circle_marker_bde853f8248911d91eeb35f8a70f3cc5 = L.circleMarker(
+                [55.83716643579401, -4.143395268571451],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee28a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.32611536431578, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_01a7eb3c0e29a3d9464204697b52e37b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_143c316826dc5cf69c3154968dcc4904 = $(`<div id="html_143c316826dc5cf69c3154968dcc4904" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Parkhead East and Braidfauld North</h4>         <b>Population:</b> 3,596<br>         <b>Area:</b> 0.89 km²<br>         <b>Density:</b> 4051.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_01a7eb3c0e29a3d9464204697b52e37b.setContent(html_143c316826dc5cf69c3154968dcc4904);
+            
+        
+
+        circle_marker_bde853f8248911d91eeb35f8a70f3cc5.bindPopup(popup_01a7eb3c0e29a3d9464204697b52e37b)
+        ;
+
+        
+    
+    
+            var circle_marker_0480476a2e8bafe6d88a92f3fd3989d8 = L.circleMarker(
+                [55.83823619342337, -4.236702406265046],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee999", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.50080744818558, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_e90034699912c6d1da1f1bbb6b48aedc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b55f6842af2173c6f98f87216864a5a1 = $(`<div id="html_b55f6842af2173c6f98f87216864a5a1" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Braidfauld</h4>         <b>Population:</b> 6,652<br>         <b>Area:</b> 2.03 km²<br>         <b>Density:</b> 3278.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_e90034699912c6d1da1f1bbb6b48aedc.setContent(html_b55f6842af2173c6f98f87216864a5a1);
+            
+        
+
+        circle_marker_0480476a2e8bafe6d88a92f3fd3989d8.bindPopup(popup_e90034699912c6d1da1f1bbb6b48aedc)
+        ;
+
+        
+    
+    
+            var circle_marker_510fe51b7408b5ac8ed4f2bca02ed999 = L.circleMarker(
+                [55.8061014061543, -4.386623501142536],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff7ba", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.664520970154253, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_948a5e0b6de364d1e6ae629c6619386a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_92bbd9c898db18fb00b4935d28e03597 = $(`<div id="html_92bbd9c898db18fb00b4935d28e03597" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Shettleston South</h4>         <b>Population:</b> 3,810<br>         <b>Area:</b> 2.44 km²<br>         <b>Density:</b> 1558.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_948a5e0b6de364d1e6ae629c6619386a.setContent(html_92bbd9c898db18fb00b4935d28e03597);
+            
+        
+
+        circle_marker_510fe51b7408b5ac8ed4f2bca02ed999.bindPopup(popup_948a5e0b6de364d1e6ae629c6619386a)
+        ;
+
+        
+    
+    
+            var circle_marker_9b76e849e0570b5749535d211b7b937b = L.circleMarker(
+                [55.81759556440982, -4.1020152594761825],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.079113106146316, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_113a100468c35d31cb98805f8afec9c8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_156ef08afc95551cb299e7e4a1067abf = $(`<div id="html_156ef08afc95551cb299e7e4a1067abf" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Carmyle and Mount Vernon South</h4>         <b>Population:</b> 2,632<br>         <b>Area:</b> 1.35 km²<br>         <b>Density:</b> 1947.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_113a100468c35d31cb98805f8afec9c8.setContent(html_156ef08afc95551cb299e7e4a1067abf);
+            
+        
+
+        circle_marker_9b76e849e0570b5749535d211b7b937b.bindPopup(popup_113a100468c35d31cb98805f8afec9c8)
+        ;
+
+        
+    
+    
+            var circle_marker_f9c0c884fe2d9f2812336b61de79ec66 = L.circleMarker(
+                [55.9515309175425, -4.150991724476015],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.960868858814088, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_d4e86742f644892eb8edfdbdae7b7e85 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_838b9f68f4558f1b2e6aee433bc25d68 = $(`<div id="html_838b9f68f4558f1b2e6aee433bc25d68" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Mount Vernon North and Sandyhills</h4>         <b>Population:</b> 3,525<br>         <b>Area:</b> 1.27 km²<br>         <b>Density:</b> 2772.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_d4e86742f644892eb8edfdbdae7b7e85.setContent(html_838b9f68f4558f1b2e6aee433bc25d68);
+            
+        
+
+        circle_marker_f9c0c884fe2d9f2812336b61de79ec66.bindPopup(popup_d4e86742f644892eb8edfdbdae7b7e85)
+        ;
+
+        
+    
+    
+            var circle_marker_164f6868bf95606572f510639de2338c = L.circleMarker(
+                [55.89380707704932, -4.111101122814575],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedb7c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.090882482932198, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_be3a60179291ec5b9299f54801432652 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b1adbb18c579c6d2d0c1b6b8b2deeead = $(`<div id="html_b1adbb18c579c6d2d0c1b6b8b2deeead" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Baillieston West</h4>         <b>Population:</b> 3,607<br>         <b>Area:</b> 0.76 km²<br>         <b>Density:</b> 4767.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_be3a60179291ec5b9299f54801432652.setContent(html_b1adbb18c579c6d2d0c1b6b8b2deeead);
+            
+        
+
+        circle_marker_164f6868bf95606572f510639de2338c.bindPopup(popup_be3a60179291ec5b9299f54801432652)
+        ;
+
+        
+    
+    
+            var circle_marker_b2be04946f5c5f5bb509031cca789706 = L.circleMarker(
+                [55.8860262011334, -4.123889905097562],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffac0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.249108970430347, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_a137e5986aabd2ebd0c90f7d55ad63f3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d093d8b3654d7de95a0b4fcfc5d4e4f9 = $(`<div id="html_d093d8b3654d7de95a0b4fcfc5d4e4f9" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Baillieston East</h4>         <b>Population:</b> 7,128<br>         <b>Area:</b> 6.09 km²<br>         <b>Density:</b> 1169.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_a137e5986aabd2ebd0c90f7d55ad63f3.setContent(html_d093d8b3654d7de95a0b4fcfc5d4e4f9);
+            
+        
+
+        circle_marker_b2be04946f5c5f5bb509031cca789706.bindPopup(popup_a137e5986aabd2ebd0c90f7d55ad63f3)
+        ;
+
+        
+    
+    
+            var circle_marker_6bfbbb5be84216f7ac426813105472ee = L.circleMarker(
+                [55.79842772963961, -4.147191279675709],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee48e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.075114839799216, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_1fb08ab4477da8c71521a8d7c45964cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3cacf60b5516e282809742532a6417e9 = $(`<div id="html_3cacf60b5516e282809742532a6417e9" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Garrowhill West</h4>         <b>Population:</b> 4,096<br>         <b>Area:</b> 1.07 km²<br>         <b>Density:</b> 3816.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_1fb08ab4477da8c71521a8d7c45964cc.setContent(html_3cacf60b5516e282809742532a6417e9);
+            
+        
+
+        circle_marker_6bfbbb5be84216f7ac426813105472ee.bindPopup(popup_1fb08ab4477da8c71521a8d7c45964cc)
+        ;
+
+        
+    
+    
+            var circle_marker_c47c8fdb2da57881c0c259ab3fad68cd = L.circleMarker(
+                [55.910025359590065, -4.351906666818826],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc7635", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.161015175324536, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_2c1e22af31c9ae874f02c9696606dff3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11122581a235a8014f97bc1a12042987 = $(`<div id="html_11122581a235a8014f97bc1a12042987" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Strathbungo</h4>         <b>Population:</b> 5,917<br>         <b>Area:</b> 0.57 km²<br>         <b>Density:</b> 10452.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_2c1e22af31c9ae874f02c9696606dff3.setContent(html_11122581a235a8014f97bc1a12042987);
+            
+        
+
+        circle_marker_c47c8fdb2da57881c0c259ab3fad68cd.bindPopup(popup_2c1e22af31c9ae874f02c9696606dff3)
+        ;
+
+        
+    
+    
+            var circle_marker_3be328ced33c31121d22c2c25b668e32 = L.circleMarker(
+                [55.79688049875238, -4.256107662364784],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff7b8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.73853420090335, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c70f8b55fc79b46b8f113d0dd48f574f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9a5daad5fde020404c96ba7791e44fbc = $(`<div id="html_9a5daad5fde020404c96ba7791e44fbc" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Maxwell Park</h4>         <b>Population:</b> 5,866<br>         <b>Area:</b> 3.60 km²<br>         <b>Density:</b> 1628.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_c70f8b55fc79b46b8f113d0dd48f574f.setContent(html_9a5daad5fde020404c96ba7791e44fbc);
+            
+        
+
+        circle_marker_3be328ced33c31121d22c2c25b668e32.bindPopup(popup_c70f8b55fc79b46b8f113d0dd48f574f)
+        ;
+
+        
+    
+    
+            var circle_marker_1012c7ce62c594837fabdd3b95f71a3f = L.circleMarker(
+                [55.84009108835153, -4.3376758102402455],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fa4b29", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.87730473031754, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_f1a0b6e20580f1eacf95f02a6de9ce14 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eba750e009793f9fb4b008ad377e12ae = $(`<div id="html_eba750e009793f9fb4b008ad377e12ae" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Shawlands West</h4>         <b>Population:</b> 3,888<br>         <b>Area:</b> 0.32 km²<br>         <b>Density:</b> 12059.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_f1a0b6e20580f1eacf95f02a6de9ce14.setContent(html_eba750e009793f9fb4b008ad377e12ae);
+            
+        
+
+        circle_marker_1012c7ce62c594837fabdd3b95f71a3f.bindPopup(popup_f1a0b6e20580f1eacf95f02a6de9ce14)
+        ;
+
+        
+    
+    
+            var circle_marker_166abfc5ee53991c96c649362d58e94b = L.circleMarker(
+                [55.96210467012732, -4.281487912235164],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8d0026", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.459225435957684, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_bf7fee1d7f6d34e6cf3af160dd40aaa1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9671a74f6dbf34b4d49f8d4ae797d1d0 = $(`<div id="html_9671a74f6dbf34b4d49f8d4ae797d1d0" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Shawlands East</h4>         <b>Population:</b> 3,593<br>         <b>Area:</b> 0.20 km²<br>         <b>Density:</b> 18223.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_bf7fee1d7f6d34e6cf3af160dd40aaa1.setContent(html_9671a74f6dbf34b4d49f8d4ae797d1d0);
+            
+        
+
+        circle_marker_166abfc5ee53991c96c649362d58e94b.bindPopup(popup_bf7fee1d7f6d34e6cf3af160dd40aaa1)
+        ;
+
+        
+    
+    
+            var circle_marker_19a277b156d51c2c615316add24fd1ec = L.circleMarker(
+                [55.89219995197082, -4.384209380008347],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8038", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.817901374187876, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c8322d58604b30a4b0e9d5b93451dd97 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2baf9ae433fffd8241b90f8eee2efc88 = $(`<div id="html_2baf9ae433fffd8241b90f8eee2efc88" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Langside</h4>         <b>Population:</b> 4,573<br>         <b>Area:</b> 0.45 km²<br>         <b>Density:</b> 10130.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_c8322d58604b30a4b0e9d5b93451dd97.setContent(html_2baf9ae433fffd8241b90f8eee2efc88);
+            
+        
+
+        circle_marker_19a277b156d51c2c615316add24fd1ec.bindPopup(popup_c8322d58604b30a4b0e9d5b93451dd97)
+        ;
+
+        
+    
+    
+            var circle_marker_46d81831adf5aefb6b131060c029cdf6 = L.circleMarker(
+                [55.87558994875493, -4.288108064306925],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffac0", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.242547790319392, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_f792e56390be9b311dccbd07847ac9c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_949f68b7d38751096a445c19106b7bac = $(`<div id="html_949f68b7d38751096a445c19106b7bac" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Pollokshaws</h4>         <b>Population:</b> 4,462<br>         <b>Area:</b> 3.83 km²<br>         <b>Density:</b> 1163.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_f792e56390be9b311dccbd07847ac9c5.setContent(html_949f68b7d38751096a445c19106b7bac);
+            
+        
+
+        circle_marker_46d81831adf5aefb6b131060c029cdf6.bindPopup(popup_f792e56390be9b311dccbd07847ac9c5)
+        ;
+
+        
+    
+    
+            var circle_marker_462915ac06f5c76526d13b5453ab0bcf = L.circleMarker(
+                [55.90112285019797, -4.106207346866083],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedb7c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.144413864974062, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_a535cc727aef54c3a0638e35f2957dd9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_19fff5fd6a95b43842971f622c00b777 = $(`<div id="html_19fff5fd6a95b43842971f622c00b777" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Carntyne</h4>         <b>Population:</b> 3,504<br>         <b>Area:</b> 0.73 km²<br>         <b>Density:</b> 4817.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_a535cc727aef54c3a0638e35f2957dd9.setContent(html_19fff5fd6a95b43842971f622c00b777);
+            
+        
+
+        circle_marker_462915ac06f5c76526d13b5453ab0bcf.bindPopup(popup_a535cc727aef54c3a0638e35f2957dd9)
+        ;
+
+        
+    
+    
+            var circle_marker_63ff57e4f8b4ab58dd3a0cfdaceef915 = L.circleMarker(
+                [55.93277038403796, -4.3222390825483545],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedb7a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.197974540936277, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_728a5f4e61e2cf79ae5d1be947c193bc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_66bf8190157dd2cf98b7091f7b0d4f1b = $(`<div id="html_66bf8190157dd2cf98b7091f7b0d4f1b" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Cranhill, Lightburn and Queenslie South</h4>         <b>Population:</b> 6,554<br>         <b>Area:</b> 1.35 km²<br>         <b>Density:</b> 4867.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_728a5f4e61e2cf79ae5d1be947c193bc.setContent(html_66bf8190157dd2cf98b7091f7b0d4f1b);
+            
+        
+
+        circle_marker_63ff57e4f8b4ab58dd3a0cfdaceef915.bindPopup(popup_728a5f4e61e2cf79ae5d1be947c193bc)
+        ;
+
+        
+    
+    
+            var circle_marker_720d024f0b897153ec2bc6f69cb765c9 = L.circleMarker(
+                [55.919399982309244, -4.166578819415429],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee188", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.43341727644654, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_bda662f01a1aa16adb811bb9ba7fb763 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3482b7b6b6a020a3e974533399188d81 = $(`<div id="html_3482b7b6b6a020a3e974533399188d81" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Craigend and Ruchazie</h4>         <b>Population:</b> 5,692<br>         <b>Area:</b> 1.37 km²<br>         <b>Density:</b> 4151.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_bda662f01a1aa16adb811bb9ba7fb763.setContent(html_3482b7b6b6a020a3e974533399188d81);
+            
+        
+
+        circle_marker_720d024f0b897153ec2bc6f69cb765c9.bindPopup(popup_bda662f01a1aa16adb811bb9ba7fb763)
+        ;
+
+        
+    
+    
+            var circle_marker_cd6629e81bec20a216eb767e4fccab2f = L.circleMarker(
+                [55.81000961439282, -4.265297489798257],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.851818541106832, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_2d7357a08a2721f67ce7db3c4788a89f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_95414ee2d2bcb13334e673fe8622de28 = $(`<div id="html_95414ee2d2bcb13334e673fe8622de28" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Riddrie and Hogganfield</h4>         <b>Population:</b> 5,867<br>         <b>Area:</b> 2.20 km²<br>         <b>Density:</b> 2670.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_2d7357a08a2721f67ce7db3c4788a89f.setContent(html_95414ee2d2bcb13334e673fe8622de28);
+            
+        
+
+        circle_marker_cd6629e81bec20a216eb767e4fccab2f.bindPopup(popup_2d7357a08a2721f67ce7db3c4788a89f)
+        ;
+
+        
+    
+    
+            var circle_marker_9fe49ce03ac0f777d39cd2280baf7bba = L.circleMarker(
+                [55.770620048780806, -4.274897754202952],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee692", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.821757190952368, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_200e6314fecb7a4f5955c344ba3a0acf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_596d8408ab8b6c839e9954927f13742f = $(`<div id="html_596d8408ab8b6c839e9954927f13742f" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Blackhill and Barmulloch East</h4>         <b>Population:</b> 4,601<br>         <b>Area:</b> 1.29 km²<br>         <b>Density:</b> 3579.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_200e6314fecb7a4f5955c344ba3a0acf.setContent(html_596d8408ab8b6c839e9954927f13742f);
+            
+        
+
+        circle_marker_9fe49ce03ac0f777d39cd2280baf7bba.bindPopup(popup_200e6314fecb7a4f5955c344ba3a0acf)
+        ;
+
+        
+    
+    
+            var circle_marker_d25bc2f63ba62d1ce0783f14a7021912 = L.circleMarker(
+                [55.827290609611815, -4.114604707742099],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff8bb", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.585611765998152, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_852503ec7a30f97f6c0b1abce088ea5b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_39d8c58e31609fc6a068967e1ba16366 = $(`<div id="html_39d8c58e31609fc6a068967e1ba16366" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Robroyston and Millerston</h4>         <b>Population:</b> 6,352<br>         <b>Area:</b> 4.28 km²<br>         <b>Density:</b> 1484.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_852503ec7a30f97f6c0b1abce088ea5b.setContent(html_39d8c58e31609fc6a068967e1ba16366);
+            
+        
+
+        circle_marker_d25bc2f63ba62d1ce0783f14a7021912.bindPopup(popup_852503ec7a30f97f6c0b1abce088ea5b)
+        ;
+
+        
+    
+    
+            var circle_marker_7779e8fd1d7a62dbec5705589759faaf = L.circleMarker(
+                [55.817748175195135, -4.103173193152186],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feec9f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.121334191105019, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_9cdb040b1f1d7c2f86e6658da15570f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f55ced4805f75a96abeeb66465d2bbd = $(`<div id="html_3f55ced4805f75a96abeeb66465d2bbd" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Balornock</h4>         <b>Population:</b> 3,439<br>         <b>Area:</b> 1.18 km²<br>         <b>Density:</b> 2923.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_9cdb040b1f1d7c2f86e6658da15570f8.setContent(html_3f55ced4805f75a96abeeb66465d2bbd);
+            
+        
+
+        circle_marker_7779e8fd1d7a62dbec5705589759faaf.bindPopup(popup_9cdb040b1f1d7c2f86e6658da15570f8)
+        ;
+
+        
+    
+    
+            var circle_marker_ff62ccf7bfd85d963d305517ffe19c32 = L.circleMarker(
+                [55.80639656871726, -4.235069502978315],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedf84", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.646832247890874, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c372f6c0c6ef1d94524d834ae08f2d8e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_84c4d64453cfb2412d7588b81551ef79 = $(`<div id="html_84c4d64453cfb2412d7588b81551ef79" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Barmulloch</h4>         <b>Population:</b> 3,048<br>         <b>Area:</b> 0.70 km²<br>         <b>Density:</b> 4351.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_c372f6c0c6ef1d94524d834ae08f2d8e.setContent(html_84c4d64453cfb2412d7588b81551ef79);
+            
+        
+
+        circle_marker_ff62ccf7bfd85d963d305517ffe19c32.bindPopup(popup_c372f6c0c6ef1d94524d834ae08f2d8e)
+        ;
+
+        
+    
+    
+            var circle_marker_25874ae952ec6f6debaefb36e7edd3de = L.circleMarker(
+                [55.952781942867006, -4.186277517411103],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed875", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.508142997336904, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_2ea9a70e5b76f685fd22e82af51e1d17 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_921d899c2e5074b28e852fdc09ce644c = $(`<div id="html_921d899c2e5074b28e852fdc09ce644c" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Petershill</h4>         <b>Population:</b> 3,611<br>         <b>Area:</b> 0.70 km²<br>         <b>Density:</b> 5158.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_2ea9a70e5b76f685fd22e82af51e1d17.setContent(html_921d899c2e5074b28e852fdc09ce644c);
+            
+        
+
+        circle_marker_25874ae952ec6f6debaefb36e7edd3de.bindPopup(popup_2ea9a70e5b76f685fd22e82af51e1d17)
+        ;
+
+        
+    
+    
+            var circle_marker_427559f9d1c4d1fe45d8fbe42690005c = L.circleMarker(
+                [55.93947352529453, -4.355360952417781],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.894207199493472, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_61bfd456f47567c4d8f7d71ffff6f7f0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fdc09976e19e90f41e0ae10881676977 = $(`<div id="html_fdc09976e19e90f41e0ae10881676977" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Springburn</h4>         <b>Population:</b> 4,539<br>         <b>Area:</b> 1.67 km²<br>         <b>Density:</b> 2710.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_61bfd456f47567c4d8f7d71ffff6f7f0.setContent(html_fdc09976e19e90f41e0ae10881676977);
+            
+        
+
+        circle_marker_427559f9d1c4d1fe45d8fbe42690005c.bindPopup(popup_61bfd456f47567c4d8f7d71ffff6f7f0)
+        ;
+
+        
+    
+    
+            var circle_marker_ebbcf87997dd9bd9167037751f8d6c84 = L.circleMarker(
+                [55.82713557615969, -4.312787652351631],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.894207199493472, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_3f8b9a937004ffe751b53758e7b5ebb3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_66a9d8a26941bdf78e4c1bc6d0d14918 = $(`<div id="html_66a9d8a26941bdf78e4c1bc6d0d14918" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Springburn</h4>         <b>Population:</b> 4,539<br>         <b>Area:</b> 1.67 km²<br>         <b>Density:</b> 2710.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_3f8b9a937004ffe751b53758e7b5ebb3.setContent(html_66a9d8a26941bdf78e4c1bc6d0d14918);
+            
+        
+
+        circle_marker_ebbcf87997dd9bd9167037751f8d6c84.bindPopup(popup_3f8b9a937004ffe751b53758e7b5ebb3)
+        ;
+
+        
+    
+    
+            var circle_marker_8aca48766bfa1f09a288c2bce1ac0d7f = L.circleMarker(
+                [55.89528773305897, -4.111187190509253],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.894207199493472, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_8be277f57891b4386dd06eb6bdb9d90e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fffb26f863c129c9d9da84d610dc4bf5 = $(`<div id="html_fffb26f863c129c9d9da84d610dc4bf5" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Springburn</h4>         <b>Population:</b> 4,539<br>         <b>Area:</b> 1.67 km²<br>         <b>Density:</b> 2710.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_8be277f57891b4386dd06eb6bdb9d90e.setContent(html_fffb26f863c129c9d9da84d610dc4bf5);
+            
+        
+
+        circle_marker_8aca48766bfa1f09a288c2bce1ac0d7f.bindPopup(popup_8be277f57891b4386dd06eb6bdb9d90e)
+        ;
+
+        
+    
+    
+            var circle_marker_957ef568ff582776f358d9c66917fb48 = L.circleMarker(
+                [55.84332638021213, -4.228045912755124],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec864", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.50189413430241, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_f58e8542d0c3e9780625aac28f81c809 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31dde9de2cb8c77acfcb3629c08fd069 = $(`<div id="html_31dde9de2cb8c77acfcb3629c08fd069" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Springburn East and Cowlairs</h4>         <b>Population:</b> 4,850<br>         <b>Area:</b> 0.80 km²<br>         <b>Density:</b> 6089.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_f58e8542d0c3e9780625aac28f81c809.setContent(html_31dde9de2cb8c77acfcb3629c08fd069);
+            
+        
+
+        circle_marker_957ef568ff582776f358d9c66917fb48.bindPopup(popup_f58e8542d0c3e9780625aac28f81c809)
+        ;
+
+        
+    
+    
+            var circle_marker_f0c78e8d8cbd24728f637d3b2a6fdb8e = L.circleMarker(
+                [55.94710951794811, -4.239141439587718],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b3", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.017195542992253, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_69837fd3556a490928a41d0a055666c8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1e8eb396d5e1f472a355a3b7369c8753 = $(`<div id="html_1e8eb396d5e1f472a355a3b7369c8753" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Cowlairs and Port Dundas</h4>         <b>Population:</b> 4,026<br>         <b>Area:</b> 2.13 km²<br>         <b>Density:</b> 1889.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_69837fd3556a490928a41d0a055666c8.setContent(html_1e8eb396d5e1f472a355a3b7369c8753);
+            
+        
+
+        circle_marker_f0c78e8d8cbd24728f637d3b2a6fdb8e.bindPopup(popup_69837fd3556a490928a41d0a055666c8)
+        ;
+
+        
+    
+    
+            var circle_marker_a911e48a325eaeb6e303e3162db91c55 = L.circleMarker(
+                [55.855970370517475, -4.177407331886281],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffcc6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.95855827796915, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_da21c294384daa2cdb85bd407f5bf13e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1f58228676aab85ae2566d041fe8e37d = $(`<div id="html_1f58228676aab85ae2566d041fe8e37d" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Sighthill</h4>         <b>Population:</b> 900<br>         <b>Area:</b> 1.00 km²<br>         <b>Density:</b> 897.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_da21c294384daa2cdb85bd407f5bf13e.setContent(html_1f58228676aab85ae2566d041fe8e37d);
+            
+        
+
+        circle_marker_a911e48a325eaeb6e303e3162db91c55.bindPopup(popup_da21c294384daa2cdb85bd407f5bf13e)
+        ;
+
+        
+    
+    
+            var circle_marker_5aa5155029b811c565dc157387c2b7c2 = L.circleMarker(
+                [55.81717603329961, -4.384650418127755],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee793", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.765512437675586, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_a97d4573b719bca9045301835c6ffaea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d7b3688af8721056bc8fb4a9ac3e1e1b = $(`<div id="html_d7b3688af8721056bc8fb4a9ac3e1e1b" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Roystonhill, Blochairn, and Provanmill</h4>         <b>Population:</b> 6,023<br>         <b>Area:</b> 1.71 km²<br>         <b>Density:</b> 3526.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_a97d4573b719bca9045301835c6ffaea.setContent(html_d7b3688af8721056bc8fb4a9ac3e1e1b);
+            
+        
+
+        circle_marker_5aa5155029b811c565dc157387c2b7c2.bindPopup(popup_a97d4573b719bca9045301835c6ffaea)
+        ;
+
+        
+    
+    
+            var circle_marker_32daad217a59c03a32eccb095c280bd7 = L.circleMarker(
+                [55.81352550153879, -4.2265467216623085],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9e43", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.10394532079527, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_d340591b67b811b6eecd8a0a66843a8c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6596c239803f4359999bd40f9ae4cfaf = $(`<div id="html_6596c239803f4359999bd40f9ae4cfaf" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Dennistoun North</h4>         <b>Population:</b> 4,707<br>         <b>Area:</b> 0.55 km²<br>         <b>Density:</b> 8525.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_d340591b67b811b6eecd8a0a66843a8c.setContent(html_6596c239803f4359999bd40f9ae4cfaf);
+            
+        
+
+        circle_marker_32daad217a59c03a32eccb095c280bd7.bindPopup(popup_d340591b67b811b6eecd8a0a66843a8c)
+        ;
+
+        
+    
+    
+            var circle_marker_a7c30af2763bc21a867bc96125574ddc = L.circleMarker(
+                [55.87647362683263, -4.250944885124146],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee590", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.977380835059025, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_9b9486624f0caac3d66c118324bee93b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ca860027bbb3b684097e70b5420703dc = $(`<div id="html_ca860027bbb3b684097e70b5420703dc" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Alexandra Parade</h4>         <b>Population:</b> 2,695<br>         <b>Area:</b> 0.72 km²<br>         <b>Density:</b> 3724.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_9b9486624f0caac3d66c118324bee93b.setContent(html_ca860027bbb3b684097e70b5420703dc);
+            
+        
+
+        circle_marker_a7c30af2763bc21a867bc96125574ddc.bindPopup(popup_9b9486624f0caac3d66c118324bee93b)
+        ;
+
+        
+    
+    
+            var circle_marker_1de848527950b6cbea5a48279c6517d3 = L.circleMarker(
+                [55.81674832170459, -4.145984032385515],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fedd80", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.919246031379924, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_4241da7ec07b7ff289390441efc6273e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6f3d81492b90b4b7331083f7d1ff3e11 = $(`<div id="html_6f3d81492b90b4b7331083f7d1ff3e11" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Carntyne West and Haghill</h4>         <b>Population:</b> 4,771<br>         <b>Area:</b> 1.04 km²<br>         <b>Density:</b> 4606.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_4241da7ec07b7ff289390441efc6273e.setContent(html_6f3d81492b90b4b7331083f7d1ff3e11);
+            
+        
+
+        circle_marker_1de848527950b6cbea5a48279c6517d3.bindPopup(popup_4241da7ec07b7ff289390441efc6273e)
+        ;
+
+        
+    
+    
+            var circle_marker_7184678ed68ff3423118303b8b914502 = L.circleMarker(
+                [55.881117198044706, -4.354570181618155],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc7c37", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.971922118811968, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_e7aa167c8e3846297f797e45d32f2489 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d765728720a8c10bccf6ca26b8a125c8 = $(`<div id="html_d765728720a8c10bccf6ca26b8a125c8" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Gallowgate North and Bellgrove</h4>         <b>Population:</b> 6,354<br>         <b>Area:</b> 0.62 km²<br>         <b>Density:</b> 10275.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_e7aa167c8e3846297f797e45d32f2489.setContent(html_d765728720a8c10bccf6ca26b8a125c8);
+            
+        
+
+        circle_marker_7184678ed68ff3423118303b8b914502.bindPopup(popup_e7aa167c8e3846297f797e45d32f2489)
+        ;
+
+        
+    
+    
+            var circle_marker_938d3409be83aa244f8474be0ccad20e = L.circleMarker(
+                [55.94376457672049, -4.113566329017665],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec560", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.73915350318561, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_6c519b4da9ca7cc887be5cbd999ed4ce = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f30445702a99317560f815ddd3dedb78 = $(`<div id="html_f30445702a99317560f815ddd3dedb78" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>City Centre East</h4>         <b>Population:</b> 10,486<br>         <b>Area:</b> 1.66 km²<br>         <b>Density:</b> 6311.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_6c519b4da9ca7cc887be5cbd999ed4ce.setContent(html_f30445702a99317560f815ddd3dedb78);
+            
+        
+
+        circle_marker_938d3409be83aa244f8474be0ccad20e.bindPopup(popup_6c519b4da9ca7cc887be5cbd999ed4ce)
+        ;
+
+        
+    
+    
+            var circle_marker_21149ca1b9ac46f5748f63fde797ede7 = L.circleMarker(
+                [55.84408010102808, -4.377766560427824],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec560", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.73915350318561, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_ff0e98085dfe008ee0bbd6d8840dc61b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b7f1c4161b6748628b8d7d6a54370c3 = $(`<div id="html_3b7f1c4161b6748628b8d7d6a54370c3" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>City Centre East</h4>         <b>Population:</b> 10,486<br>         <b>Area:</b> 1.66 km²<br>         <b>Density:</b> 6311.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_ff0e98085dfe008ee0bbd6d8840dc61b.setContent(html_3b7f1c4161b6748628b8d7d6a54370c3);
+            
+        
+
+        circle_marker_21149ca1b9ac46f5748f63fde797ede7.bindPopup(popup_ff0e98085dfe008ee0bbd6d8840dc61b)
+        ;
+
+        
+    
+    
+            var circle_marker_ad69768a9d3c035833bf17a3cd908a0a = L.circleMarker(
+                [55.80806415183145, -4.346052511705783],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdac49", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.25223403678829, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_909de7edfafb851a36fcca6a7d8b796a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c826601b8444b54b0221e8f63d7a7e03 = $(`<div id="html_c826601b8444b54b0221e8f63d7a7e03" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>City Centre West</h4>         <b>Population:</b> 5,676<br>         <b>Area:</b> 0.73 km²<br>         <b>Density:</b> 7728.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_909de7edfafb851a36fcca6a7d8b796a.setContent(html_c826601b8444b54b0221e8f63d7a7e03);
+            
+        
+
+        circle_marker_ad69768a9d3c035833bf17a3cd908a0a.bindPopup(popup_909de7edfafb851a36fcca6a7d8b796a)
+        ;
+
+        
+    
+    
+            var circle_marker_77b5628f4c6eac2fb953530505a088ec = L.circleMarker(
+                [55.96370752129902, -4.223289468064992],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee896", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.599895897869096, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_64223228e991b62a5de9e44e5c75c666 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f92fc41aacd2ebebbe2742076dd18e0 = $(`<div id="html_4f92fc41aacd2ebebbe2742076dd18e0" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>City Centre South</h4>         <b>Population:</b> 3,945<br>         <b>Area:</b> 1.17 km²<br>         <b>Density:</b> 3371.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_64223228e991b62a5de9e44e5c75c666.setContent(html_4f92fc41aacd2ebebbe2742076dd18e0);
+            
+        
+
+        circle_marker_77b5628f4c6eac2fb953530505a088ec.bindPopup(popup_64223228e991b62a5de9e44e5c75c666)
+        ;
+
+        
+    
+    
+            var circle_marker_7a3b346c43c388118488fdf62993cc8a = L.circleMarker(
+                [55.86610525873529, -4.199236233918773],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd923e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.958366982599948, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_ee35f2347da8c5d1513c5fe67aa4206b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b87c883b363f62a96f96c0c2eaf628a5 = $(`<div id="html_b87c883b363f62a96f96c0c2eaf628a5" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Anderston</h4>         <b>Population:</b> 5,577<br>         <b>Area:</b> 0.60 km²<br>         <b>Density:</b> 9326.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_ee35f2347da8c5d1513c5fe67aa4206b.setContent(html_b87c883b363f62a96f96c0c2eaf628a5);
+            
+        
+
+        circle_marker_7a3b346c43c388118488fdf62993cc8a.bindPopup(popup_ee35f2347da8c5d1513c5fe67aa4206b)
+        ;
+
+        
+    
+    
+            var circle_marker_f6bf126deed0ca293dcb25a17fcd11d7 = L.circleMarker(
+                [55.782381882434755, -4.3312388314997206],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9e43", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.114446126111638, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_d69ffe60b87efae5597fa205e5655931 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_92302001ea7467239b9d6f6c82d3eafd = $(`<div id="html_92302001ea7467239b9d6f6c82d3eafd" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Finnieston and Kelvinhaugh</h4>         <b>Population:</b> 10,513<br>         <b>Area:</b> 1.23 km²<br>         <b>Density:</b> 8535.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_d69ffe60b87efae5597fa205e5655931.setContent(html_92302001ea7467239b9d6f6c82d3eafd);
+            
+        
+
+        circle_marker_f6bf126deed0ca293dcb25a17fcd11d7.bindPopup(popup_d69ffe60b87efae5597fa205e5655931)
+        ;
+
+        
+    
+    
+            var circle_marker_eaaec476ce75de99a41bce98d418374e = L.circleMarker(
+                [55.773623275084944, -4.365834015815863],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e8251f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.585898821572663, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_6467805b3c20ad92f1aef744fb7b60a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0733e13468cb5630dcbe5b27f3ea50c5 = $(`<div id="html_0733e13468cb5630dcbe5b27f3ea50c5" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Woodlands</h4>         <b>Population:</b> 7,387<br>         <b>Area:</b> 0.54 km²<br>         <b>Density:</b> 13659.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_6467805b3c20ad92f1aef744fb7b60a2.setContent(html_0733e13468cb5630dcbe5b27f3ea50c5);
+            
+        
+
+        circle_marker_eaaec476ce75de99a41bce98d418374e.bindPopup(popup_6467805b3c20ad92f1aef744fb7b60a2)
+        ;
+
+        
+    
+    
+            var circle_marker_a35541a68700ed56117a9940d48c3f27 = L.circleMarker(
+                [55.78612982607013, -4.134713805761169],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed875", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.474120945127797, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_7f24a713a5bf66c0f398a31409d656d3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aecdae7263290af1c7a3feb2f4924fe1 = $(`<div id="html_aecdae7263290af1c7a3feb2f4924fe1" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Woodside</h4>         <b>Population:</b> 3,569<br>         <b>Area:</b> 0.70 km²<br>         <b>Density:</b> 5126.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_7f24a713a5bf66c0f398a31409d656d3.setContent(html_aecdae7263290af1c7a3feb2f4924fe1);
+            
+        
+
+        circle_marker_a35541a68700ed56117a9940d48c3f27.bindPopup(popup_7f24a713a5bf66c0f398a31409d656d3)
+        ;
+
+        
+    
+    
+            var circle_marker_96ff7273f6fdf5ec7879640c21c4bd74 = L.circleMarker(
+                [55.88968920834061, -4.327935395663413],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feeb9b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.280507236900938, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_a967b727280421d62a50dc47375ed682 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4cbda27679fe630e05c6e36a8c843e45 = $(`<div id="html_4cbda27679fe630e05c6e36a8c843e45" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Garrowhill East and Swinton</h4>         <b>Population:</b> 4,177<br>         <b>Area:</b> 1.36 km²<br>         <b>Density:</b> 3072.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_a967b727280421d62a50dc47375ed682.setContent(html_4cbda27679fe630e05c6e36a8c843e45);
+            
+        
+
+        circle_marker_96ff7273f6fdf5ec7879640c21c4bd74.bindPopup(popup_a967b727280421d62a50dc47375ed682)
+        ;
+
+        
+    
+    
+            var circle_marker_470d05b0ee42e5cd0bab7ab36bd7e0bd = L.circleMarker(
+                [55.92261587287259, -4.2234442539399675],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffdc9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.823844241873154, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_1ba8ddd3d24d10a5293628a483cec498 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b93bbd8455a1f2dfb40fd49512c04424 = $(`<div id="html_b93bbd8455a1f2dfb40fd49512c04424" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Easterhouse East</h4>         <b>Population:</b> 3,156<br>         <b>Area:</b> 4.09 km²<br>         <b>Density:</b> 771.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_1ba8ddd3d24d10a5293628a483cec498.setContent(html_b93bbd8455a1f2dfb40fd49512c04424);
+            
+        
+
+        circle_marker_470d05b0ee42e5cd0bab7ab36bd7e0bd.bindPopup(popup_1ba8ddd3d24d10a5293628a483cec498)
+        ;
+
+        
+    
+    
+            var circle_marker_946eba9e7a54d134a01e3f6256c5ffda = L.circleMarker(
+                [55.84863199335993, -4.215985546900369],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea2", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.899330829474895, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_e3f01381f443abdb0169f38c59baa007 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d2a1107e151bf332795ae4fd33d7a8b5 = $(`<div id="html_d2a1107e151bf332795ae4fd33d7a8b5" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Central Easterhouse</h4>         <b>Population:</b> 2,382<br>         <b>Area:</b> 0.88 km²<br>         <b>Density:</b> 2715.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_e3f01381f443abdb0169f38c59baa007.setContent(html_d2a1107e151bf332795ae4fd33d7a8b5);
+            
+        
+
+        circle_marker_946eba9e7a54d134a01e3f6256c5ffda.bindPopup(popup_e3f01381f443abdb0169f38c59baa007)
+        ;
+
+        
+    
+    
+            var circle_marker_8c85eb9b1ccec3aa4b48ee354cd0159e = L.circleMarker(
+                [55.77690554123039, -4.276032525399239],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffdc9", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.847970034994562, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_46a0f369bc9bc4fbf5c3f473b6f23528 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_77ffbf9e3655b7b73258a9af6cb1e2f9 = $(`<div id="html_77ffbf9e3655b7b73258a9af6cb1e2f9" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Garthamlock, Auchinlea and Gartloch</h4>         <b>Population:</b> 4,631<br>         <b>Area:</b> 5.83 km²<br>         <b>Density:</b> 794.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_46a0f369bc9bc4fbf5c3f473b6f23528.setContent(html_77ffbf9e3655b7b73258a9af6cb1e2f9);
+            
+        
+
+        circle_marker_8c85eb9b1ccec3aa4b48ee354cd0159e.bindPopup(popup_46a0f369bc9bc4fbf5c3f473b6f23528)
+        ;
+
+        
+    
+    
+            var circle_marker_102e7729daa761ec4f644d39a257763e = L.circleMarker(
+                [55.84052385730131, -4.226698313212633],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee48d", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.14942243083008, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_31bb9c8315e7142cc6252253b75381fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1fbfd8ec8be6e0cee95407f9597ea4aa = $(`<div id="html_1fbfd8ec8be6e0cee95407f9597ea4aa" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>North Barlanark and Easterhouse South</h4>         <b>Population:</b> 3,581<br>         <b>Area:</b> 0.92 km²<br>         <b>Density:</b> 3885.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_31bb9c8315e7142cc6252253b75381fc.setContent(html_1fbfd8ec8be6e0cee95407f9597ea4aa);
+            
+        
+
+        circle_marker_102e7729daa761ec4f644d39a257763e.bindPopup(popup_31bb9c8315e7142cc6252253b75381fc)
+        ;
+
+        
+    
+    
+            var circle_marker_ca0db31594e3bc73ffb30946a64a8d78 = L.circleMarker(
+                [55.963424276048016, -4.244965185340413],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3af", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.283336211762938, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_1f22cd08f5c10c4c4b8f4637d645a582 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_72560ef930d7f5d781c02c8ca4561438 = $(`<div id="html_72560ef930d7f5d781c02c8ca4561438" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Barlanark</h4>         <b>Population:</b> 4,916<br>         <b>Area:</b> 2.30 km²<br>         <b>Density:</b> 2138.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_1f22cd08f5c10c4c4b8f4637d645a582.setContent(html_72560ef930d7f5d781c02c8ca4561438);
+            
+        
+
+        circle_marker_ca0db31594e3bc73ffb30946a64a8d78.bindPopup(popup_1f22cd08f5c10c4c4b8f4637d645a582)
+        ;
+
+        
+    
+    
+            var circle_marker_d21f108ebb397f861b5260fa7eab032d = L.circleMarker(
+                [55.87002286901983, -4.121388122679072],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee28a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.262266951626952, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_71bbce433604c2da0202e70dc74605fa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_54574713524a5a81eb95f7d59bbf352d = $(`<div id="html_54574713524a5a81eb95f7d59bbf352d" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Greenfield</h4>         <b>Population:</b> 5,139<br>         <b>Area:</b> 1.29 km²<br>         <b>Density:</b> 3991.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_71bbce433604c2da0202e70dc74605fa.setContent(html_54574713524a5a81eb95f7d59bbf352d);
+            
+        
+
+        circle_marker_d21f108ebb397f861b5260fa7eab032d.bindPopup(popup_71bbce433604c2da0202e70dc74605fa)
+        ;
+
+        
+    
+    
+            var circle_marker_94f6f07b61eb7ff933b9b1727551edd6 = L.circleMarker(
+                [55.95841567552272, -4.340522240172939],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec763", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.562587354021016, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_61359c367ee63512c0ec3c8b2ace1845 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2116eca680125dd7195e01238ccbf2c2 = $(`<div id="html_2116eca680125dd7195e01238ccbf2c2" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Shettleston North</h4>         <b>Population:</b> 4,772<br>         <b>Area:</b> 0.78 km²<br>         <b>Density:</b> 6145.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_61359c367ee63512c0ec3c8b2ace1845.setContent(html_2116eca680125dd7195e01238ccbf2c2);
+            
+        
+
+        circle_marker_94f6f07b61eb7ff933b9b1727551edd6.bindPopup(popup_61359c367ee63512c0ec3c8b2ace1845)
+        ;
+
+        
+    
+    
+            var circle_marker_a0cc0b1a45b207d956984d0ebb9de333 = L.circleMarker(
+                [55.936355940446894, -4.186942459763176],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8d3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.27046916502955, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_4e98fa5591a718323abc10e888e2503a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5edd258c97bb0d39fbb1e1dce024948b = $(`<div id="html_5edd258c97bb0d39fbb1e1dce024948b" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Tollcross</h4>         <b>Population:</b> 4,052<br>         <b>Area:</b> 0.42 km²<br>         <b>Density:</b> 9618.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_4e98fa5591a718323abc10e888e2503a.setContent(html_5edd258c97bb0d39fbb1e1dce024948b);
+            
+        
+
+        circle_marker_a0cc0b1a45b207d956984d0ebb9de333.bindPopup(popup_4e98fa5591a718323abc10e888e2503a)
+        ;
+
+        
+    
+    
+            var circle_marker_0893620b31dd59f3dc6d9d45bfe53308 = L.circleMarker(
+                [55.76649620438856, -4.330194214215246],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee186", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.505968155659943, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c5d1e921cee5fbd16138e3a3652e1b33 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_98e42367ec8489c1d6516b081dbc59d8 = $(`<div id="html_98e42367ec8489c1d6516b081dbc59d8" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Old Shettleston and Parkhead North</h4>         <b>Population:</b> 4,848<br>         <b>Area:</b> 1.15 km²<br>         <b>Density:</b> 4219.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_c5d1e921cee5fbd16138e3a3652e1b33.setContent(html_98e42367ec8489c1d6516b081dbc59d8);
+            
+        
+
+        circle_marker_0893620b31dd59f3dc6d9d45bfe53308.bindPopup(popup_c5d1e921cee5fbd16138e3a3652e1b33)
+        ;
+
+        
+    
+    
+            var circle_marker_273362e580205f16cf613b478583cd36 = L.circleMarker(
+                [55.90834436387203, -4.283064245962624],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff2ad", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.330173822026739, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_7cc4a5fd1324726e9cafea913a421d5f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3e3a234298db8ad7dae0cc4945e6fb3a = $(`<div id="html_3e3a234298db8ad7dae0cc4945e6fb3a" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Summerston North</h4>         <b>Population:</b> 3,445<br>         <b>Area:</b> 1.58 km²<br>         <b>Density:</b> 2182.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_7cc4a5fd1324726e9cafea913a421d5f.setContent(html_3e3a234298db8ad7dae0cc4945e6fb3a);
+            
+        
+
+        circle_marker_273362e580205f16cf613b478583cd36.bindPopup(popup_7cc4a5fd1324726e9cafea913a421d5f)
+        ;
+
+        
+    
+    
+            var circle_marker_5c76cafbaa4b57c1235537ee39571dba = L.circleMarker(
+                [55.90054207380531, -4.200292933112009],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fede81", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.838186751688028, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_bddb9a5f85a96d1e18a74333e9800be4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1db6e670ff12b9455ec5ee7b0a127319 = $(`<div id="html_1db6e670ff12b9455ec5ee7b0a127319" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Maryhill East</h4>         <b>Population:</b> 3,448<br>         <b>Area:</b> 0.76 km²<br>         <b>Density:</b> 4530.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_bddb9a5f85a96d1e18a74333e9800be4.setContent(html_1db6e670ff12b9455ec5ee7b0a127319);
+            
+        
+
+        circle_marker_5c76cafbaa4b57c1235537ee39571dba.bindPopup(popup_bddb9a5f85a96d1e18a74333e9800be4)
+        ;
+
+        
+    
+    
+            var circle_marker_96fa8146d8982ea57341e10c34ee55f3 = L.circleMarker(
+                [55.871594066081755, -4.311800876060372],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fecd69", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.18431408924358, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_f302c5208e4f6890d5d0ad662e1fbc8b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f367c4e61594e480fcf7c467d61a136 = $(`<div id="html_9f367c4e61594e480fcf7c467d61a136" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Maryhill West</h4>         <b>Population:</b> 3,064<br>         <b>Area:</b> 0.53 km²<br>         <b>Density:</b> 5791.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_f302c5208e4f6890d5d0ad662e1fbc8b.setContent(html_9f367c4e61594e480fcf7c467d61a136);
+            
+        
+
+        circle_marker_96fa8146d8982ea57341e10c34ee55f3.bindPopup(popup_f302c5208e4f6890d5d0ad662e1fbc8b)
+        ;
+
+        
+    
+    
+            var circle_marker_168800ea15e52530484bc60164dbfed5 = L.circleMarker(
+                [55.817565037990505, -4.306946841118444],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9941", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.48517784195053, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_18fbcb73322c13e3280001179dc4a092 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89c91cea1fed48082abf19ce79bf0747 = $(`<div id="html_89c91cea1fed48082abf19ce79bf0747" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Wyndford</h4>         <b>Population:</b> 4,306<br>         <b>Area:</b> 0.48 km²<br>         <b>Density:</b> 8882.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_18fbcb73322c13e3280001179dc4a092.setContent(html_89c91cea1fed48082abf19ce79bf0747);
+            
+        
+
+        circle_marker_168800ea15e52530484bc60164dbfed5.bindPopup(popup_18fbcb73322c13e3280001179dc4a092)
+        ;
+
+        
+    
+    
+            var circle_marker_0c5838b42782cb03207151a39b4678f3 = L.circleMarker(
+                [55.892392359715956, -4.17624065227568],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed571", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.7196506378359, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_4c1fc2460aab50c77f1666e20011d325 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2a1e4424780f04faf9bd0e0a35d1e97 = $(`<div id="html_b2a1e4424780f04faf9bd0e0a35d1e97" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kelvindale</h4>         <b>Population:</b> 6,166<br>         <b>Area:</b> 1.15 km²<br>         <b>Density:</b> 5356.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_4c1fc2460aab50c77f1666e20011d325.setContent(html_b2a1e4424780f04faf9bd0e0a35d1e97);
+            
+        
+
+        circle_marker_0c5838b42782cb03207151a39b4678f3.bindPopup(popup_4c1fc2460aab50c77f1666e20011d325)
+        ;
+
+        
+    
+    
+            var circle_marker_bac2a3775dd14d9e8d2681cf4bba71f1 = L.circleMarker(
+                [55.78651043471917, -4.380037065652053],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9e43", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.1644215981349, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_ac63dfe1865003acab5af5ef6cf6a4af = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc80ae838a2f6503dd0d4e733e7c2345 = $(`<div id="html_cc80ae838a2f6503dd0d4e733e7c2345" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>North Kelvin</h4>         <b>Population:</b> 4,187<br>         <b>Area:</b> 0.49 km²<br>         <b>Density:</b> 8582.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_ac63dfe1865003acab5af5ef6cf6a4af.setContent(html_cc80ae838a2f6503dd0d4e733e7c2345);
+            
+        
+
+        circle_marker_bac2a3775dd14d9e8d2681cf4bba71f1.bindPopup(popup_ac63dfe1865003acab5af5ef6cf6a4af)
+        ;
+
+        
+    
+    
+            var circle_marker_4e6e50b264f82cb07686d8588cec419b = L.circleMarker(
+                [55.85115305013382, -4.264314343214425],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8d3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.25912512259311, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_45d0ce19998a0272de4c70abf10a9b1a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6379b55f3f187f7766661b5814772341 = $(`<div id="html_6379b55f3f187f7766661b5814772341" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kelvingrove and University</h4>         <b>Population:</b> 6,546<br>         <b>Area:</b> 0.68 km²<br>         <b>Density:</b> 9607.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_45d0ce19998a0272de4c70abf10a9b1a.setContent(html_6379b55f3f187f7766661b5814772341);
+            
+        
+
+        circle_marker_4e6e50b264f82cb07686d8588cec419b.bindPopup(popup_45d0ce19998a0272de4c70abf10a9b1a)
+        ;
+
+        
+    
+    
+            var circle_marker_e172d9a6ec74723c831846d5cbd17b6e = L.circleMarker(
+                [55.85494474126584, -4.102263667743667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd9c42", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.266363398121445, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_2038f8cd01d0d914a2dfb277374192f9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_929552009d4f669fb65a182800d61b30 = $(`<div id="html_929552009d4f669fb65a182800d61b30" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Hillhead</h4>         <b>Population:</b> 8,319<br>         <b>Area:</b> 0.96 km²<br>         <b>Density:</b> 8677.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_2038f8cd01d0d914a2dfb277374192f9.setContent(html_929552009d4f669fb65a182800d61b30);
+            
+        
+
+        circle_marker_e172d9a6ec74723c831846d5cbd17b6e.bindPopup(popup_2038f8cd01d0d914a2dfb277374192f9)
+        ;
+
+        
+    
+    
+            var circle_marker_43d5c15859c097b0aa6b37212c33a599 = L.circleMarker(
+                [55.95496318550421, -4.102971065643472],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc6e33", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.49336347031856, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_337b0d29510e03c83d3cbfc584b408db = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6aaae7bf2beead48edc33ce7181bfe3d = $(`<div id="html_6aaae7bf2beead48edc33ce7181bfe3d" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Glasgow Harbour and Partick South</h4>         <b>Population:</b> 5,311<br>         <b>Area:</b> 0.49 km²<br>         <b>Density:</b> 10763.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_337b0d29510e03c83d3cbfc584b408db.setContent(html_6aaae7bf2beead48edc33ce7181bfe3d);
+            
+        
+
+        circle_marker_43d5c15859c097b0aa6b37212c33a599.bindPopup(popup_337b0d29510e03c83d3cbfc584b408db)
+        ;
+
+        
+    
+    
+            var circle_marker_8b79241d6c61dd8c9d976a3c020de3d1 = L.circleMarker(
+                [55.93937058807563, -4.379821783670111],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc5e2e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.077852528297594, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_f0465f703c60152bd165cbf9a794925e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_648da56352e75fcf1b5958a4e8b4ffb4 = $(`<div id="html_648da56352e75fcf1b5958a4e8b4ffb4" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Partick</h4>         <b>Population:</b> 4,024<br>         <b>Area:</b> 0.36 km²<br>         <b>Density:</b> 11310.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_f0465f703c60152bd165cbf9a794925e.setContent(html_648da56352e75fcf1b5958a4e8b4ffb4);
+            
+        
+
+        circle_marker_8b79241d6c61dd8c9d976a3c020de3d1.bindPopup(popup_f0465f703c60152bd165cbf9a794925e)
+        ;
+
+        
+    
+    
+            var circle_marker_1627962f91e4eab4be50f350e21ef0c3 = L.circleMarker(
+                [55.81687781015022, -4.337853706319888],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc6e33", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.451965296185236, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_19520133f13fe2cef6037dd3ac6beb65 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_83ad7ac0b3bca73f99a0d8532927bd4f = $(`<div id="html_83ad7ac0b3bca73f99a0d8532927bd4f" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Partickhill and Hyndland</h4>         <b>Population:</b> 5,803<br>         <b>Area:</b> 0.54 km²<br>         <b>Density:</b> 10724.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_19520133f13fe2cef6037dd3ac6beb65.setContent(html_83ad7ac0b3bca73f99a0d8532927bd4f);
+            
+        
+
+        circle_marker_1627962f91e4eab4be50f350e21ef0c3.bindPopup(popup_19520133f13fe2cef6037dd3ac6beb65)
+        ;
+
+        
+    
+    
+            var circle_marker_38c2743ceb424b5d019c0d89a7aaadea = L.circleMarker(
+                [55.864317222610055, -4.32223987557488],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc863a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.58143403923488, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_debac92a859373e1aa3ba6ea96b98084 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_202a08a4c4563266f9058fa0a2b7535e = $(`<div id="html_202a08a4c4563266f9058fa0a2b7535e" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Dowanhill</h4>         <b>Population:</b> 4,589<br>         <b>Area:</b> 0.46 km²<br>         <b>Density:</b> 9909.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_debac92a859373e1aa3ba6ea96b98084.setContent(html_202a08a4c4563266f9058fa0a2b7535e);
+            
+        
+
+        circle_marker_38c2743ceb424b5d019c0d89a7aaadea.bindPopup(popup_debac92a859373e1aa3ba6ea96b98084)
+        ;
+
+        
+    
+    
+            var circle_marker_1607ecb832371130ef88315ebf045338 = L.circleMarker(
+                [55.799930376106026, -4.121822186601888],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feea9a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.367818711358145, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_1a78d786780e82e6b3c9221f014a92e9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_248a485761432daf328c293a664e6de6 = $(`<div id="html_248a485761432daf328c293a664e6de6" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kelvinside and Jordanhill</h4>         <b>Population:</b> 5,717<br>         <b>Area:</b> 1.81 km²<br>         <b>Density:</b> 3154.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_1a78d786780e82e6b3c9221f014a92e9.setContent(html_248a485761432daf328c293a664e6de6);
+            
+        
+
+        circle_marker_1607ecb832371130ef88315ebf045338.bindPopup(popup_1a78d786780e82e6b3c9221f014a92e9)
+        ;
+
+        
+    
+    
+            var circle_marker_34bf5de1e07512d4d827fde013c33254 = L.circleMarker(
+                [55.94672556786896, -4.137540747894068],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feea9a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.367818711358145, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_fd9a46367764f810c636b41c78fe4c3b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9eec4e5c8fd7ef3c43bf1a80351f4731 = $(`<div id="html_9eec4e5c8fd7ef3c43bf1a80351f4731" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kelvinside and Jordanhill</h4>         <b>Population:</b> 5,717<br>         <b>Area:</b> 1.81 km²<br>         <b>Density:</b> 3154.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_fd9a46367764f810c636b41c78fe4c3b.setContent(html_9eec4e5c8fd7ef3c43bf1a80351f4731);
+            
+        
+
+        circle_marker_34bf5de1e07512d4d827fde013c33254.bindPopup(popup_fd9a46367764f810c636b41c78fe4c3b)
+        ;
+
+        
+    
+    
+            var circle_marker_e9ac34016c23b76c5332b1c729a74378 = L.circleMarker(
+                [55.93830371396735, -4.138018927254637],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feea9a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.367818711358145, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_39ef5f3209ef6b390ebf9154ff6c271e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9b48c2ecfc08bcac870f240a694138f0 = $(`<div id="html_9b48c2ecfc08bcac870f240a694138f0" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kelvinside and Jordanhill</h4>         <b>Population:</b> 5,717<br>         <b>Area:</b> 1.81 km²<br>         <b>Density:</b> 3154.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_39ef5f3209ef6b390ebf9154ff6c271e.setContent(html_9b48c2ecfc08bcac870f240a694138f0);
+            
+        
+
+        circle_marker_e9ac34016c23b76c5332b1c729a74378.bindPopup(popup_39ef5f3209ef6b390ebf9154ff6c271e)
+        ;
+
+        
+    
+    
+            var circle_marker_881b6408db17ed4e9290f4e4a81fdcc4 = L.circleMarker(
+                [55.82388895828972, -4.290941873378335],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feea9a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.367818711358145, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_12fb45ed5f8384ed386675b3decc02eb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5cc15eb2d20bcfd14f1273c04e2e324b = $(`<div id="html_5cc15eb2d20bcfd14f1273c04e2e324b" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kelvinside and Jordanhill</h4>         <b>Population:</b> 5,717<br>         <b>Area:</b> 1.81 km²<br>         <b>Density:</b> 3154.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_12fb45ed5f8384ed386675b3decc02eb.setContent(html_5cc15eb2d20bcfd14f1273c04e2e324b);
+            
+        
+
+        circle_marker_881b6408db17ed4e9290f4e4a81fdcc4.bindPopup(popup_12fb45ed5f8384ed386675b3decc02eb)
+        ;
+
+        
+    
+    
+            var circle_marker_99913b3e5b49e9f4ac4177c91b1ab8d5 = L.circleMarker(
+                [55.8919898989732, -4.354475950292831],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feea9a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.367818711358145, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_fcd0967c11e0e3d4d3cad49682b1acc6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_773738143c5c7643958b755f9f7f37f2 = $(`<div id="html_773738143c5c7643958b755f9f7f37f2" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kelvinside and Jordanhill</h4>         <b>Population:</b> 5,717<br>         <b>Area:</b> 1.81 km²<br>         <b>Density:</b> 3154.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_fcd0967c11e0e3d4d3cad49682b1acc6.setContent(html_773738143c5c7643958b755f9f7f37f2);
+            
+        
+
+        circle_marker_99913b3e5b49e9f4ac4177c91b1ab8d5.bindPopup(popup_fcd0967c11e0e3d4d3cad49682b1acc6)
+        ;
+
+        
+    
+    
+            var circle_marker_9a6054992d328edc1f7774ff2669d6f7 = L.circleMarker(
+                [55.88599404228763, -4.1516765136080584],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feea9a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.367818711358145, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_f2a5f377d67b89bba2ccc077884a7da1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b7697cace1e2130bac73c60b54a82f8 = $(`<div id="html_3b7697cace1e2130bac73c60b54a82f8" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Kelvinside and Jordanhill</h4>         <b>Population:</b> 5,717<br>         <b>Area:</b> 1.81 km²<br>         <b>Density:</b> 3154.0 inhabitants/km²     </div>     </div>`)[0];
+                popup_f2a5f377d67b89bba2ccc077884a7da1.setContent(html_3b7697cace1e2130bac73c60b54a82f8);
+            
+        
+
+        circle_marker_9a6054992d328edc1f7774ff2669d6f7.bindPopup(popup_f2a5f377d67b89bba2ccc077884a7da1)
+        ;
+
+        
+    
+    
+            var circle_marker_40fc015886af2c0d19e3ca075c4e7786 = L.circleMarker(
+                [55.79476785370992, -4.190738022473789],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdaf4a", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.08784076855194, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_1aa48a8ef425bb0b3ecb890928f8b578 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_525f17b427981abed046a48e39afd652 = $(`<div id="html_525f17b427981abed046a48e39afd652" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Broomhill</h4>         <b>Population:</b> 4,639<br>         <b>Area:</b> 0.61 km²<br>         <b>Density:</b> 7574.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_1aa48a8ef425bb0b3ecb890928f8b578.setContent(html_525f17b427981abed046a48e39afd652);
+            
+        
+
+        circle_marker_40fc015886af2c0d19e3ca075c4e7786.bindPopup(popup_1aa48a8ef425bb0b3ecb890928f8b578)
+        ;
+
+        
+    
+    
+            var circle_marker_ee6a94e51a200a94f823ac0adf8d699b = L.circleMarker(
+                [55.91670216001503, -4.218296670282215],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee48e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.077386247450624, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_32e12d6354e4bf9ddeaf3a7087076752 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c40594bcc355a1212451920a53e6da1 = $(`<div id="html_0c40594bcc355a1212451920a53e6da1" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Victoria Park</h4>         <b>Population:</b> 2,705<br>         <b>Area:</b> 0.71 km²<br>         <b>Density:</b> 3818.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_32e12d6354e4bf9ddeaf3a7087076752.setContent(html_0c40594bcc355a1212451920a53e6da1);
+            
+        
+
+        circle_marker_ee6a94e51a200a94f823ac0adf8d699b.bindPopup(popup_32e12d6354e4bf9ddeaf3a7087076752)
+        ;
+
+        
+    
+    
+            var circle_marker_269d891d971dd5e70f1ccd9a6ef3c801 = L.circleMarker(
+                [55.87207580602392, -4.105630080910549],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb54f", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.706588571643103, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c0d476fa2450f94ea66cdd39f23f4923 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71fc46015e5d98dea8a506b663648532 = $(`<div id="html_71fc46015e5d98dea8a506b663648532" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Whiteinch</h4>         <b>Population:</b> 3,742<br>         <b>Area:</b> 0.52 km²<br>         <b>Density:</b> 7217.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_c0d476fa2450f94ea66cdd39f23f4923.setContent(html_71fc46015e5d98dea8a506b663648532);
+            
+        
+
+        circle_marker_269d891d971dd5e70f1ccd9a6ef3c801.bindPopup(popup_c0d476fa2450f94ea66cdd39f23f4923)
+        ;
+
+        
+    
+    
+            var circle_marker_d734ebffc9e479cd564ef974d8c5567d = L.circleMarker(
+                [55.91992529572611, -4.205607104686781],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#febb56", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.349895305148163, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_fe02295ba5c4cbf737b73aa233d79f1d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a6130f9aae469ea79d0d83c2b76f7a0e = $(`<div id="html_a6130f9aae469ea79d0d83c2b76f7a0e" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Scotstoun North and East</h4>         <b>Population:</b> 4,595<br>         <b>Area:</b> 0.67 km²<br>         <b>Density:</b> 6883.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_fe02295ba5c4cbf737b73aa233d79f1d.setContent(html_a6130f9aae469ea79d0d83c2b76f7a0e);
+            
+        
+
+        circle_marker_d734ebffc9e479cd564ef974d8c5567d.bindPopup(popup_fe02295ba5c4cbf737b73aa233d79f1d)
+        ;
+
+        
+    
+    
+            var circle_marker_95eacb48099515596448098fa48bf289 = L.circleMarker(
+                [55.87027073443903, -4.399453067854353],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee691", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.897110779745832, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_55aca8b0b47293f4a42209f9bb592e0c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5cd8ef81af929b15adf5a98629c0115a = $(`<div id="html_5cd8ef81af929b15adf5a98629c0115a" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Scotstoun South and West</h4>         <b>Population:</b> 3,637<br>         <b>Area:</b> 1.00 km²<br>         <b>Density:</b> 3649.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_55aca8b0b47293f4a42209f9bb592e0c.setContent(html_5cd8ef81af929b15adf5a98629c0115a);
+            
+        
+
+        circle_marker_95eacb48099515596448098fa48bf289.bindPopup(popup_55aca8b0b47293f4a42209f9bb592e0c)
+        ;
+
+        
+    
+    
+            var circle_marker_c92141a92580dfd1189830e3a6f255cc = L.circleMarker(
+                [55.76431437922559, -4.1566687594653615],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feda78", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.370789642882457, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_598895b4a45c8cc53cae44ec7a468d06 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_52d5f9cf9c44c1c1c573ba2b31844fe2 = $(`<div id="html_52d5f9cf9c44c1c1c573ba2b31844fe2" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Yoker South</h4>         <b>Population:</b> 4,856<br>         <b>Area:</b> 0.97 km²<br>         <b>Density:</b> 5029.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_598895b4a45c8cc53cae44ec7a468d06.setContent(html_52d5f9cf9c44c1c1c573ba2b31844fe2);
+            
+        
+
+        circle_marker_c92141a92580dfd1189830e3a6f255cc.bindPopup(popup_598895b4a45c8cc53cae44ec7a468d06)
+        ;
+
+        
+    
+    
+            var circle_marker_a40e4098ef950b75764ce5518973e0be = L.circleMarker(
+                [55.82903121140093, -4.311986374340007],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed06c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.053237426443253, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_0a7e905c0577270fac13e10b2fce5057 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86093ad4f6e60b5e2a85dc6192b1d6cd = $(`<div id="html_86093ad4f6e60b5e2a85dc6192b1d6cd" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Yoker North</h4>         <b>Population:</b> 2,970<br>         <b>Area:</b> 0.52 km²<br>         <b>Density:</b> 5668.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_0a7e905c0577270fac13e10b2fce5057.setContent(html_86093ad4f6e60b5e2a85dc6192b1d6cd);
+            
+        
+
+        circle_marker_a40e4098ef950b75764ce5518973e0be.bindPopup(popup_0a7e905c0577270fac13e10b2fce5057)
+        ;
+
+        
+    
+    
+            var circle_marker_2ae27a710ed829b621a61b3ca8b80e6c = L.circleMarker(
+                [55.76809534847716, -4.202783385510177],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed06c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.042523865476085, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_bc7cbc81e68de7dc792d8aa5dc3903d4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_635c82751d70e3d9b59b133d07f7d81d = $(`<div id="html_635c82751d70e3d9b59b133d07f7d81d" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Knightswood West</h4>         <b>Population:</b> 2,551<br>         <b>Area:</b> 0.45 km²<br>         <b>Density:</b> 5658.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_bc7cbc81e68de7dc792d8aa5dc3903d4.setContent(html_635c82751d70e3d9b59b133d07f7d81d);
+            
+        
+
+        circle_marker_2ae27a710ed829b621a61b3ca8b80e6c.bindPopup(popup_bc7cbc81e68de7dc792d8aa5dc3903d4)
+        ;
+
+        
+    
+    
+            var circle_marker_438ca1c49376a311dce43f13bde52c9f = L.circleMarker(
+                [55.95001972325292, -4.120120998821869],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec560", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.72153981118297, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_6fb3a56320a9acfb70d26d0ad2508b16 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_41ca205867a72a4099c55e64476b7548 = $(`<div id="html_41ca205867a72a4099c55e64476b7548" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Knightswood East</h4>         <b>Population:</b> 3,921<br>         <b>Area:</b> 0.62 km²<br>         <b>Density:</b> 6294.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_6fb3a56320a9acfb70d26d0ad2508b16.setContent(html_41ca205867a72a4099c55e64476b7548);
+            
+        
+
+        circle_marker_438ca1c49376a311dce43f13bde52c9f.bindPopup(popup_6fb3a56320a9acfb70d26d0ad2508b16)
+        ;
+
+        
+    
+    
+            var circle_marker_5fda481f6bfad49d4110148f8ef59a67 = L.circleMarker(
+                [55.939944375564636, -4.36151266568199],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee692", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.832946958483209, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_c3b9b1e83a9c2424e0fef89d8736ec86 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b30874d8d98877066529b8d0cb5a131 = $(`<div id="html_5b30874d8d98877066529b8d0cb5a131" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Knightswood Park West</h4>         <b>Population:</b> 3,354<br>         <b>Area:</b> 0.93 km²<br>         <b>Density:</b> 3589.5 inhabitants/km²     </div>     </div>`)[0];
+                popup_c3b9b1e83a9c2424e0fef89d8736ec86.setContent(html_5b30874d8d98877066529b8d0cb5a131);
+            
+        
+
+        circle_marker_5fda481f6bfad49d4110148f8ef59a67.bindPopup(popup_c3b9b1e83a9c2424e0fef89d8736ec86)
+        ;
+
+        
+    
+    
+            var circle_marker_c7ca76c1dd57da745411eb192a27c30f = L.circleMarker(
+                [55.930533105872236, -4.3671713988742695],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb853", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.502909486617693, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_d6aec0c279f4fa99a43ac16a4025330a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_28be5fdaa660f056db6ae4d50515032b = $(`<div id="html_28be5fdaa660f056db6ae4d50515032b" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Knightswood Park East</h4>         <b>Population:</b> 3,870<br>         <b>Area:</b> 0.55 km²<br>         <b>Density:</b> 7026.4 inhabitants/km²     </div>     </div>`)[0];
+                popup_d6aec0c279f4fa99a43ac16a4025330a.setContent(html_28be5fdaa660f056db6ae4d50515032b);
+            
+        
+
+        circle_marker_c7ca76c1dd57da745411eb192a27c30f.bindPopup(popup_d6aec0c279f4fa99a43ac16a4025330a)
+        ;
+
+        
+    
+    
+            var circle_marker_0cc300f9275b339148d944d8563ff270 = L.circleMarker(
+                [55.825702825080526, -4.369689206687175],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c50523", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.03678573623787, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_9522dec1420eb2ddaad0940dedb0c4c4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b3fd44fa391d0c6222339476a1f7740 = $(`<div id="html_7b3fd44fa391d0c6222339476a1f7740" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Dennistoun</h4>         <b>Population:</b> 4,454<br>         <b>Area:</b> 0.28 km²<br>         <b>Density:</b> 15954.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_9522dec1420eb2ddaad0940dedb0c4c4.setContent(html_7b3fd44fa391d0c6222339476a1f7740);
+            
+        
+
+        circle_marker_0cc300f9275b339148d944d8563ff270.bindPopup(popup_9522dec1420eb2ddaad0940dedb0c4c4)
+        ;
+
+        
+    
+    
+            var circle_marker_92899223e408cf74075ce60eddc62aa1 = L.circleMarker(
+                [55.77578503329883, -4.235832907734555],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.01993618409307, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_d8835e7e24f9972faf56cade531a4ac5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4de779ec0a4828b12a6bf32d0bb856b8 = $(`<div id="html_4de779ec0a4828b12a6bf32d0bb856b8" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Anniesland East</h4>         <b>Population:</b> 4,242<br>         <b>Area:</b> 1.50 km²<br>         <b>Density:</b> 2828.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_d8835e7e24f9972faf56cade531a4ac5.setContent(html_4de779ec0a4828b12a6bf32d0bb856b8);
+            
+        
+
+        circle_marker_92899223e408cf74075ce60eddc62aa1.bindPopup(popup_d8835e7e24f9972faf56cade531a4ac5)
+        ;
+
+        
+    
+    
+            var circle_marker_30478efdc098907e985a2c03e8a271da = L.circleMarker(
+                [55.939801919840804, -4.320095536305556],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed875", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.49198167620057, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_ed4ba742e10e37dd34300e9d8e1df10f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b7554290bbcb34544be7d18fff82d04 = $(`<div id="html_5b7554290bbcb34544be7d18fff82d04" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Anniesland West</h4>         <b>Population:</b> 6,681<br>         <b>Area:</b> 1.30 km²<br>         <b>Density:</b> 5143.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_ed4ba742e10e37dd34300e9d8e1df10f.setContent(html_5b7554290bbcb34544be7d18fff82d04);
+            
+        
+
+        circle_marker_30478efdc098907e985a2c03e8a271da.bindPopup(popup_ed4ba742e10e37dd34300e9d8e1df10f)
+        ;
+
+        
+    
+    
+            var circle_marker_1f2e46af086772d55ed1a5166f2ff819 = L.circleMarker(
+                [55.95358988905959, -4.220351051890933],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed16d", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.99239273481874, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_0b6b6fcd79ca960c7651c54ff157558e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1399c21465caa59b21d731344ab3b314 = $(`<div id="html_1399c21465caa59b21d731344ab3b314" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Blairdardie East</h4>         <b>Population:</b> 5,485<br>         <b>Area:</b> 0.98 km²<br>         <b>Density:</b> 5611.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_0b6b6fcd79ca960c7651c54ff157558e.setContent(html_1399c21465caa59b21d731344ab3b314);
+            
+        
+
+        circle_marker_1f2e46af086772d55ed1a5166f2ff819.bindPopup(popup_0b6b6fcd79ca960c7651c54ff157558e)
+        ;
+
+        
+    
+    
+            var circle_marker_629ad61f9f7a0f429cf53a5ad90457bb = L.circleMarker(
+                [55.781330690413576, -4.186516343858361],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee999", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.487114090876442, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_a64d4bf54b4303b71d31e9d42134653c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b294629590ff8c8eb93da23bca0d038 = $(`<div id="html_7b294629590ff8c8eb93da23bca0d038" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Blairdardie West</h4>         <b>Population:</b> 2,975<br>         <b>Area:</b> 0.91 km²<br>         <b>Density:</b> 3265.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_a64d4bf54b4303b71d31e9d42134653c.setContent(html_7b294629590ff8c8eb93da23bca0d038);
+            
+        
+
+        circle_marker_629ad61f9f7a0f429cf53a5ad90457bb.bindPopup(popup_a64d4bf54b4303b71d31e9d42134653c)
+        ;
+
+        
+    
+    
+            var circle_marker_7460d35c0f5d91d3fe706de12e1fada6 = L.circleMarker(
+                [55.86139809266332, -4.340720806301764],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feeb9b", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.294967981978282, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_afc41406f45b67f2ae8070543ae71753 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2c7a380509c4421be51610a1e18a39df = $(`<div id="html_2c7a380509c4421be51610a1e18a39df" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Drumchapel South</h4>         <b>Population:</b> 2,542<br>         <b>Area:</b> 0.82 km²<br>         <b>Density:</b> 3085.7 inhabitants/km²     </div>     </div>`)[0];
+                popup_afc41406f45b67f2ae8070543ae71753.setContent(html_2c7a380509c4421be51610a1e18a39df);
+            
+        
+
+        circle_marker_7460d35c0f5d91d3fe706de12e1fada6.bindPopup(popup_afc41406f45b67f2ae8070543ae71753)
+        ;
+
+        
+    
+    
+            var circle_marker_6461fa56d100ffdc0a5c12287dd0c8c1 = L.circleMarker(
+                [55.778042503693676, -4.211528612334476],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee48e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.032650059862585, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_7e6d149160c1c3de118cd30d1c86ab11 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_251006e57f7fb582fa96a1b2acd10799 = $(`<div id="html_251006e57f7fb582fa96a1b2acd10799" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Drumchapel North</h4>         <b>Population:</b> 3,354<br>         <b>Area:</b> 0.89 km²<br>         <b>Density:</b> 3776.6 inhabitants/km²     </div>     </div>`)[0];
+                popup_7e6d149160c1c3de118cd30d1c86ab11.setContent(html_251006e57f7fb582fa96a1b2acd10799);
+            
+        
+
+        circle_marker_6461fa56d100ffdc0a5c12287dd0c8c1.bindPopup(popup_7e6d149160c1c3de118cd30d1c86ab11)
+        ;
+
+        
+    
+    
+            var circle_marker_c607d36c795cdf5a65d65249c98d8a7f = L.circleMarker(
+                [55.916320433051446, -4.322604829510877],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffefa5", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.751842393644113, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_e322ace72efc2f06c721900eeca8718b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11c2ac89bbd793d89723ed60468da201 = $(`<div id="html_11c2ac89bbd793d89723ed60468da201" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Drumry East</h4>         <b>Population:</b> 3,317<br>         <b>Area:</b> 1.29 km²<br>         <b>Density:</b> 2577.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_e322ace72efc2f06c721900eeca8718b.setContent(html_11c2ac89bbd793d89723ed60468da201);
+            
+        
+
+        circle_marker_c607d36c795cdf5a65d65249c98d8a7f.bindPopup(popup_e322ace72efc2f06c721900eeca8718b)
+        ;
+
+        
+    
+    
+            var circle_marker_d0e86179df8cfb54153144f267bad550 = L.circleMarker(
+                [55.91736688586139, -4.255240444355187],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee38c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.211698411330442, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_f09ddce531e2577458b8c84cf7187b01 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0c4c52f91a24d7d5e30cbc72760a334 = $(`<div id="html_f0c4c52f91a24d7d5e30cbc72760a334" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Drumry West</h4>         <b>Population:</b> 3,542<br>         <b>Area:</b> 0.90 km²<br>         <b>Density:</b> 3944.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_f09ddce531e2577458b8c84cf7187b01.setContent(html_f0c4c52f91a24d7d5e30cbc72760a334);
+            
+        
+
+        circle_marker_d0e86179df8cfb54153144f267bad550.bindPopup(popup_f09ddce531e2577458b8c84cf7187b01)
+        ;
+
+        
+    
+    
+            var circle_marker_fc978caad464610677b42eb4fed566f1 = L.circleMarker(
+                [55.78987829289995, -4.130199052676203],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc6a32", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.610499730423903, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_0551af43fa4c3c5eca7a8a4e1b7a12ba = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_681819346a02f8c5f193c8bddef250d4 = $(`<div id="html_681819346a02f8c5f193c8bddef250d4" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Firhill</h4>         <b>Population:</b> 6,415<br>         <b>Area:</b> 0.59 km²<br>         <b>Density:</b> 10873.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_0551af43fa4c3c5eca7a8a4e1b7a12ba.setContent(html_681819346a02f8c5f193c8bddef250d4);
+            
+        
+
+        circle_marker_fc978caad464610677b42eb4fed566f1.bindPopup(popup_0551af43fa4c3c5eca7a8a4e1b7a12ba)
+        ;
+
+        
+    
+    
+            var circle_marker_9366ce587b8fb36e136fb9d9cdc46eaa = L.circleMarker(
+                [55.859256475619745, -4.147968886011544],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed673", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.681560227979222, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_2a2eabcf45d250ba5dfabc7ec65a0d62 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d0bd89272b4e5c7366c2bdcf1997fe8 = $(`<div id="html_7d0bd89272b4e5c7366c2bdcf1997fe8" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Keppochhill</h4>         <b>Population:</b> 4,894<br>         <b>Area:</b> 0.92 km²<br>         <b>Density:</b> 5320.8 inhabitants/km²     </div>     </div>`)[0];
+                popup_2a2eabcf45d250ba5dfabc7ec65a0d62.setContent(html_7d0bd89272b4e5c7366c2bdcf1997fe8);
+            
+        
+
+        circle_marker_9366ce587b8fb36e136fb9d9cdc46eaa.bindPopup(popup_2a2eabcf45d250ba5dfabc7ec65a0d62)
+        ;
+
+        
+    
+    
+            var circle_marker_8246bdaafb14ccfde2fcad855afd8edc = L.circleMarker(
+                [55.87416071869899, -4.374110459686181],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fec25d", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.83641860061048, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_856e4bcd4ce303614015672142346ee1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44056680d79a71a9ac1ef861d0f07270 = $(`<div id="html_44056680d79a71a9ac1ef861d0f07270" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Ruchill</h4>         <b>Population:</b> 7,402<br>         <b>Area:</b> 1.16 km²<br>         <b>Density:</b> 6402.3 inhabitants/km²     </div>     </div>`)[0];
+                popup_856e4bcd4ce303614015672142346ee1.setContent(html_44056680d79a71a9ac1ef861d0f07270);
+            
+        
+
+        circle_marker_8246bdaafb14ccfde2fcad855afd8edc.bindPopup(popup_856e4bcd4ce303614015672142346ee1)
+        ;
+
+        
+    
+    
+            var circle_marker_92709032b5ffd37c17cbfeea15f4fb31 = L.circleMarker(
+                [55.81721132578801, -4.274727268230882],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee997", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.514394505661693, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_898ea03d6a9ac455099d399fd9ac73c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0106c2d9dadca15ffe5cc32cf1c64341 = $(`<div id="html_0106c2d9dadca15ffe5cc32cf1c64341" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Possil Park</h4>         <b>Population:</b> 6,123<br>         <b>Area:</b> 1.86 km²<br>         <b>Density:</b> 3291.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_898ea03d6a9ac455099d399fd9ac73c3.setContent(html_0106c2d9dadca15ffe5cc32cf1c64341);
+            
+        
+
+        circle_marker_92709032b5ffd37c17cbfeea15f4fb31.bindPopup(popup_898ea03d6a9ac455099d399fd9ac73c3)
+        ;
+
+        
+    
+    
+            var circle_marker_f43857252030b7a65592359a6252ca74 = L.circleMarker(
+                [55.93868660821705, -4.3187959328083245],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee999", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.44891867645422, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_015c36416484d0088da95bd871c0e126 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_984ad850cd38e11c7bf1ebd7365185ba = $(`<div id="html_984ad850cd38e11c7bf1ebd7365185ba" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Milton West</h4>         <b>Population:</b> 4,275<br>         <b>Area:</b> 1.32 km²<br>         <b>Density:</b> 3229.9 inhabitants/km²     </div>     </div>`)[0];
+                popup_015c36416484d0088da95bd871c0e126.setContent(html_984ad850cd38e11c7bf1ebd7365185ba);
+            
+        
+
+        circle_marker_f43857252030b7a65592359a6252ca74.bindPopup(popup_015c36416484d0088da95bd871c0e126)
+        ;
+
+        
+    
+    
+            var circle_marker_bd5f94a584f1fc68ed8d6dfcdbc23b96 = L.circleMarker(
+                [55.84882758804017, -4.400736293273665],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feda79", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.29966157186787, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_bd852ee0c6a1372b47a8ba894837cf62 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_851389055ccee05c0e8cd8b2adea23ca = $(`<div id="html_851389055ccee05c0e8cd8b2adea23ca" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Milton East</h4>         <b>Population:</b> 3,185<br>         <b>Area:</b> 0.64 km²<br>         <b>Density:</b> 4963.1 inhabitants/km²     </div>     </div>`)[0];
+                popup_bd852ee0c6a1372b47a8ba894837cf62.setContent(html_851389055ccee05c0e8cd8b2adea23ca);
+            
+        
+
+        circle_marker_bd5f94a584f1fc68ed8d6dfcdbc23b96.bindPopup(popup_bd852ee0c6a1372b47a8ba894837cf62)
+        ;
+
+        
+    
+    
+            var circle_marker_55ec7e89ba8a72c9ab3c5edecffed769 = L.circleMarker(
+                [55.80655964108841, -4.170464233094112],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffcc", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.624850675614015, "stroke": true, "weight": 1}
+            ).addTo(map_350cdd024e29e6170c484580de3bbbaf);
+        
+    
+        var popup_3ef45348fd5be7000282460b0a52fb79 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d1c547d83b0e32e3b8be6c9ee13146b6 = $(`<div id="html_d1c547d83b0e32e3b8be6c9ee13146b6" style="width: 100.0%; height: 100.0%;">     <div style='width:200px'>         <h4>Summerston Central and West</h4>         <b>Population:</b> 4,481<br>         <b>Area:</b> 7.66 km²<br>         <b>Density:</b> 585.2 inhabitants/km²     </div>     </div>`)[0];
+                popup_3ef45348fd5be7000282460b0a52fb79.setContent(html_d1c547d83b0e32e3b8be6c9ee13146b6);
+            
+        
+
+        circle_marker_55ec7e89ba8a72c9ab3c5edecffed769.bindPopup(popup_3ef45348fd5be7000282460b0a52fb79)
+        ;
+
+        
+    
+</script>
+</html>

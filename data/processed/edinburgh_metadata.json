@@ -1,0 +1,12 @@
+{
+  "source_file": "c:/Users/glauc/Desktop/PHS/Operational_A-E/data/intermediate_zones_data/edinburgh.RData",
+  "city": "edinburgh",
+  "objects_count": 1,
+  "objects": {
+    "edinburgh_data": {
+      "class": "sf",
+      "type": "list",
+      "dimensions": "46 x 28"
+    }
+  }
+}
