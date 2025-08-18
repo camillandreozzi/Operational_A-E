@@ -174,10 +174,10 @@ The project uses various datasets provided by Public Health Scotland:
 The main results are available in the `results` folder, with visualizations in the `images_dir` subfolder.
 
 Key visualizations include:
-- **Optimal Locations**: Best new site modeling results in `results/images_dir/recovered/best_new_site_model.png`
-- **Service Areas**: Voronoi maps showing coverage in `results/images_dir/recovered/best_new_site_voronoi_map.png`
-- **Patient Flow Changes**: Impact analysis in `results/images_dir/recovered/change_in_attendances.png`
-- **Combined Solutions**: Multi-facility optimization in `results/images_dir/recovered/combined_solution.png`
+- **Optimal Locations**: Best new site modeling results in `results/images_dir/best_new_site_model.png`
+- **Service Areas**: Voronoi maps showing coverage in `results/images_dir/best_new_site_voronoi_map.png`
+- **Patient Flow Changes**: Impact analysis in `results/images_dir/change_in_attendances.png`
+- **Combined Solutions**: Multi-facility optimization in `results/images_dir/combined_solution.png`
 
 ## 📈 Key Findings
 
