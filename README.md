@@ -42,11 +42,12 @@ For more information about the challenge, visit [Undergraduate Operational Resea
 
 The repository is organized into the following main folders:
 
-### `/data`: Data Files
+### `/data`: Data Files *(Local Only - Not in Repository)*
 - **`/raw`**: Original data files and intermediate zones data
 - **`/processed`**: Cleaned and processed data files (CSV, JSON, Excel formats)
 - **`/shapefiles`**: Geographic shapefiles for Scotland data zones
 - Main datasets: population estimates, hospital data, A&E activity data
+- **Note**: Data files are excluded from the Git repository due to size and privacy considerations
 
 ### `/src`: Source Code
 - **`/exploratory`**: Notebooks and scripts for exploratory data analysis
@@ -94,9 +95,17 @@ The repository is organized into the following main folders:
   - `add_geography.R`: Functions for integrating geographic data
   - `data_transf.R`: Data transformation functions in R
 
-### `/data`: Project Data
-- Contains all datasets used in the project (CSV files, Excel)
-- `/shapefiles`: Geographic shape files for visualization and spatial analysis
+## 📊 Data Management
+
+**Important**: The `/data` directory is excluded from this Git repository for the following reasons:
+- **File size**: Large CSV and Excel datasets exceed GitHub's recommended limits
+- **Privacy**: Some datasets may contain sensitive healthcare information
+- **Local processing**: Data files are processed locally and results are saved in `/results`
+
+To use this repository:
+1. Ensure you have the required datasets in the `/data` directory locally
+2. Run the analysis scripts which will generate outputs in `/results`
+3. The code is designed to work with the expected data structure
 
 ### `/docs`: Documentation
 - `problem_description.pdf`: Challenge description
