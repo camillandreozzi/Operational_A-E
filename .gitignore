@@ -1,8 +1,5 @@
-# Ignore the entire data directory
+# Ignore the entire data directory (contains large datasets, processed files, etc.)
 data/
-
-# Exception: Keep processed data that's already tracked
-!data/processed/
 
 # Ignore large datasets
 *.csv
