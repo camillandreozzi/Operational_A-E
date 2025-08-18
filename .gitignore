@@ -1,15 +1,15 @@
+# Ignore the entire data directory
+data/
+
+# Exception: Keep processed data that's already tracked
+!data/processed/
+
 # Ignore large datasets
 *.csv
 *.xlsx
 *.Rdata
 *.npz
 *.pkl
-
-# Ignore shapefile data
-data/shapefiles/
-
-# Ignore virtual environment
-/env_phs/
 
 # Ignore system files
 .Rhistory
