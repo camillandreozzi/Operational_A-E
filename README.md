@@ -3,8 +3,8 @@
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/recovered/best_new_site_voronoi_map.png" alt="Voronoi Map of Best New Site" width="400"/></td>
-      <td><img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/recovered/best_new_site_model.png" alt="Best New Site Model" width="400"/></td>
+      <td><img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/best_new_site_voronoi_map.png" alt="Voronoi Map of Best New Site" width="400"/></td>
+      <td><img src="https://raw.githubusercontent.com/camillandreozzi/Operational_A-E/main/results/images_dir/best_new_site_model.png" alt="Best New Site Model" width="400"/></td>
     </tr>
     <tr>
       <td align="center">Voronoi Map of Best New Site</td>
