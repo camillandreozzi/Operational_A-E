@@ -38,88 +38,6 @@ Complete documentation is available in the `docs` folder:
 
 For more information about the challenge, visit [Undergraduate Operational Research Challenge](https://www.maths.ed.ac.uk/school-of-mathematics/events/operational-research-challenge).
 
-## 📁 Repository Structure
-
-The repository is organized into the following main folders:
-
-### `/data`: Data Files *(Local Only - Not in Repository)*
-- **`/raw`**: Original data files and intermediate zones data
-- **`/processed`**: Cleaned and processed data files (CSV, JSON, Excel formats)
-- **`/shapefiles`**: Geographic shapefiles for Scotland data zones
-- Main datasets: population estimates, hospital data, A&E activity data
-- **Note**: Data files are excluded from the Git repository due to size and privacy considerations
-
-### `/src`: Source Code
-- **`/exploratory`**: Notebooks and scripts for exploratory data analysis
-  - `data_transf.ipynb`: Data transformation and preprocessing
-  - `exploration.ipynb`: Initial exploration of datasets
-  - `Exploratory Data Analysis.ipynb`: Detailed analysis of patterns in the data
-  - `Exploratory_Analysis_PatientProfiles.R`: R script for patient profile analysis
-  - `filter_non_glasgow_data.ipynb`: Data filtering for Glasgow analysis
-  - `technique_4.ipynb`: Advanced analysis techniques
-  - `waiting_time_analysis.ipynb`: Analysis of waiting times
-- **`/modeling`**: Model development and optimization scripts
-  - `/location_optimization`: Hospital location optimization models
-  - `/wait_time`: Waiting time prediction models
-- **`/analysis`**: Additional analysis scripts
-- **`/utils`**: Utility functions and helper scripts
-- Main analysis files:
-  - `intermediate_zones_exploration.ipynb`: Comprehensive zones analysis
-  - `glasgow_edinburgh_analysis.R`: Glasgow and Edinburgh comparative analysis
-  - `ModelCode.R`: Main modeling code
-
-### `/results`: Results and Outputs
-- **`/analysis`**: Analysis reports (PDF format)
-- **`/maps`**: Interactive HTML maps and visualizations
-- **`/static_maps`**: Static PNG maps and charts
-- **`/models`**: Saved model files (R data, numpy, pickle formats)
-- **`/images_dir`**: Additional charts and visualizations
-
-### `/docs`: Documentation
-- Complete project documentation and reports
-
-- **`/modeling`**: Analytical and optimization models
-  - **`/location_optimization`**: Models to optimize the location of healthcare facilities
-    - `BNS_ED.ipynb`: Optimization for Emergency Departments
-    - `BNS_MIU.ipynb`: Optimization for Minor Injury Units
-    - `BNS_real_data.ipynb`: Application of models on real data
-    - `Finding_Best_New_Site.ipynb`: Algorithms to find optimal locations
-    - `Elderly Work.ipynb`: Specific analyses for the elderly population
-    - `Best_New_Site_Distributional_Assumptions.R`: Optimization for optimal locations
-    - `metrics.R`: Evaluation metrics for location models
-  
-  - **`/wait_time`**: Models for waiting time analysis and prediction
-    - `Modelling.ipynb`: Predictive models for waiting times
-
-- **`/utils`**: Utility scripts
-  - `add_geography.R`: Functions for integrating geographic data
-  - `data_transf.R`: Data transformation functions in R
-
-## 📊 Data Management
-
-**Important**: The `/data` directory is excluded from this Git repository for the following reasons:
-- **File size**: Large CSV and Excel datasets exceed GitHub's recommended limits
-- **Privacy**: Some datasets may contain sensitive healthcare information
-- **Local processing**: Data files are processed locally and results are saved in `/results`
-
-To use this repository:
-1. Ensure you have the required datasets in the `/data` directory locally
-2. Run the analysis scripts which will generate outputs in `/results`
-3. The code is designed to work with the expected data structure
-
-### `/docs`: Documentation
-- `problem_description.pdf`: Challenge description
-- `Business Report.pdf`: Business report
-- `Optimizing Healthcare.pdf`: Complete paper
-
-### `/results`: Analysis Results
-- **`/images_dir`**: Visualizations and graphs generated from analyses
-  - Distribution maps
-  - Performance graphs
-  - Voronoi visualizations for service areas
-- **`/ED`**: Results specific to Emergency Departments
-- **`/MIU`**: Results specific to Minor Injury Units
-- Model output files (`.Rdata`, `.npz`, `.pkl`)
 
 ## 📊 Data
 
@@ -156,28 +74,6 @@ The project uses various datasets provided by Public Health Scotland:
    install.packages(c("readxl", "tidyverse", "magritt", "ranger", "caret", "optimx", "patchwork", "sf", "tmap"))
    ```
 
-## 🚀 Reproducing Results
-
-### Exploratory Analysis
-1. Run the notebooks in the `src/exploratory` folder to understand the data
-2. Follow the `Exploratory Data Analysis.ipynb` notebook for a complete analysis
-
-### Optimization Models
-1. For location optimization:
-   - Start with `src/modeling/location_optimization/BNS_real_data.ipynb`
-   - Run `Finding_Best_New_Site.ipynb` to obtain optimal locations
-
-2. For waiting time analysis:
-   - Use `src/modeling/wait_time/Modelling.ipynb`
-
-### Visualizing Results
-The main results are available in the `results` folder, with visualizations in the `images_dir` subfolder.
-
-Key visualizations include:
-- **Optimal Locations**: Best new site modeling results in `results/images_dir/best_new_site_model.png`
-- **Service Areas**: Voronoi maps showing coverage in `results/images_dir/best_new_site_voronoi_map.png`
-- **Patient Flow Changes**: Impact analysis in `results/images_dir/change_in_attendances.png`
-- **Combined Solutions**: Multi-facility optimization in `results/images_dir/combined_solution.png`
 
 ## 📈 Key Findings
 
