@@ -16,10 +16,8 @@
 ## 📋 Summary
 
 - [Project Overview](#-project-overview)
-- [Repository Structure](#-repository-structure)
 - [Data](#-data)
 - [Installation](#-installation)
-- [Reproducing Results](#-reproducing-results)
 - [Key Findings](#-key-findings)
 - [Contributing](#-contributing)
 - [Authors](#-authors)
