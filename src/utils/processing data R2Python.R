@@ -5,12 +5,12 @@ suppressPackageStartupMessages({
 })
 
 # Load source data
-load("C:\\Users\\glauc\\Desktop\\PHS\\Operational_A-E\\data\\intermediate_zones_data\\glasgow.RData")
 stopifnot(exists("plot_glasgow"))
 g <- plot_glasgow
 
 # Make geometry valid
 g <- st_make_valid(g)
+View(plot_glasgow)
 
 # Ensure CRS exists
 if (is.na(st_crs(g))) {
